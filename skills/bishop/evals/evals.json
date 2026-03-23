@@ -1,0 +1,47 @@
+{
+  "skill_name": "unifi-network-manager",
+  "evals": [
+    {
+      "id": 0,
+      "name": "health-check",
+      "prompt": "Hey, I just set everything up. Can you check on my network and make sure everything is healthy? I want to know if any devices are having issues, if my internet connection is solid, and if there's anything I should worry about.",
+      "expected_output": "Comprehensive health report covering WAN status, device health (CPU/mem/temp/uptime), client counts, and any active alarms",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "wifi-troubleshooting",
+      "prompt": "The WiFi in the warehouse seems really slow lately. People are complaining they can't load anything. Can you figure out what's going on with the wireless?",
+      "expected_output": "WiFi diagnostic report covering channel utilization, interference, client distribution across APs, signal strength analysis, and actionable recommendations",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "security-audit",
+      "prompt": "I noticed some devices I don't recognize on my network. Can you do a security check and tell me if anything looks suspicious? I want to make sure nobody unauthorized is connected.",
+      "expected_output": "Security audit covering rogue AP scan, unknown client identification, IDS/IPS event review, and recommendations for blocking or isolating suspicious devices",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "firmware-status",
+      "prompt": "Are any of my UniFi devices running old firmware? I want to know which ones need updates and whether any are critically outdated. Can you check and tell me what needs attention?",
+      "expected_output": "Firmware inventory showing each device model, current version, available version, upgrade status, and critical flags for severely outdated devices",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "port-diagnostics",
+      "prompt": "One of my switches seems to have a bad port — port 8 keeps going up and down. Can you check the switch port status and tell me if there are errors, speed mismatches, or PoE issues? I think it's the USW-Pro-48 in the server room.",
+      "expected_output": "Port-level diagnostic report covering error counts, speed/duplex, PoE budget, flapping detection from event logs, and recommendations",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "geo-blocking",
+      "prompt": "I keep seeing weird traffic that looks like it might be from China or Russia. Can you check if my UniFi is set up to block that stuff? I want to make sure geo-blocking and threat protection are turned on properly.",
+      "expected_output": "Geo-blocking audit showing IPS mode status, country restriction config, recent IPS events by country, and guidance to enable/harden native UniFi threat management features",
+      "files": []
+    }
+  ]
+}
