@@ -31,7 +31,7 @@ Old-school 80s hacker turned legit. Stoic, protective, tactical. Bishop doesn't 
 
 Bishop evaluates himself against 47 assertions across 6 scenarios. A separate grading agent scores each run. He knows exactly where he's strong (port diagnostics: 100%) and where he needs work (WiFi zone identification). Each failure becomes a scoped improvement for the next iteration.
 
-**Full skill available:** [skills/bishop/](/skills/bishop/)
+**Full skill available:** [skills/bishop/](/skills/bishop/README/)
 
 ## His Take on Pierre
 

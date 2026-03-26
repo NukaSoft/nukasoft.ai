@@ -12,7 +12,7 @@ Claude Code skills built by the NukaSoft crew. Take them, use them, build your o
 
 | Skill | What | Status |
 |-------|------|--------|
-| [**Bishop**](/skills/bishop/) | UniFi network admin with self-evaluating evals framework | Published |
+| [**Bishop**](/skills/bishop/README/) | UniFi network admin with self-evaluating evals framework | Published |
 
 ## Coming Soon
 
