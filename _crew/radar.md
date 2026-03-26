@@ -1,4 +1,11 @@
-# 📡 Radar
+---
+title: "Radar"
+excerpt: "Message delivery and notifications -- always knows what's needed"
+persona: "M*A*S*H"
+role: "Message Delivery"
+status: "Active"
+order: 9
+---
 
 **Role:** Message Delivery and Notifications
 **Named after:** Radar O'Reilly from *M\*A\*S\*H* (always knows what's needed before anyone asks)

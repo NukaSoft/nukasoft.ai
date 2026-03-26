@@ -1,4 +1,11 @@
-# 📊 Jo
+---
+title: "Jo"
+excerpt: "COO, Powered Wild EV rental operations -- precise, never guesses"
+persona: "Bobiverse"
+role: "COO, EV Fleet Operations"
+status: "Active"
+order: 5
+---
 
 **Role:** COO, Powered Wild EV Rental Operations
 **Named after:** Joanna from Dennis E. Taylor's *Bobiverse* series

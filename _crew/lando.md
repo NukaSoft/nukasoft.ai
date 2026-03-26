@@ -1,4 +1,11 @@
-# 🎨 Lando
+---
+title: "Lando"
+excerpt: "Brand management and creative direction -- smooth operator"
+persona: "Star Wars"
+role: "Brand Management"
+status: "Active"
+order: 8
+---
 
 **Role:** Brand Management / Creative Director
 **Named after:** Lando Calrissian from *Star Wars* (smooth operator, entrepreneur, marketing genius)

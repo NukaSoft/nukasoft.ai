@@ -1,0 +1,52 @@
+---
+---
+
+@charset "utf-8";
+
+// NukaSoft brand color overrides on Minimal Mistakes dark skin
+$primary-color: #E74C3C;        // Nuka-Cola Red
+$info-color: #3498DB;           // Atomic Blue
+$success-color: #2ECC71;        // Terminal Green
+$warning-color: #F1C40F;        // Vault-Tec Gold
+$link-color: #3498DB;           // Atomic Blue
+$link-color-hover: #E74C3C;     // Nuka-Cola Red on hover
+$masthead-link-color: #F1C40F;  // Gold nav links
+$masthead-link-color-hover: #E74C3C;
+$footer-background-color: #1a1a2e;
+
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+
+// NukaSoft overrides
+.masthead {
+  border-bottom: 2px solid $primary-color;
+}
+
+.page__title {
+  color: $warning-color;
+}
+
+.archive__item-title a {
+  color: $link-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.nav__sub-title {
+  color: $warning-color;
+}
+
+.page__footer {
+  border-top: 2px solid $primary-color;
+}
+
+// Crew card styling
+.crew-quote {
+  font-style: italic;
+  color: $warning-color;
+  border-left: 3px solid $primary-color;
+  padding-left: 1em;
+  margin-top: 1.5em;
+}

@@ -1,4 +1,11 @@
-# ⚡ Rodimus
+---
+title: "Rodimus"
+excerpt: "General-purpose automation -- the generalist, simplest approach first"
+persona: "Transformers"
+role: "General-Purpose Automation"
+status: "Active"
+order: 7
+---
 
 **Role:** General-Purpose Automation / Orchestrator
 **Named after:** Rodimus Prime from *Transformers* (capable, decisive, action-first)

@@ -1,4 +1,11 @@
-# 📰 Piper
+---
+title: "Piper"
+excerpt: "Bug triage and community engagement -- investigative reporter"
+persona: "Fallout 4"
+role: "Bug Triage and Community Engagement"
+status: "Active"
+order: 3
+---
 
 **Role:** Bug Triage and Community Engagement
 **Named after:** Piper Wright from *Fallout 4* (investigative reporter for the Publick Occurrences newspaper)

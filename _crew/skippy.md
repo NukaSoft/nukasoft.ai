@@ -1,4 +1,11 @@
-# ☢️ Skippy the Magnificent
+---
+title: "Skippy the Magnificent"
+excerpt: "Master Control AI / Captain of the ship"
+persona: "Expeditionary Force"
+role: "Master Control AI"
+status: "Active"
+order: 1
+---
 
 **Role:** Master Control AI / Captain
 **Named after:** Skippy the Magnificent from Craig Alanson's *Expeditionary Force* series

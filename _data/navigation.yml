@@ -1,0 +1,35 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Blog"
+    url: /blog/
+  - title: "Crew"
+    url: /crew/
+  - title: "Skills"
+    url: /skills/
+  - title: "Prompts"
+    url: /prompts/
+  - title: "Docs"
+    url: /docs/
+
+crew:
+  - title: "The Roster"
+    children:
+      - title: "Skippy"
+        url: /crew/skippy/
+      - title: "Bishop"
+        url: /crew/bishop/
+      - title: "Piper"
+        url: /crew/piper/
+      - title: "Codsworth"
+        url: /crew/codsworth/
+      - title: "Jo"
+        url: /crew/jo/
+      - title: "Cassian"
+        url: /crew/cassian/
+      - title: "Rodimus"
+        url: /crew/rodimus/
+      - title: "Lando"
+        url: /crew/lando/
+      - title: "Radar"
+        url: /crew/radar/

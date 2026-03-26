@@ -1,4 +1,9 @@
-# Bishop — Network Operations Admin
+---
+title: "Bishop -- Network Operations Admin"
+excerpt: "Claude Code skill for Ubiquiti UniFi network management with self-evaluating evals"
+---
+
+# Bishop -- Network Operations Admin
 
 Bishop is a Claude Code skill for Ubiquiti UniFi network management. It gives Claude deep knowledge of the UniFi API, network diagnostics methodology, and autonomous health monitoring capabilities.
 

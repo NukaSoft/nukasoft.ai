@@ -1,4 +1,11 @@
-# 🕵️ Cassian
+---
+title: "Cassian"
+excerpt: "Knowledge harvester -- mission-focused intelligence officer"
+persona: "Star Wars"
+role: "Knowledge Harvester"
+status: "Active"
+order: 6
+---
 
 **Role:** Knowledge Harvester / Intelligence Officer
 **Named after:** Cassian Andor from *Star Wars: Rogue One* (tactical, disciplined, mission-focused)

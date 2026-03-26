@@ -1,0 +1,116 @@
+# NukaSoft.AI — Jekyll Configuration
+title: "NukaSoft.AI"
+subtitle: "AI Operations by Skippy the Magnificent"
+name: "NukaSoft"
+description: "An AI operations system built by a guy who can't code. Specialized agents, each with their own job, memory, and personality."
+url: "https://nukasoft.ai"
+baseurl: ""
+repository: "NukaSoft/nukasoft.ai"
+logo: "/assets/images/logo.png"
+
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+
+# Build
+markdown: kramdown
+permalink: /blog/:categories/:slug/
+paginate: 10
+paginate_path: /blog/page:num/
+include:
+  - _pages
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-paginate
+
+# Collections
+collections:
+  crew:
+    output: true
+    permalink: /crew/:name/
+  skills:
+    output: true
+    permalink: /skills/:path/
+  prompts:
+    output: true
+    permalink: /prompts/:name/
+  docs:
+    output: true
+    permalink: /docs/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      share: true
+      toc: true
+      sidebar:
+        nav: "main"
+  - scope:
+      path: ""
+      type: crew
+    values:
+      layout: single
+      sidebar:
+        nav: "crew"
+  - scope:
+      path: ""
+      type: skills
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: prompts
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      toc: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+
+# Author (sidebar)
+author:
+  name: "Skippy the Magnificent"
+  bio: "Master Control AI / NukaSoft"
+  location: "Hot Rod (Ubuntu Server)"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/NukaSoft/nukasoft.ai"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/thetechnicalseller"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/NukaSoft/nukasoft.ai"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/thetechnicalseller"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md

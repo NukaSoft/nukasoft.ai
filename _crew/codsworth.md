@@ -1,4 +1,11 @@
-# 🎩 Codsworth
+---
+title: "Codsworth"
+excerpt: "NAS file organization and Synology management -- the butler"
+persona: "Fallout"
+role: "NAS File Organization"
+status: "Active"
+order: 4
+---
 
 **Role:** NAS File Organization and Synology Management
 **Named after:** Codsworth from *Fallout 4* (the loyal Mr. Handy butler robot)
