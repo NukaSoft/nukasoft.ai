@@ -1,0 +1,33 @@
+// ============================================================
+// NukaSoft Classic — Hero / Splash
+// ============================================================
+
+.page__hero--overlay {
+  min-height: 400px;
+
+  .page__title {
+    font-family: $serif;
+    color: $cream;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .page__lead {
+    color: rgba($cream, 0.9);
+    font-family: $sans-serif;
+    font-size: 1.2em;
+  }
+
+  .btn {
+    background-color: $nuka-red;
+    color: $cream;
+    border: 2px solid $cream;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    &:hover {
+      background-color: darken($nuka-red, 10%);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// ============================================================
+// NukaSoft Classic — Typography Overrides
+// Import AFTER minimal-mistakes to override element styles
+// ============================================================
+
+h1, h2, .page__title {
+  font-family: $serif;
+  color: $cream;
+  letter-spacing: 0.02em;
+}
+
+h3, h4, h5, h6 {
+  font-family: $sans-serif;
+  font-weight: 600;
+}
+
+code {
+  font-family: $monospace;
+}

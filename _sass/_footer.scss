@@ -1,0 +1,26 @@
+// ============================================================
+// NukaSoft Classic — Footer
+// ============================================================
+
+.page__footer {
+  background-color: darken($cola-brown, 5%);
+  border-top: 3px solid $nuka-red;
+  color: $cream;
+
+  a {
+    color: $radiation-yellow;
+    &:hover { color: $nuka-red; }
+  }
+
+  footer {
+    &::before {
+      content: "One sip and you'll forget the bombs ever fell... almost";
+      display: block;
+      font-family: $serif;
+      font-style: italic;
+      color: rgba($cream, 0.5);
+      margin-bottom: 1em;
+      font-size: 0.85em;
+    }
+  }
+}

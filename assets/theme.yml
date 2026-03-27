@@ -1,0 +1,24 @@
+name: Nuka Classic
+description: Retrofuturistic 1950s atomic age — the original NukaSoft brand
+version: 1.0.0
+author: NukaSoft.AI
+base_theme: minimal-mistakes (dark skin)
+
+palette:
+  primary: "#C41E24"       # Nuka Red
+  background: "#3D1C0B"    # Cola Brown
+  text: "#F5E6C8"          # Cream/Ivory
+  accent: "#F1C40F"        # Radiation Yellow
+  info: "#87CEEB"          # Sky Blue
+  metallic: "#8B6914"      # Brass/Bronze
+  danger: "#C0392B"        # Bandana Red
+
+fonts:
+  display: "Abril Fatface"
+  body: "Josefin Sans"
+  code: "IBM Plex Mono"
+
+assets:
+  logo: "assets/images/NukaSoft_Log.png"
+  hero: "assets/images/Poster_1.png"
+  wordmark: "assets/images/NukaSoft_Wordmark_Design2.png"

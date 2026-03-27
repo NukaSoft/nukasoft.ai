@@ -1,0 +1,86 @@
+// ============================================================
+// NukaSoft Classic — Component Overrides
+// ============================================================
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $nuka-red;
+  color: $cream;
+  font-style: italic;
+  background: rgba($cola-brown, 0.5);
+  padding: 1em;
+  border-radius: 2px;
+}
+
+// Crew card quotes
+.crew-quote {
+  border-left: 3px solid $radiation-yellow;
+  color: $radiation-yellow;
+  padding-left: 1em;
+  margin-top: 1.5em;
+  font-style: italic;
+}
+
+// Tables
+table {
+  border-color: mix($cola-brown, $cream, 70%);
+
+  th {
+    background-color: $nuka-red;
+    color: $cream;
+    font-family: $sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+  }
+
+  td {
+    border-color: mix($cola-brown, $cream, 80%);
+  }
+}
+
+// Sidebar nav
+.nav__sub-title {
+  color: $radiation-yellow;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid $nuka-red;
+}
+
+// Archive items
+.archive__item-title a {
+  color: $cream;
+  &:hover { color: $nuka-red; }
+}
+
+// TOC
+.toc__menu a {
+  color: $cream;
+  &:hover { color: $nuka-red; }
+}
+
+// Buttons
+.btn--primary {
+  background-color: $nuka-red;
+  color: $cream;
+  &:hover {
+    background-color: darken($nuka-red, 10%);
+  }
+}
+
+// Author sidebar
+.author__name {
+  color: $radiation-yellow;
+  font-family: $serif;
+}
+
+.author__bio {
+  color: rgba($cream, 0.8);
+}
+
+// Selection highlight
+::selection {
+  background: $nuka-red;
+  color: $cream;
+}

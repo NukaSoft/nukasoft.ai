@@ -1,0 +1,39 @@
+// ============================================================
+// NukaSoft Classic — Masthead / Navigation
+// ============================================================
+
+.masthead {
+  background-color: $cola-brown;
+  border-bottom: 3px solid $nuka-red;
+
+  .site-title {
+    font-family: $serif;
+    color: $cream;
+  }
+
+  .masthead__menu {
+    .greedy-nav {
+      background: $cola-brown;
+
+      a {
+        color: $cream;
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.8em;
+
+        &:hover {
+          color: $nuka-red;
+        }
+      }
+
+      .visible-links a::before {
+        background: $nuka-red;
+      }
+
+      button {
+        color: $cream;
+      }
+    }
+  }
+}

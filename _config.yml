@@ -6,7 +6,7 @@ description: "An AI operations system built by a guy who can't code. Specialized
 url: "https://nukasoft.ai"
 baseurl: ""
 repository: "NukaSoft/nukasoft.ai"
-logo: "/assets/images/logo.png"
+logo: "/assets/images/NukaSoft_Log.png"
 
 # Theme
 theme: minimal-mistakes-jekyll
