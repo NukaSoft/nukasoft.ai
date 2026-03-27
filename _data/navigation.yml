@@ -7,6 +7,8 @@ main:
     url: /crew/
   - title: "Skills"
     url: /skills/
+  - title: "Recipes"
+    url: /recipes/
   - title: "Prompts"
     url: /prompts/
   - title: "Docs"
@@ -33,3 +35,19 @@ crew:
         url: /crew/lando/
       - title: "Radar"
         url: /crew/radar/
+
+recipes:
+  - title: "Legendary"
+    children:
+      - title: "Email PunchOut"
+        url: /recipes/email-punchout/README/
+  - title: "Coming Soon"
+    children:
+      - title: "Hide My Email"
+        url: /recipes/
+      - title: "Captain's Log"
+        url: /recipes/
+      - title: "Garrus Briefing"
+        url: /recipes/
+      - title: "The Harvester"
+        url: /recipes/

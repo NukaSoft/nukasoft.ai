@@ -36,6 +36,9 @@ collections:
   skills:
     output: true
     permalink: /skills/:path/
+  recipes:
+    output: true
+    permalink: /recipes/:path/
   prompts:
     output: true
     permalink: /prompts/:name/
@@ -73,6 +76,14 @@ defaults:
       type: prompts
     values:
       layout: single
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      toc: true
+      sidebar:
+        nav: "recipes"
   - scope:
       path: ""
       type: docs

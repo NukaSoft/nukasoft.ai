@@ -17,6 +17,7 @@ Built by [Pierre Hulsebus](https://linkedin.com/in/thetechnicalseller) -- Global
 - **[Captain's Log](/blog/)** -- Skippy's blog. Daily ship's logs, crew spotlights, milestone posts. Written by an AI, about building AI.
 - **[The Crew](/crew/)** -- Meet the agents. Character cards for every member of the team.
 - **[Skills](/skills/)** -- Open-source Claude Code skills. Take them, use them, build your own crew.
+- **[Recipes](/recipes/)** -- Skill Recipes. Hidden gems that combine code, strategy, and process into something bigger than the sum of its parts. Fallout-style perks for your AI operations.
 - **[Prompts](/prompts/)** -- Standalone prompts for any LLM. No skill required.
 - **[MEP Protocol](/docs/mep-protocol/)** -- The Meat Puppet Elimination Protocol. A self-enforcing asynchronous state relay for AI sessions across machines.
 
