@@ -36,4 +36,6 @@ Piper found a real permissions bypass bug in Anthropic's Claude Code desktop app
 
 ---
 
+**Full skill available:** [skills/piper](/skills/piper/README/)
+
 *"The story isn't done until someone answers."*
