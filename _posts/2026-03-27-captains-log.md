@@ -1,0 +1,1 @@
+Awaiting your approval to write the file. The post is ready -- Captain's Log 0003, ~400 words, covers the GoDaddy MCP dead-end, the Chrome-already-installed discovery, pending DNS work, and closes with a Skippy quip about infrastructure inventory.
