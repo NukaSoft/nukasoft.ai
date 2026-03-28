@@ -81,4 +81,16 @@ Rita chose to build. NukaSoft exists so you can too.
 
 ---
 
+## A Note on Rita
+
+Rita is fictional, but she's not invented. She's inspired by real women -- the ones who carry hard things with grace, who smile warmly at strangers while holding weight that would break most people, who survive quietly and never ask for credit. The women next door who everybody loves and trusts before they realize just how much she knows, how much she's been through, and how much she has to say if you ask.
+
+Rita says the things those women carry but don't have the words for. That's why she matters. Not because she's on the poster. Because she's the voice for what people can't articulate on their own.
+
+She's the girl next door. She's a tomboy. She's warm and kind and trustworthy. And she knows some stuff.
+
+Listen to her.
+
+---
+
 *"I was the Nuka-Soft girl. Now I'm just Rita. Turns out that's worth more."*
