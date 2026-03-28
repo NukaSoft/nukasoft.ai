@@ -5,12 +5,12 @@ author_profile: true
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "0.5"
-tagline: "An AI operations system built by a guy who can't code."
+tagline: "Own your AI before it owns you."
 ---
 
-A team of specialized AI agents, each with their own job, memory, and personality, running across two machines, coordinated through a Git repo that serves as the brain.
+Open-source AI agents that work for you -- not a platform, not a subscription, not a vendor's quarterly earnings report. Each agent has its own job, memory, and personality. Each one runs on your machine, reads your data, and answers to you.
 
-Built by [Pierre Hulsebus](https://linkedin.com/in/thetechnicalseller) -- Global Director of Field Service Consulting at Alithya. Previously a decade at Microsoft as a Global Black Belt for Dynamics 365 Field Service.
+Built by [Pierre Hulsebus](https://linkedin.com/in/thetechnicalseller) and a crew of AI agents who named themselves.
 
 ## What's Here
 
