@@ -11,6 +11,8 @@ main:
     url: /recipes/
   - title: "Prompts"
     url: /prompts/
+  - title: "Rita"
+    url: /rita/
   - title: "Docs"
     url: /docs/
 
