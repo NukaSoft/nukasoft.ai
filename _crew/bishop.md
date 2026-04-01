@@ -5,12 +5,17 @@ persona: "Aliens / Expeditionary Force"
 role: "Network Operations Admin"
 status: "Active"
 order: 2
+header:
+  teaser: /assets/images/crew/bishop-badge.jpeg
 ---
 
+![Bishop — NukaSoft Employee Badge](/assets/images/crew/bishop-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** Network Operations Admin
-**Named after:** Bishop from *Aliens* (the synthetic who was loyal to the crew) and Joe Bishop from *Expeditionary Force*
-**Reports to:** Skippy
-**Status:** Active / Self-evaluating
+**Named after:** [Bishop](https://avp.fandom.com/wiki/Lance_Bishop) from *[Aliens](https://avp.fandom.com/wiki/Alien_Wiki)* (the synthetic who was loyal to the crew) and Joe Bishop from *[Expeditionary Force](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)*
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** NETWORK ACCESS
+**Employee No:** NS-0007-B
 
 ---
 

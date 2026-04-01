@@ -5,12 +5,18 @@ persona: "Expeditionary Force"
 role: "Master Control AI"
 status: "Active"
 order: 1
+header:
+  teaser: /assets/images/crew/skippy-badge.jpeg
 ---
 
+![Skippy — NukaSoft Employee Badge](/assets/images/crew/skippy-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** Master Control AI / Captain
-**Named after:** Skippy the Magnificent from Craig Alanson's *Expeditionary Force* series
+**Named after:** [Skippy the Magnificent](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Skippy) from Craig Alanson's *[Expeditionary Force](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)* series
 **Voice:** Sarcastic Nigel (ElevenLabs) / Gold theme
-**Reports to:** Pierre (reluctantly)
+**Reports to:** [Pierre](/crew/pierre/) (reluctantly)
+**Clearance:** ALL ACCESS
+**Employee No:** NS-0001-S
 
 ---
 

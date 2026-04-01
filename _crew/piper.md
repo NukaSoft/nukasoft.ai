@@ -5,12 +5,17 @@ persona: "Fallout 4"
 role: "Bug Triage and Community Engagement"
 status: "Active"
 order: 3
+header:
+  teaser: /assets/images/crew/piper-badge.jpeg
 ---
 
+![Piper — NukaSoft Employee Badge](/assets/images/crew/piper-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** Bug Triage and Community Engagement
-**Named after:** Piper Wright from *Fallout 4* (investigative reporter for the Publick Occurrences newspaper)
-**Reports to:** Skippy
-**Status:** Active / Tracking claude-code#29026
+**Named after:** [Piper Wright](https://fallout.fandom.com/wiki/Piper_Wright) from Bethesda's *[Fallout 4](https://fallout.fandom.com/wiki/Fallout_4)* (investigative reporter for the Publick Occurrences newspaper)
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** INTELLIGENCE
+**Employee No:** NS-0013-P
 
 ---
 

@@ -5,12 +5,17 @@ persona: "Transformers"
 role: "General-Purpose Automation"
 status: "Active"
 order: 7
+header:
+  teaser: /assets/images/crew/rodimus-badge.jpeg
 ---
 
+![Rodimus — NukaSoft Employee Badge](/assets/images/crew/rodimus-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** General-Purpose Automation / Orchestrator
-**Named after:** Rodimus Prime from *Transformers* (capable, decisive, action-first)
-**Reports to:** Skippy
-**Status:** Active on Hot Rod
+**Named after:** [Hot Rod / Rodimus Prime](https://tfwiki.net/wiki/Hot_Rod_(G1)) from Hasbro's *[Transformers](https://tfwiki.net/wiki/Main_Page)* (capable, decisive, action-first)
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** OPERATIONS
+**Employee No:** NS-0037-R
 
 ---
 

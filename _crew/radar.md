@@ -5,12 +5,17 @@ persona: "M*A*S*H"
 role: "Message Delivery"
 status: "Active"
 order: 9
+header:
+  teaser: /assets/images/crew/radar-badge.jpeg
 ---
 
+![Radar — NukaSoft Employee Badge](/assets/images/crew/radar-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** Message Delivery and Notifications
-**Named after:** Radar O'Reilly from *M\*A\*S\*H* (always knows what's needed before anyone asks)
-**Reports to:** Skippy
-**Status:** Active / Just initialized
+**Named after:** [Radar O'Reilly](https://mash.fandom.com/wiki/Walter_%22Radar%22_O%E2%80%99Reilly) from *[M\*A\*S\*H](https://mash.fandom.com/wiki/M*A*S*H_(TV_series))* (always knows what's needed before anyone asks)
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** BRAND & COMMS
+**Employee No:** NS-0041-D
 
 ---
 

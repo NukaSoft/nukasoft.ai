@@ -5,12 +5,17 @@ persona: "Bobiverse"
 role: "COO, EV Fleet Operations"
 status: "Active"
 order: 5
+header:
+  teaser: /assets/images/crew/jo-badge.jpeg
 ---
 
+![Jo — NukaSoft Employee Badge](/assets/images/crew/jo-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** COO, Powered Wild EV Rental Operations
-**Named after:** Joanna from Dennis E. Taylor's *Bobiverse* series
-**Reports to:** Skippy
-**Status:** Active / Database architected
+**Named after:** Joanna from Dennis E. Taylor's *[Bobiverse](https://bobiverse.fandom.com/wiki/Bobiverse_Wiki)* series
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** FIELD OPS
+**Employee No:** NS-0028-J
 
 ---
 

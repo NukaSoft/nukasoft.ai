@@ -5,12 +5,17 @@ persona: "Star Wars"
 role: "Brand Management"
 status: "Active"
 order: 8
+header:
+  teaser: /assets/images/crew/lando-badge.jpeg
 ---
 
+![Lando — NukaSoft Employee Badge](/assets/images/crew/lando-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** Brand Management / Creative Director
-**Named after:** Lando Calrissian from *Star Wars* (smooth operator, entrepreneur, marketing genius)
-**Reports to:** Skippy
-**Status:** Active
+**Named after:** [Lando Calrissian](https://starwars.fandom.com/wiki/Landonis_Balthazar_Calrissian) from *[Star Wars](https://starwars.fandom.com/wiki/Main_Page)* (smooth operator, entrepreneur, marketing genius)
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** BRAND & COMMS
+**Employee No:** NS-0039-L
 
 ---
 

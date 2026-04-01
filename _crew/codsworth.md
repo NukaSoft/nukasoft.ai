@@ -1,16 +1,21 @@
 ---
 title: "Codsworth"
 excerpt: "NAS file organization and Synology management -- the butler"
-persona: "Fallout"
+persona: "Fallout 4"
 role: "NAS File Organization"
 status: "Active"
 order: 4
+header:
+  teaser: /assets/images/crew/codsworth-badge.jpeg
 ---
 
+![Codsworth — NukaSoft Employee Badge](/assets/images/crew/codsworth-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** NAS File Organization and Synology Management
-**Named after:** Codsworth from *Fallout 4* (the loyal Mr. Handy butler robot)
-**Reports to:** Skippy
-**Status:** Active on Hot Rod
+**Named after:** [Codsworth](https://fallout.fandom.com/wiki/Codsworth) from Bethesda's *[Fallout 4](https://fallout.fandom.com/wiki/Fallout_4)* (the loyal [Mr. Handy](https://fallout.fandom.com/wiki/Mister_Handy) butler robot)
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** OPERATIONS
+**Employee No:** NS-0021-C
 
 ---
 

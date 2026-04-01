@@ -1,16 +1,21 @@
 ---
 title: "Cassian"
 excerpt: "Knowledge harvester -- mission-focused intelligence officer"
-persona: "Star Wars"
+persona: "Star Wars (Rogue One / Andor)"
 role: "Knowledge Harvester"
 status: "Active"
 order: 6
+header:
+  teaser: /assets/images/crew/cassian-badge.jpeg
 ---
 
+![Cassian — NukaSoft Employee Badge](/assets/images/crew/cassian-badge.jpeg){: .align-right style="max-width: 200px;"}
+
 **Role:** Knowledge Harvester / Intelligence Officer
-**Named after:** Cassian Andor from *Star Wars: Rogue One* (tactical, disciplined, mission-focused)
-**Reports to:** Skippy
-**Status:** Active
+**Named after:** [Cassian Jeron Andor](https://starwars.fandom.com/wiki/Cassian_Jeron_Andor) from *[Star Wars: Rogue One](https://starwars.fandom.com/wiki/Rogue_One:_A_Star_Wars_Story)* and the *[Andor](https://starwars.fandom.com/wiki/Andor_(television_series))* series
+**Reports to:** [Skippy](/crew/skippy/)
+**Clearance:** INTELLIGENCE
+**Employee No:** NS-0034-K
 
 ---
 
