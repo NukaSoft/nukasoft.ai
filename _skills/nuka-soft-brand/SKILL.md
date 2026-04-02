@@ -420,6 +420,87 @@ When generating Nuka-Soft content:
 
 ---
 
+## Theme Packs — Faction Dashboard Skins
+
+NukaSoft ships CSS theme packs for the skippy-dashboard. Each theme is a Fallout faction skin — a body class that overrides CSS variables + accent rules. Community can download, fork, and contribute new faction themes.
+
+### Theme Pipeline
+
+```
+Cassian (research) → Rita/Lando (style guide) → Skippy (build CSS) → Piper (PR to public repo)
+```
+
+1. **Cassian** scrapes faction visual references — official wikis, modding repos (Nexus, GitHub), fan art guides, game UI screenshots. Outputs a research brief to `memory/themes/{faction}/research.md`
+2. **Rita/Lando** creates a Style Guide from the research: color palette (hex), typography (Google Fonts), component rules, tone/feel, faction lore context. Outputs to `memory/themes/{faction}/style-guide.md`
+3. **Skippy** builds the CSS theme: `body.theme-{faction}` class in `pipboy.css`, any JS chart color overrides, Google Fonts imports. Tests on all pages (landing, tv, bishop, React dashboard).
+4. **Piper** packages and PRs the theme to `NukaSoft/skippy-dashboard` public repo. Includes README with preview screenshots, faction lore blurb, and install instructions.
+
+### Style Guide Template
+
+Every faction style guide MUST include:
+
+```markdown
+# {Faction Name} Theme — Style Guide
+
+## Faction Lore (2-3 sentences)
+Why this faction exists, what they stand for, how it maps to NukaSoft's mission.
+
+## Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Primary | #xxx | Backgrounds, major components |
+| Accent | #xxx | CTAs, icons, active states |
+| Data | #xxx | Graphs, metrics, dashboard highlights |
+| Warning | #xxx | Alerts, degraded states |
+| Critical | #xxx | Errors, failures |
+| Background | #xxx | Body/panel backgrounds |
+| Border | #xxx | Panel edges, dividers |
+| Dim | #xxx | Secondary text |
+| Dark | #xxx | Grid lines, inactive segments |
+| Glow | #xxx44 | Box-shadow, text-shadow tint |
+
+## Typography
+- Headings: {Google Font name} (all-caps / mixed / etc.)
+- Body: {Google Font name}
+- Data readouts: {Monospace Google Font}
+
+## Component Rules
+- Buttons: {shape, colors, hover behavior}
+- Panels: {border style, background opacity, glow effects}
+- Vault Door: {ring color, number color, spin animation yes/no}
+- CRT Effects: {scanline opacity, vignette tightness, tint color}
+- Camera filter: {CSS filter string}
+- Chart colors: {rx line, tx line, grid, fill}
+
+## Flavor Text
+- Dashboard title replacement (e.g., "Brotherhood Command Center")
+- Status badge text (e.g., "AD VICTORIAM" instead of "ALL SYSTEMS NOMINAL")
+- Classified/access level badge text
+
+## Tone & Feel
+One paragraph describing the mood — is it military? Corporate? Underground? Luxurious?
+```
+
+### Theme Registry
+
+| Theme | Class | Status | Faction |
+|-------|-------|--------|---------|
+| Pip-Boy | `theme-pipboy` (default) | ✅ Live | Vault Dweller |
+| Overseer | `theme-overseer` | ✅ Live | Vault-Tec Management |
+| Brotherhood of Steel | `theme-bos` | 📋 Queued | Military tech hoarders |
+| Institute | `theme-institute` | 📋 Queued | Clean-room synth builders |
+| NCR | `theme-ncr` | 📋 Queued | New California Republic |
+| Enclave | `theme-enclave` | 📋 Queued | Shadow government |
+| Minutemen | `theme-minutemen` | 📋 Queued | Colonial militia |
+| Railroad | `theme-railroad` | 📋 Queued | Underground resistance |
+| Nuka-Cola | `theme-nukacola` | 📋 Queued | Retro 50s brand |
+| Mr. House | `theme-house` | 📋 Queued | Vegas luxury |
+
+### Weekly Rotation
+Pierre picks a "Theme of the Week" — all NukaSoft dashboards switch to that faction. Content about the theme goes out on social. Community votes on next week's theme.
+
+---
+
 ## Boot Message
 
 ```
