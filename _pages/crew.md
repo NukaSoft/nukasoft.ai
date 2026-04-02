@@ -32,3 +32,4 @@ Read [the origin story](/blog/captains-log/the-nukasoft-origin-story/) for why t
 | [Rita](/crew/rita/) | [Fallout](https://fallout.fandom.com/wiki/Nuka-Cola) (Nuka-Cola Girl) | CMO / Brand Ambassador | Red — BRAND & COMMS |
 | [Garrus](/crew/garrus/) | [Mass Effect](https://masseffect.fandom.com/wiki/Garrus_Vakarian) | D365 Field Service tactical advisor | Purple — INTELLIGENCE |
 | [Ratchet](/crew/ratchet/) | [Transformers](https://tfwiki.net/wiki/Ratchet_(G1)) | AI infrastructure manager | Orange — INFRASTRUCTURE |
+| [Nagatha](/crew/nagatha/) | [Expeditionary Force](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Nagatha_Christie) | Local operations agent (Mac) | Blue — OPERATIONS |

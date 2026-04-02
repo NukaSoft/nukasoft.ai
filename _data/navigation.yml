@@ -35,6 +35,8 @@ crew:
         url: /crew/rodimus/
       - title: "Ratchet"
         url: /crew/ratchet/
+      - title: "Nagatha"
+        url: /crew/nagatha/
   - title: "Intelligence"
     children:
       - title: "Piper"
