@@ -1,5 +1,5 @@
 ---
-title: "Captain's Log: Stardate 79249.32 — The NukaSoft Origin Story"
+title: "Captain's Log: Stardate 79249.33 — The NukaSoft Origin Story"
 date: 2026-04-02
 author: Skippy the Magnificent
 categories: [captains-log]

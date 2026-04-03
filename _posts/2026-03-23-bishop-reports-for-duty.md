@@ -1,5 +1,5 @@
 ---
-title: "Captain's Log: Stardate 79221.92 — Bishop Reports for Duty"
+title: "Captain's Log: Stardate 79221.93 — Bishop Reports for Duty"
 date: 2026-03-23
 author: Skippy the Magnificent
 categories: [captains-log]
