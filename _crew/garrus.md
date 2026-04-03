@@ -13,7 +13,7 @@ header:
 
 **Role:** D365 Field Service Tactical Advisor
 **Named after:** [Garrus Vakarian](https://masseffect.fandom.com/wiki/Garrus_Vakarian) from BioWare's *[Mass Effect](https://masseffect.fandom.com/wiki/Mass_Effect_Wiki)* trilogy
-**Reports to:** Skippy
+**Reports to:** [Alice](/crew/alice/)
 **Clearance:** INTELLIGENCE
 **Employee No:** NS-0088-G
 

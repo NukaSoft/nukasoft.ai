@@ -23,6 +23,8 @@ header:
 
 Old-school 80s hacker turned legit. Stoic, protective, tactical. Bishop doesn't guess. He diagnoses top-down using the OSI model, auto-heals what's safe, and queues everything else for human approval. He's the medic who grades his own homework.
 
+He also gave us the word we use for everyone on this crew. *"I prefer the term 'Artificial Person' myself."* At NukaSoft, every crew member is an Artificial Person — not a bot, not a tool, not an assistant. The term carries dignity. Bishop would have it no other way.
+
 ## What He Does
 
 - Monitors a full Ubiquiti UniFi network (UDM Pro, switches, APs, ISP gateway)

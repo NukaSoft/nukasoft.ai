@@ -13,7 +13,7 @@ header:
 
 **Role:** Knowledge Harvester / Intelligence Officer
 **Named after:** [Cassian Jeron Andor](https://starwars.fandom.com/wiki/Cassian_Jeron_Andor) from *[Star Wars: Rogue One](https://starwars.fandom.com/wiki/Rogue_One:_A_Star_Wars_Story)* and the *[Andor](https://starwars.fandom.com/wiki/Andor_(television_series))* series
-**Reports to:** [Skippy](/crew/skippy/)
+**Reports to:** [Alice](/crew/alice/)
 **Clearance:** INTELLIGENCE
 **Employee No:** NS-0034-K
 

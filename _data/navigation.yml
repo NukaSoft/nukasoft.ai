@@ -45,6 +45,8 @@ crew:
         url: /crew/cassian/
       - title: "Garrus"
         url: /crew/garrus/
+      - title: "Alice"
+        url: /crew/alice/
   - title: "Brand & Comms"
     children:
       - title: "Rita"
