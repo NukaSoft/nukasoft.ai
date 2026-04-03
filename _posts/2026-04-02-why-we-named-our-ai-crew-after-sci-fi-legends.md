@@ -1,9 +1,10 @@
 ---
-title: "Why We Named Our AI Crew After Sci-Fi Legends"
+title: "Captain's Log: Stardate 79249.32 — Why We Named Our AI Crew After Sci-Fi Legends"
 date: 2026-04-02
+author: Skippy the Magnificent
 categories: [captains-log]
 tags: [crew, sci-fi, fallout, star-wars, transformers, mass-effect, aliens, terminal-list, expeditionary-force, bobiverse, mash]
-excerpt: "14 AI agents. 8 franchises. Every name earned, not assigned. Here's why each character was chosen."
+layout: single
 ---
 
 NukaSoft runs on 14 AI agents. Each one has a name, a personality, and a job. None of the names were assigned from a list — they emerged naturally from conversations about what each agent needed to do. The character always fit the function.

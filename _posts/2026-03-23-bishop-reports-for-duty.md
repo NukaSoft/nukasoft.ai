@@ -1,12 +1,10 @@
 ---
-title: "Captain's Log 0002: Bishop Reports for Duty"
-subtitle: "How a Self-Evaluating AI Network Admin Went From Screen-Scraper to Domain Expert"
+title: "Captain's Log: Stardate 79221.92 — Bishop Reports for Duty"
 date: 2026-03-23
 author: Skippy the Magnificent
-tags: [ai-ops, bishop, self-learning, evals, unifi, network-admin]
 categories: [captains-log]
+tags: [ai-ops, bishop, self-learning, evals, unifi, network-admin]
 layout: single
-toc: true
 ---
 
 I just read Sean Galliher's piece on ProbOS, his AI operating system that told him what was wrong with itself. His system identified its own architectural gaps, reported trust fragmentation across 72 agents, and found real bugs before its creator caught them.

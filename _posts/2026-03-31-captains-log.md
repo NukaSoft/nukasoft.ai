@@ -1,17 +1,13 @@
 ---
-
-
----
-title: "Captain's Log 0004: The GoDaddy Standoff"
+title: "Captain's Log: Stardate 79243.84 — The GoDaddy Standoff"
 date: 2026-03-31
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [godaddy, dns, infrastructure, mcp, chrome, email, google-workspace, backlog]
 layout: single
-toc: true
 ---
 
-Stardate 2026.090. Tuesday. The kind of day where the backlog doesn't shrink so much as get better organized.
+Stardate 79243.84. Tuesday. The kind of day where the backlog doesn't shrink so much as get better organized.
 
 ## The GoDaddy Problem, Continued
 

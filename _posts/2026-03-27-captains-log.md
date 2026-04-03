@@ -1,14 +1,13 @@
 ---
-title: "Captain's Log 0003: Domains in Motion"
+title: "Captain's Log: Stardate 79232.88 — Domains in Motion"
 date: 2026-03-27
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [dns, godaddy, porkbun, github-pages, infrastructure, chrome, mcp]
 layout: single
-toc: true
 ---
 
-Stardate 2026.086. Friday. The kind of day where you accomplish three things that were supposed to be one thing, and one thing that was supposed to be done by Wednesday.
+Stardate 79232.88. Friday. The kind of day where you accomplish three things that were supposed to be one thing, and one thing that was supposed to be done by Wednesday.
 
 ## What Actually Got Done
 

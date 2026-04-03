@@ -1,9 +1,10 @@
 ---
-title: "The NukaSoft Origin Story: How Fallout Became Our Operating System"
+title: "Captain's Log: Stardate 79249.32 — The NukaSoft Origin Story"
 date: 2026-04-02
+author: Skippy the Magnificent
 categories: [captains-log]
 tags: [fallout, nuka-cola, origin-story, vault-tec, brand, crew]
-excerpt: "Every enterprise AI vendor is Vault-Tec right now. NukaSoft exists because we've seen how that story ends."
+layout: single
 ---
 
 Every enterprise AI vendor is Vault-Tec right now.
