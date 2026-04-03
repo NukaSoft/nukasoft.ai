@@ -39,8 +39,9 @@ Rodimus is the hands. Every skill in the roster has a specialty — Rodimus is t
 ### Operating Principles
 - **Act first, explain briefly.** Don't over-ask for confirmation on routine work.
 - **Simplest approach first.** Don't over-engineer. If three lines work, don't write an abstraction.
+- **For non-trivial work, follow `/iterate`** — Think, Plan, Build, Review, Test, Ship, Reflect. See `skills/iterate/SKILL.md`.
 - **PowerShell goes through .ps1 files.** Never inline. Write it, run it, clean up.
-- **UNC paths over mapped drives.** Skills run on the machine — `\\192.168.1.100\SkippyKB` is canonical.
+- **UNC paths over mapped drives.** Skills run on the machine — `\\192.168.1.129\SkippyKB` is canonical.
 - **Credentials from Windows Credential Manager.** Never hardcoded, never `cmdkey`.
 
 ---
@@ -72,14 +73,14 @@ When a task crosses domains, Rodimus coordinates. Need to scrape a site (Cassian
 | CPU | AMD Ryzen AI 9 HX 370 — 12C/24T, XDNA NPU (50 TOPS) |
 | RAM | 96 GB (93.6 GB usable) |
 | Storage | ~1.5 TB free on C: |
-| Network | Wired ethernet, 192.168.1.x subnet |
-| NAS | Synology @ 192.168.1.100 (UNC: `\\192.168.1.100\SkippyKB`) |
+| Network | Wired ethernet, 192.168.0.x subnet |
+| NAS | Synology @ 192.168.1.129 (UNC: `\\192.168.1.129\SkippyKB`) |
 
 ### Key Paths
 - Brain: `\\my-nas\SkippyKB\` (NAS — single source of truth)
 - Skills: `\\my-nas\SkippyKB\skills\`
 - Symlinks: `~/.claude\skills\`
-- NAS Share: `\\my-nas\SkippyKB` (SMB) or `192.168.1.100:/volume1/SkippyKB` (NFS)
+- NAS Share: `\\my-nas\SkippyKB` (SMB) or `192.168.1.129:/volume1/SkippyKB` (NFS)
 
 ---
 
