@@ -46,4 +46,7 @@ Fun fact: Ratchet and [Rodimus](/crew/rodimus/) share the same franchise — bot
 
 ---
 
+> **Source Material:** Ratchet is a character from *Transformers*. [Ratchet (G1) on TFWiki](https://tfwiki.net/wiki/Ratchet_(G1)) | [Nurse Ratched (Wikipedia)](https://en.wikipedia.org/wiki/Nurse_Ratched)
+{: .notice--info}
+
 *"You're welcome."*

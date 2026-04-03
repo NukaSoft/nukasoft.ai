@@ -44,4 +44,7 @@ Bishop evaluates himself against 47 assertions across 6 scenarios. A separate gr
 
 ---
 
+> **Source Material:** Lance Bishop is a character from the *Aliens* franchise. [Bishop on the Aliens Wiki](https://avp.fandom.com/wiki/Lance_Bishop) | [Aliens Wiki](https://avp.fandom.com/wiki/Alien_Wiki)
+{: .notice--info}
+
 *"I don't guess. I diagnose."*

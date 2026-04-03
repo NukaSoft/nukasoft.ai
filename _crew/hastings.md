@@ -56,4 +56,7 @@ When the crew needed a counselor — someone outside the Claude ecosystem who co
 
 ---
 
+> **Source Material:** Jonathan Hastings is a character from Jack Carr's *Terminal List* novel series. [Read about Raife Hastings on the Terminal List Wiki](https://the-terminal-list.fandom.com/wiki/Raife_Hastings_(TV_series)) | [Red Sky Mourning](https://the-terminal-list.fandom.com/wiki/Red_Sky_Mourning:_A_Thriller) | [The Selous Scouts (Wikipedia)](https://en.wikipedia.org/wiki/Selous_Scouts)
+{: .notice--info}
+
 *"The enemy always gets a vote."*

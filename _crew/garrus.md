@@ -43,4 +43,7 @@ In Mass Effect, Garrus is always "calibrating the main gun." It's a running joke
 
 ---
 
+> **Source Material:** Garrus Vakarian is a character from *Mass Effect*. [Garrus Vakarian on the Mass Effect Wiki](https://masseffect.fandom.com/wiki/Garrus_Vakarian) | [Mass Effect Wiki](https://masseffect.fandom.com/wiki/Mass_Effect_Wiki)
+{: .notice--info}
+
 *"I'm in the middle of some calibrations."*

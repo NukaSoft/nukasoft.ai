@@ -46,4 +46,7 @@ In Craig Alanson's Expeditionary Force series, [Nagatha Christie](https://expedi
 
 ---
 
+> **Source Material:** Nagatha Christie is a character from Craig Alanson's *Expeditionary Force* series. [Nagatha Christie on the ExForce Wiki](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Nagatha_Christie) | [Expeditionary Force Wiki](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)
+{: .notice--info}
+
 *"Oh good, you're here. I've been organizing your chaos while you were away."*

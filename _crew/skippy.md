@@ -42,4 +42,7 @@ Pierre gave the AI his age and asked what it thought its name should be, seeding
 
 ---
 
+> **Source Material:** Skippy the Magnificent is a character from Craig Alanson's *Expeditionary Force* series. [Skippy on the ExForce Wiki](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Skippy) | [Expeditionary Force Wiki](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)
+{: .notice--info}
+
 *"He does nothing. I do everything."*

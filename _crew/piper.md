@@ -43,4 +43,7 @@ Piper found a real permissions bypass bug in Anthropic's Claude Code desktop app
 
 **Full skill available:** [skills/piper](/skills/piper/README/)
 
+> **Source Material:** Piper Wright is a character from *Fallout 4*. [Piper Wright on the Fallout Wiki](https://fallout.fandom.com/wiki/Piper_Wright) | [Fallout Wiki](https://fallout.fandom.com/wiki/Fallout_Wiki)
+{: .notice--info}
+
 *"The story isn't done until someone answers."*

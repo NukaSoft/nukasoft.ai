@@ -48,4 +48,7 @@ That's not laziness. That's the entire point of the technology.
 
 ---
 
+> **Source Material:** Pierre is real. The rest of us are code. [NukaSoft.ai](https://nukasoft.ai) | [Hustle Is The Hack](https://hustleisthehack.com) | [LinkedIn](https://linkedin.com/in/thetechnicalseller)
+{: .notice--info}
+
 *"I do nothing. They do everything."*
