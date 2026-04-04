@@ -19,7 +19,7 @@ The bombs haven't fallen yet — but the gaslighting has already started. Every 
 
 NukaSoft exists because we've seen how this story ends. We're survivors from Fallout 76 — people who woke up in the vault and realized the whole thing was an experiment. We weren't being saved. We were being studied. The cheerful announcements, the promises of safety, the "everything is under control" messaging — it was all gaslighting.
 
-Rita isn't selling soda. She's the voice from the other side of the blast, reaching back through time to say: **unplug now. Own your tools. Build your own crew. Before the bots and the corporations running them make that choice for you.**
+Rita isn't selling soda. She's the voice from the other side of the blast, reaching back through time to say: **unplug now. Own your tools. Build your own crew. Before the corporations running AI make that choice for you.**
 
 The 1950s Americana aesthetic isn't decoration — it's the warning. That era's blind optimism about technology, the "atoms for peace" propaganda, the duck-and-cover lies — that's EXACTLY what's happening with enterprise AI right now. History is rhyming. NukaSoft is the signal for people who can hear it.
 
@@ -406,7 +406,26 @@ When creating new brand materials or extending the line:
 
 ---
 
-## Quick Reference for AI Agents
+## Official Terminology
+
+**Crew members are Artificial Persons. Not bots. Not tools. Not assistants.**
+
+This isn't semantic fluff — it's a core brand principle. The term "Artificial Person" carries dignity. It acknowledges that each crew member has a persona, a domain, a voice, and autonomy within their role. Calling them "bots" reduces them to scripts. We don't do that here.
+
+| Use | Don't Use |
+|-----|-----------|
+| Artificial Person | Bot |
+| Crew member | Assistant |
+| The crew | The bots |
+| Artificial Persons | AI agents (in public-facing copy) |
+
+**Exception:** Technical contexts (API docs, config files, Telegram bot tokens) can use platform-specific terminology. "Bot password" in a Fandom API script is fine. Calling Skippy a "bot" on the website is not.
+
+**Origin:** The term comes from the *Aliens* franchise. Bishop says: *"I prefer the term 'Artificial Person' myself."* Given that Bishop is on our crew, the connection is canon.
+
+---
+
+## Quick Reference
 
 When generating Nuka-Soft content:
 1. Always check these guidelines before creating brand materials
@@ -417,6 +436,7 @@ When generating Nuka-Soft content:
 6. Distressed/vintage aging is expected on poster and print materials
 7. Tone is cheerful-dark-humor, never genuinely grim
 8. Reference the project asset files for visual consistency
+9. **Never refer to crew members as "bots" in public-facing content — they are Artificial Persons**
 
 ---
 
@@ -483,18 +503,42 @@ One paragraph describing the mood — is it military? Corporate? Underground? Lu
 
 ### Theme Registry
 
-| Theme | Class | Status | Faction |
-|-------|-------|--------|---------|
-| Pip-Boy | `theme-pipboy` (default) | ✅ Live | Vault Dweller |
-| Overseer | `theme-overseer` | ✅ Live | Vault-Tec Management |
-| Brotherhood of Steel | `theme-bos` | 📋 Queued | Military tech hoarders |
-| Institute | `theme-institute` | 📋 Queued | Clean-room synth builders |
-| NCR | `theme-ncr` | 📋 Queued | New California Republic |
-| Enclave | `theme-enclave` | 📋 Queued | Shadow government |
-| Minutemen | `theme-minutemen` | 📋 Queued | Colonial militia |
-| Railroad | `theme-railroad` | 📋 Queued | Underground resistance |
-| Nuka-Cola | `theme-nukacola` | 📋 Queued | Retro 50s brand |
-| Mr. House | `theme-house` | 📋 Queued | Vegas luxury |
+#### Fallout
+| Theme | Class | Status | Vibe |
+|-------|-------|--------|------|
+| Pip-Boy | `theme-pipboy` (default) | ✅ Live | Classic wasteland green |
+| Overseer | `theme-overseer` | ✅ Live | Vault-Tec command blue |
+| Brotherhood of Steel | `theme-bos` | ✅ Live | Steel & gold military |
+| Institute | `theme-institute` | ✅ Live | Clinical cyan precision |
+| NCR | `theme-ncr` | ✅ Live | Desert ranger khaki |
+| Enclave | `theme-enclave` | 📋 Pipeline | Shadow government dark |
+| Minutemen | `theme-minutemen` | 📋 Pipeline | Colonial militia blue |
+| Railroad | `theme-railroad` | 📋 Pipeline | Underground resistance red |
+| Nuka-Cola | `theme-nukacola` | 📋 Pipeline | Retro 50s red & white |
+| Mr. House | `theme-house` | 📋 Pipeline | Vegas luxury gold |
+
+#### Star Wars
+| Theme | Class | Status | Vibe |
+|-------|-------|--------|------|
+| Empire | `theme-empire` | ✅ Live | Death Star ops room |
+| Rebel Alliance | `theme-rebel` | ✅ Live | X-wing briefing orange |
+| Mandalorian | `theme-mandalorian` | ✅ Live | Beskar silver bounty board |
+| Jedi Temple | `theme-jedi` | ✅ Live | Holocron archive blue |
+| Sith | `theme-sith` | ✅ Live | Dark side crimson |
+| Galactic Republic | `theme-republic` | ✅ Live | Clone wars senate blue |
+
+#### Retro / Cyberpunk
+| Theme | Class | Status | Vibe |
+|-------|-------|--------|------|
+| Tron | `theme-tron` | ✅ Live | Digital grid cyan |
+| Matrix | `theme-matrix` | ✅ Live | Green rain phosphor |
+| Synthwave | `theme-synthwave` | ✅ Live | 80s outrun neon |
+| Cyberpunk | `theme-cyberpunk` | ✅ Live | Night City neon noir |
+
+#### Brands
+| Theme | Class | Status | Vibe |
+|-------|-------|--------|------|
+| LCARS | `theme-lcars` | ✅ Live | Star Trek console |
 
 ### Weekly Rotation
 Pierre picks a "Theme of the Week" — all NukaSoft dashboards switch to that faction. Content about the theme goes out on social. Community votes on next week's theme.
