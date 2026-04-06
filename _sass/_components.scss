@@ -56,38 +56,40 @@ table {
 
 // Blog cards
 .blog-card {
-  border: 1px solid mix($cola-brown, $cream, 75%);
-  border-left: 3px solid $nuka-red;
-  border-radius: 4px;
-  padding: 1.25em 1.5em;
-  margin-bottom: 1.5em;
-  background: rgba(lighten($cola-brown, 3%), 0.6);
-  transition: border-color 0.2s ease, background 0.2s ease;
+  border: none;
+  border-bottom: 1px solid rgba($cream, 0.1);
+  padding: 1.5em 0;
+  margin-bottom: 0;
+  transition: background 0.2s ease;
 
   &:hover {
-    border-left-color: $radiation-yellow;
-    background: rgba(lighten($cola-brown, 5%), 0.8);
+    background: rgba($cream, 0.03);
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 
   .archive__item-title {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.15em;
+    font-size: 1.3em;
   }
 
   .archive__item-excerpt {
-    color: rgba($cream, 0.75);
+    color: rgba($cream, 0.65);
     font-size: 0.9em;
-    line-height: 1.5;
-    margin-bottom: 0.5em;
+    line-height: 1.6;
+    margin-bottom: 0.75em;
   }
 }
 
 .blog-card__date {
-  color: $radiation-yellow;
+  color: rgba($cream, 0.5);
   font-family: $sans-serif;
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin: 0 0 0.75em 0;
+  margin: 0 0 0.5em 0;
 
   time {
     color: $radiation-yellow;
@@ -98,30 +100,36 @@ table {
     display: inline;
     font-size: 1em;
     margin: 0;
+    color: rgba($cream, 0.4);
   }
 }
 
 .blog-card__sep {
-  margin: 0 0.4em;
-  color: rgba($cream, 0.4);
+  margin: 0 0.5em;
+  color: rgba($cream, 0.25);
 }
 
 .blog-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4em;
-  margin-top: 0.5em;
+  gap: 0.35em;
 }
 
 .blog-card__tag {
   font-family: $sans-serif;
-  font-size: 0.7em;
+  font-size: 0.65em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgba($cream, 0.6);
-  background: rgba($cream, 0.08);
-  padding: 0.2em 0.6em;
-  border-radius: 2px;
+  letter-spacing: 0.06em;
+  color: rgba($cream, 0.45);
+  border: 1px solid rgba($cream, 0.12);
+  padding: 0.15em 0.55em;
+  border-radius: 3px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: $radiation-yellow;
+    border-color: rgba($radiation-yellow, 0.3);
+  }
 }
 
 // TOC
