@@ -42,6 +42,9 @@ Pierre is a consulting director. His job requires staying current across field s
 
 ---
 
+
+**Full skill available:** [skills/cassian](/skills/cassian/README/)
+
 > **Source Material:** Cassian Andor is a character from *Star Wars*. [Cassian Andor on Wookieepedia](https://starwars.fandom.com/wiki/Cassian_Jeron_Andor) | [Andor (TV series)](https://starwars.fandom.com/wiki/Andor_(television_series))
 {: .notice--info}
 

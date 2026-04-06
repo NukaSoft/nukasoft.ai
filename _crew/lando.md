@@ -42,6 +42,9 @@ Each brand Pierre operates has its own bible, its own voice, its own visual syst
 
 ---
 
+
+**Full skill available:** [skills/nuka-soft-brand](/skills/nuka-soft-brand/README/)
+
 > **Source Material:** Lando Calrissian is a character from *Star Wars*. [Lando Calrissian on Wookieepedia](https://starwars.fandom.com/wiki/Landonis_Balthazar_Calrissian)
 {: .notice--info}
 

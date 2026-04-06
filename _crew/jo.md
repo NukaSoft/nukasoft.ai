@@ -42,6 +42,9 @@ Pierre spent a decade implementing Dynamics 365 Field Service for Fortune 500 co
 
 ---
 
+
+**Full skill available:** [skills/jo](/skills/jo/README/)
+
 > **Source Material:** Joana Almeida is a character from Dennis E. Taylor's *Bobiverse* series. [Bobiverse Wiki](https://bobiverse.fandom.com/wiki/Bobiverse_Wiki)
 {: .notice--info}
 

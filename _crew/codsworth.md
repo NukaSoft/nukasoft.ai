@@ -42,6 +42,9 @@ Every team needs someone who keeps the house clean. Without Codsworth, files pil
 
 ---
 
+
+**Full skill available:** [skills/codsworth](/skills/codsworth/README/)
+
 > **Source Material:** Codsworth is a character from *Fallout 4*. [Codsworth on the Fallout Wiki](https://fallout.fandom.com/wiki/Codsworth) | [Fallout Wiki](https://fallout.fandom.com/wiki/Fallout_Wiki)
 {: .notice--info}
 

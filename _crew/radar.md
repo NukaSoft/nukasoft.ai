@@ -41,6 +41,9 @@ Before Radar, notifications were ad-hoc. Each skill had its own way of alerting 
 
 ---
 
+
+**Full skill available:** [skills/radar](/skills/radar/README/)
+
 > **Source Material:** Radar O'Reilly is a character from *M\*A\*S\*H*. [Radar O'Reilly on the M\*A\*S\*H Wiki](https://mash.fandom.com/wiki/Walter_%22Radar%22_O%E2%80%99Reilly) | [M\*A\*S\*H Wiki](https://mash.fandom.com/wiki/M*A*S*H_(TV_series))
 {: .notice--info}
 

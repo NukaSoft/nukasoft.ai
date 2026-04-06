@@ -42,6 +42,9 @@ When running PowerShell from inside bash contexts, dollar-sign variables get man
 
 ---
 
+
+**Full skill available:** [skills/rodimus](/skills/rodimus/README/)
+
 > **Source Material:** Hot Rod / Rodimus Prime is a character from *Transformers*. [Hot Rod on TFWiki](https://tfwiki.net/wiki/Hot_Rod_(G1)) | [Rodimus Prime](https://tfwiki.net/wiki/Rodimus_Prime_(G1))
 {: .notice--info}
 
