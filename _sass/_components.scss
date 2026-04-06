@@ -54,6 +54,76 @@ table {
   &:hover { color: $nuka-red; }
 }
 
+// Blog cards
+.blog-card {
+  border: 1px solid mix($cola-brown, $cream, 75%);
+  border-left: 3px solid $nuka-red;
+  border-radius: 4px;
+  padding: 1.25em 1.5em;
+  margin-bottom: 1.5em;
+  background: rgba(lighten($cola-brown, 3%), 0.6);
+  transition: border-color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    border-left-color: $radiation-yellow;
+    background: rgba(lighten($cola-brown, 5%), 0.8);
+  }
+
+  .archive__item-title {
+    margin-bottom: 0.25em;
+  }
+
+  .archive__item-excerpt {
+    color: rgba($cream, 0.75);
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
+}
+
+.blog-card__date {
+  color: $radiation-yellow;
+  font-family: $sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 0.75em 0;
+
+  time {
+    color: $radiation-yellow;
+  }
+
+  // Collapse the page__meta include inline
+  .page__meta {
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+  }
+}
+
+.blog-card__sep {
+  margin: 0 0.4em;
+  color: rgba($cream, 0.4);
+}
+
+.blog-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.5em;
+}
+
+.blog-card__tag {
+  font-family: $sans-serif;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba($cream, 0.6);
+  background: rgba($cream, 0.08);
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+}
+
 // TOC
 .toc__menu a {
   color: $cream;
