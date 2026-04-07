@@ -28,7 +28,8 @@ allowed-tools:
 
 | Channel | Use Case | Implementation |
 |---------|----------|---------------|
-| **Telegram** | Push alerts, doc delivery, board meeting summaries | Reuse Bishop's `send_telegram` from `bishop/alerter.py` |
+| **Gmail** | Email alerts, daily digests, gap reports | `scripts/lib/gmail-send.py` via skippy-google OAuth2 |
+| **Telegram** | Push alerts, doc delivery, urgent notifications | `scripts/lib/alert-bus.sh` (curl to Telegram Bot API) |
 | **Google Tasks** | Actionable items, phone planning board | Via skippy-tasks MCP server |
 | **Dead-letter** | Failed deliveries | `~/.radar/dead-letter/` |
 
@@ -49,8 +50,26 @@ After every action, append a timestamped line to `activity.md`:
 - New day = new `## YYYY-MM-DD` header
 - Keep last 7 days. Archive older entries to `activity-archive.md`.
 
+## Task Formats
+
+```
+[Radar] Send Gmail: <subject> | <body>
+[Radar] Send Telegram: <message>
+[Radar] Send Alert: <severity> | <subject> | <body>
+```
+
+Severity levels: `info` (digest only), `warn` (Gmail), `critical` (Gmail + Telegram).
+
+## Implementation
+
+- **Dispatcher:** `scripts/radar-dispatch.sh` — polls every 5 min via systemd timer
+- **Alert bus:** `scripts/lib/alert-bus.sh` — source-able bash library with `send_gmail`, `send_telegram`, `send_alert`
+- **Gmail sender:** `scripts/lib/gmail-send.py` — Python script using skippy-google OAuth2 tokens
+
 ## Dependencies
 
-- `engine/task_queue.py` — shared TASKS.md parser
-- `skills/bishop/bishop/alerter.py` — `send_telegram()` function
-- Bishop's `~/.bishop/config.json` — Telegram bot_token + chat_id
+- `scripts/lib/alert-bus.sh` — shared alert dispatch functions
+- `scripts/lib/gmail-send.py` — Gmail API sender
+- `skills/skippy-google/credentials.json` + `token.json` — OAuth2 credentials
+- `skills/bishop/bishop/alerter.py` — `send_telegram()` function (reference pattern)
+- Telegram bot token embedded in `scripts/lib/alert-bus.sh`
