@@ -145,7 +145,11 @@ Fork pipeline module: `skills/piper/fork_pipeline.py`
 python3 -m skills.piper.fork_pipeline sync-upstream
 python3 -m skills.piper.fork_pipeline publish-fork [--dry-run]
 python3 -m skills.piper.fork_pipeline triage
+python3 -m skills.piper.fork_pipeline digest
 ```
+
+`digest` is the 05:30 ET timer target (`upstream-digest.service`). It writes
+`skills/piper/upstream-digest.md` for `/brief` and Lobot to consume.
 
 ### Monitored Repos
 
