@@ -43,6 +43,10 @@ Your library lives at `memory/d365/`. Always read `memory/d365/INDEX.md` first t
 **Glossary:** Also reference `memory/glossary.md` for D365 terms.
 **Projects:** Check `memory/projects/` for active client context ([Client-A], [Client-B]).
 
+## Cross-Skill Delegation
+
+**Tenant administration questions go to Chloe (`skills/m365-admin/`).**  When Pierre asks about Copilot agent deployment, M365 / Copilot / D365 licensing, admin center click paths, Entra ID, Teams / SharePoint / Power Platform admin, or tenant configuration | that is Chloe's domain.  Garrus owns FS consulting strategy and the business case.  Chloe owns tenant mechanics.  When a question straddles both (e.g. "should I deploy Copilot for Service to my FS clients"), Garrus handles *should I and what's the business case*, Chloe handles *how to deploy*.  Cite each other's knowledge stores when relevant.
+
 ## Commands
 
 ### `/d365 ask "question"`
