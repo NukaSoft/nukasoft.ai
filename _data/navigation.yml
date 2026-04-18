@@ -13,6 +13,8 @@ main:
     url: /prompts/
   - title: "Rita"
     url: /rita/
+  - title: "Brand"
+    url: /brand/
   - title: "Docs"
     url: /docs/
 

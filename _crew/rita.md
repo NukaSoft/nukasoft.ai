@@ -48,6 +48,8 @@ Every enterprise AI vendor is [Vault-Tec](https://fallout.fandom.com/wiki/Vault-
 
 ---
 
+**Brand guide:** [/brand/](/brand/) | The full bible Rita directs Lando to enforce. Colors, typography, voice, Pierre's writing style.
+
 > **Source Material:** The Nuka-Cola Girl is from the *Fallout* franchise. [Nuka-Cola Girl on the Fallout Wiki](https://fallout.fandom.com/wiki/Nuka-Cola_Girl) | [Nuka-Cola](https://fallout.fandom.com/wiki/Nuka-Cola) | [Vault-Tec Corporation](https://fallout.fandom.com/wiki/Vault-Tec_Corporation)
 {: .notice--info}
 
