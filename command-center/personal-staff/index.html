@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department — Command Center</title>
+  <link rel="icon" href="/assets/images/skippy-avatar.png">
+  <link rel="stylesheet" href="/command-center/pipboy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="/command-center/theme.js"></script>
+  <style>
+    body { padding: 0; margin: 0; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 2vh 4vw; }
+    .pip-breadcrumb { display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap; }
+    .pip-breadcrumb .spacer { flex: 1; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 2.5vw;
+      align-items: start;
+      margin: 2vh 0 3vh 0;
+      padding-bottom: 2vh;
+      border-bottom: 2px solid var(--pip-green);
+    }
+    @media (max-width: 720px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-portrait { margin: 0 auto; }
+    }
+    .hero-portrait {
+      width: 240px; height: 240px;
+      object-fit: cover;
+      border: 2px solid var(--pip-green);
+      filter: saturate(0.85) contrast(1.05);
+      box-shadow: 0 0 30px rgba(24,255,98,0.15);
+    }
+    body.theme-overseer .hero-portrait { box-shadow: 0 0 30px rgba(10,132,193,0.2); }
+    .hero-dept {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(1.8rem, 4.5vh, 2.8rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.5vh 0;
+    }
+    .hero-lead {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.85rem, 1.6vh, 1rem);
+      opacity: 0.7;
+      margin-bottom: 1.5vh;
+    }
+    .hero-tagline {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(1rem, 2vh, 1.2rem);
+      font-style: italic;
+      opacity: 0.9;
+      margin-bottom: 1.5vh;
+    }
+    .hero-mission {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(0.95rem, 1.8vh, 1.05rem);
+      line-height: 1.55;
+      opacity: 0.92;
+    }
+
+    h2.section-title {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(1.1rem, 2.2vh, 1.3rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 3vh 0 1vh 0;
+      border-bottom: 1px dotted var(--pip-green);
+      padding-bottom: 0.5vh;
+    }
+
+    .crew-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5vh 1.5vw;
+      margin-bottom: 2vh;
+    }
+    .crew-card {
+      display: block;
+      text-decoration: none;
+      color: var(--pip-green);
+      border: 1px solid var(--pip-green);
+      background: rgba(24, 255, 98, 0.04);
+      padding: 1.5vh 1.2vw;
+      transition: background 0.15s, transform 0.1s;
+      min-height: 260px;
+    }
+    .crew-card:hover, .crew-card:active {
+      background: rgba(24, 255, 98, 0.12);
+      transform: translateY(-2px);
+    }
+    body.theme-overseer .crew-card { background: rgba(10, 132, 193, 0.06); }
+    body.theme-overseer .crew-card:hover,
+    body.theme-overseer .crew-card:active { background: rgba(10, 132, 193, 0.16); }
+    .crew-thumb {
+      width: 120px; height: 120px;
+      object-fit: cover;
+      border: 1px solid var(--pip-green);
+      display: block;
+      margin: 0 auto 1vh auto;
+      filter: saturate(0.85) contrast(1.05);
+    }
+    .crew-name {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(0.95rem, 2vh, 1.15rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-align: center;
+      margin: 0 0 0.4vh 0;
+    }
+    .crew-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.65rem, 1.3vh, 0.78rem);
+      opacity: 0.7;
+      text-align: center;
+      margin-bottom: 1vh;
+      min-height: 2.4em;
+    }
+    .crew-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.6rem, 1.2vh, 0.72rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.35vh 0.6vw;
+      border: 1px solid;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      max-width: 10ch;
+    }
+    .crew-status.ACTIVE   { border-color: #18FF62; color: #18FF62; background: rgba(24, 255, 98, 0.15); }
+    .crew-status.IMPROVE  { border-color: #F8E71C; color: #F8E71C; background: rgba(248, 231, 28, 0.1); }
+    .crew-status.MERGE    { border-color: #F5A623; color: #F5A623; background: rgba(245, 166, 35, 0.1); }
+    .crew-status.MOTHBALL { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.05); }
+
+    .tools-category {
+      margin: 2vh 0 1vh 0;
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(0.8rem, 1.6vh, 0.95rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      opacity: 0.75;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1vh 1.2vw;
+    }
+    .tool-card {
+      border: 1px solid var(--pip-green);
+      background: rgba(24, 255, 98, 0.03);
+      padding: 1.2vh 1.1vw;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.7rem, 1.3vh, 0.82rem);
+    }
+    body.theme-overseer .tool-card { background: rgba(10, 132, 193, 0.05); }
+    .tool-name {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-weight: 700;
+      font-size: clamp(0.78rem, 1.5vh, 0.9rem);
+      margin-bottom: 0.3vh;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .tool-desc {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: clamp(0.78rem, 1.5vh, 0.92rem);
+      line-height: 1.35;
+      opacity: 0.85;
+    }
+    .empty { text-align: center; padding: 6vh 0; opacity: 0.6; font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body>
+  <nav class="pip-breadcrumb">
+    <a href="/">HOME</a>
+    <span class="sep">▸</span>
+    <a href="/">SITE</a>
+    <span class="sep">▸</span>
+    <a href="/command-center/">COMMAND CENTER</a>
+    <span class="sep">▸</span>
+    <span class="active" id="crumb-dept">...</span>
+    <span class="spacer"></span>
+    <div data-theme-widget></div>
+  </nav>
+
+  <div class="wrap" id="wrap">
+    <div class="empty">// loading department...</div>
+  </div>
+
+  <script>
+    const PUBLIC_MODE = true;
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
+        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+      }[c]));
+    }
+    function qs(name) { return new URLSearchParams(location.search).get(name) || ''; }
+
+    async function load() {
+      const slug = qs('d') || (location.pathname.match(/\/crew\/([^/]+)\//) || [])[1] || '';
+      if (!slug) {
+        document.getElementById('wrap').innerHTML = '<div class="empty">// no department slug | <a href="/command-center/">back to lobby</a></div>';
+        return;
+      }
+      try {
+        const [leadsRes, crewRes, toolsRes] = await Promise.all([
+          fetch((PUBLIC_MODE ? '/command-center/manifests/departments.json' : '/command-center/manifests/departments.json') + '?t=' + Date.now()),
+          fetch((PUBLIC_MODE ? '/command-center/manifests/crew.json'        : '/command-center/manifests/crew.json')    + '?t=' + Date.now()),
+          fetch((PUBLIC_MODE ? '/command-center/manifests/tools.json'       : '/command-center/manifests/tools.json')       + '?t=' + Date.now()).catch(() => null),
+        ]);
+        const leads = await leadsRes.json();
+        const crew  = await crewRes.json();
+        const tools = toolsRes && toolsRes.ok ? await toolsRes.json() : [];
+        const lead = leads.find(l => l.slug === slug);
+        if (!lead) {
+          document.getElementById('wrap').innerHTML = '<div class="empty">// department "' + escapeHtml(slug) + '" not found</div>';
+          return;
+        }
+        render(lead, crew, tools);
+      } catch (e) {
+        document.getElementById('wrap').innerHTML = '<div class="empty">// error: ' + escapeHtml(e.message) + '</div>';
+      }
+    }
+
+    function render(lead, crew, tools) {
+      document.title = lead.department + ' — Command Center';
+      document.getElementById('crumb-dept').textContent = lead.department.toUpperCase();
+
+      const deptCrew  = crew.filter(c => c.department === lead.department);
+      const deptTools = tools.filter(t => t.department === lead.department);
+
+      const viewPath = PUBLIC_MODE ? '/command-center/crew/view.html' : '/crew/view.html';
+
+      const crewHtml = deptCrew.length
+        ? `<div class="crew-grid">${deptCrew.map(c => `
+            <a class="crew-card" href="${viewPath}?id=${encodeURIComponent(c.id)}">
+              <img class="crew-thumb" src="${escapeHtml(c.thumb)}" alt="${escapeHtml(c.name)} badge" loading="lazy">
+              <div class="crew-name">${escapeHtml(c.name)}</div>
+              <div class="crew-title">${escapeHtml(c.title)}</div>
+              <div class="crew-status ${escapeHtml(c.status)}">${escapeHtml(c.status)}</div>
+            </a>
+          `).join('')}</div>`
+        : '<div style="opacity:0.6;font-family:\'JetBrains Mono\',monospace">// no crew in this room</div>';
+
+      // Group tools by category
+      const byCat = {};
+      deptTools.forEach(t => { (byCat[t.category] = byCat[t.category] || []).push(t); });
+      const toolsHtml = Object.keys(byCat).length
+        ? Object.entries(byCat).map(([cat, list]) => `
+            <div class="tools-category">${escapeHtml(cat)} (${list.length})</div>
+            <div class="tools-grid">${list.map(t => `
+              <div class="tool-card">
+                <div class="tool-name">${escapeHtml(t.name)}</div>
+                <div class="tool-desc">${escapeHtml(t.description || '')}</div>
+              </div>
+            `).join('')}</div>
+          `).join('')
+        : '<div style="opacity:0.6;font-family:\'JetBrains Mono\',monospace">// no tools racked in this room</div>';
+
+      document.getElementById('wrap').innerHTML = `
+        <div class="hero">
+          <img class="hero-portrait" src="${escapeHtml(lead.lead_portrait)}" alt="${escapeHtml(lead.lead_name)}">
+          <div>
+            <div class="hero-dept">${escapeHtml(lead.department)}</div>
+            <div class="hero-lead">Lead: <b>${escapeHtml(lead.lead_name)}</b> · ${escapeHtml(lead.lead_persona)}</div>
+            <div class="hero-tagline">${escapeHtml(lead.tagline)}</div>
+            <div class="hero-mission">${escapeHtml(lead.mission_statement)}</div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Crew in this Room (${deptCrew.length})</h2>
+        ${crewHtml}
+
+        <h2 class="section-title">Tools on the Wall (${deptTools.length})</h2>
+        ${toolsHtml}
+      `;
+    }
+
+    load();
+  </script>
+</body>
+</html>

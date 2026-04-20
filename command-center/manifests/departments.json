@@ -1,0 +1,42 @@
+[
+  {
+    "department": "Direct to Skippy",
+    "slug": "direct-reports",
+    "lead_id": "skippy",
+    "lead_name": "Skippy",
+    "lead_persona": "Skippy the Magnificent (Expeditionary Force)",
+    "lead_portrait": "/command-center/full/skippy.jpg",
+    "tagline": "The overseer. Direct reports only.",
+    "mission_statement": "This is the room where the load-bearing beings live. Not the ones wired to a timer | the ones wired to outcomes. Hastings writes the counsel. Lobot conducts the companies. Ripley audits what actually shipped. Radar moves the messages. Jo runs the fleet. Saul runs the consumer protection beat. They report to me because what they do rolls up to strategy, not operations. If any of them goes dark, the wheels come off the cart. That is why the room is small."
+  },
+  {
+    "department": "Operations",
+    "slug": "operations",
+    "lead_id": "rodimus",
+    "lead_name": "Rodimus",
+    "lead_persona": "Rodimus Prime (Transformers G1)",
+    "lead_portrait": "/command-center/full/rodimus.jpg",
+    "tagline": "My-Server's hands. Keeps the lights on.",
+    "mission_statement": "Roll out. This room is about metal and wires. Bishop runs the network medbay. Ratchet watches the local AI stack. Codsworth keeps the files tidy. If the machine you are typing on is online and the files are where you left them, credit this room. We are the uniform worn by every automated action that does not belong to a named persona. Quiet is a feature, not a bug."
+  },
+  {
+    "department": "Marketing & Intel",
+    "slug": "marketing-intel",
+    "lead_id": "rita",
+    "lead_name": "Rita",
+    "lead_persona": "Rita Rivera (original NukaSoft character)",
+    "lead_portrait": "/command-center/full/rita.jpg",
+    "tagline": "Brand voice, intel, and the pen that tells the story.",
+    "mission_statement": "Honey, this is the room where the story gets written. Cassian brings the intel in from the field. Scribe ships the words to the web. Lando guards the visual identity. Piper files the bug reports that make the community feel heard. The tools on the back wall | SEO, CRO, copywriting, paid ads, email sequences, programmatic pages | those are the pens on my desk, one for each job. The work is cohesion. One voice, many channels."
+  },
+  {
+    "department": "Pierre's Personal Staff",
+    "slug": "personal-staff",
+    "lead_id": "pierre",
+    "lead_name": "Pierre",
+    "lead_persona": "Pierre Hulsebus (the founder)",
+    "lead_portrait": "/command-center/full/pierre.jpg",
+    "tagline": "The humans' staff. School, D365, Microsoft tenant.",
+    "mission_statement": "This room reports to me personally because the work is mine. Bluto carries my ASU coursework. Garrus holds my D365 Field Service knowledge base and competitive intel. Chloe administers the Microsoft tenant so I am not clicking through admin portals at midnight. Their job is to keep my personal capacity open so the rest of the fleet can stay focused on NukaSoft and Do Nothing Company."
+  }
+]

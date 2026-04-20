@@ -5,6 +5,8 @@ main:
     url: /blog/
   - title: "Crew"
     url: /crew/
+  - title: "Command Center"
+    url: /command-center/
   - title: "Skills"
     url: /skills/
   - title: "Recipes"

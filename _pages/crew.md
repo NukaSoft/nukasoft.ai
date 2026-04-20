@@ -6,6 +6,10 @@ sidebar:
   nav: "crew"
 ---
 
+<div style="border:2px solid #18FF62; background:rgba(24,255,98,0.08); padding:1.2em 1.4em; margin-bottom:2em; font-family:monospace;">
+<strong>◆ Live Command Center</strong> — Want to see this crew actually working? Step into the <a href="/command-center/"><strong>operator's fleet review</strong></a> — four department rooms, per-crew dossiers with activity signals, self-reflections, and Skippy's performance notes on every member.
+</div>
+
 Skippy's operations team. Each crew member is an **Artificial Person** — a specialized intelligence with its own persona, memory space, and domain expertise. Not bots. Not tools. Artificial Persons. The distinction matters: it carries dignity, and dignity produces better work.
 
 The isolation between them is intentional: it prevents hive mind hallucination and produces emergent personality as a side effect of good architecture.

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crew Sheet — NukaSoft Command Center</title>
+  <link rel="icon" href="/assets/images/skippy-avatar.png">
+  <link rel="stylesheet" href="/command-center/pipboy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="/command-center/theme.js"></script>
+  <style>
+    body { padding: 0; margin: 0; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 2vh 4vw; }
+    .header {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 3vw;
+      align-items: start;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      padding-bottom: 2vh;
+      border-bottom: 1px dotted var(--pip-green);
+    }
+    @media (max-width: 720px) {
+      .header { grid-template-columns: 1fr; }
+      .portrait { margin: 0 auto; }
+    }
+    .portrait {
+      width: 280px; height: 280px;
+      object-fit: cover;
+      border: 2px solid var(--pip-green);
+      filter: saturate(0.85) contrast(1.05);
+      box-shadow: 0 0 30px rgba(24,255,98,0.15);
+    }
+    body.theme-overseer .portrait { box-shadow: 0 0 30px rgba(10,132,193,0.2); }
+
+    .name {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(1.6rem, 4vh, 2.4rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 0.4vh 0;
+    }
+    .persona {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.85rem, 1.6vh, 1rem);
+      opacity: 0.7;
+      margin-bottom: 1.5vh;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.5vh 1.5vw;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.75rem, 1.4vh, 0.9rem);
+    }
+    .meta-key { opacity: 0.6; text-transform: uppercase; letter-spacing: 0.08em; }
+    .meta-val { }
+
+    .status-pill {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.7rem, 1.4vh, 0.85rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.5vh 1vw;
+      border: 1px solid;
+      margin-top: 1vh;
+    }
+    .status-pill.ACTIVE    { border-color: #18FF62; color: #18FF62; background: rgba(24, 255, 98, 0.15); }
+    .status-pill.IMPROVE   { border-color: #F8E71C; color: #F8E71C; background: rgba(248, 231, 28, 0.1); }
+    .status-pill.MERGE     { border-color: #F5A623; color: #F5A623; background: rgba(245, 166, 35, 0.1); }
+    .status-pill.MOTHBALL  { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.05); }
+
+    section.block {
+      margin: 2.5vh 0;
+    }
+    h2.block-title {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(0.95rem, 2vh, 1.2rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0 0 1vh 0;
+      border-bottom: 1px solid var(--pip-green);
+      padding-bottom: 0.5vh;
+    }
+    .prose {
+      font-family: 'Rajdhani', 'Roboto Mono', monospace;
+      font-size: clamp(0.95rem, 1.8vh, 1.05rem);
+      line-height: 1.55;
+      opacity: 0.92;
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1vh 1.2vw;
+    }
+    .activity-cell {
+      border: 1px solid var(--pip-green);
+      background: rgba(24, 255, 98, 0.04);
+      padding: 1vh 1vw;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    body.theme-overseer .activity-cell { background: rgba(10, 132, 193, 0.06); }
+    .activity-label {
+      font-size: clamp(0.6rem, 1.2vh, 0.7rem);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+    }
+    .activity-value {
+      font-size: clamp(1.2rem, 2.8vh, 1.6rem);
+      font-weight: 700;
+      margin-top: 0.4vh;
+    }
+
+    .live-widget {
+      border: 1px dashed var(--pip-green);
+      padding: 1.2vh 1.4vw;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.75rem, 1.4vh, 0.88rem);
+      background: rgba(24, 255, 98, 0.03);
+      margin-top: 1vh;
+    }
+    body.theme-overseer .live-widget { background: rgba(10, 132, 193, 0.05); }
+    .live-widget .tag {
+      display: inline-block;
+      font-size: 0.7em;
+      padding: 0.2vh 0.5vw;
+      border: 1px solid var(--pip-green);
+      margin-right: 0.5vw;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+    }
+
+    .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8vw;
+    }
+    .link-btn {
+      padding: 0.8vh 1.2vw;
+      border: 1px solid var(--pip-green);
+      background: transparent;
+      color: var(--pip-green);
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(0.7rem, 1.4vh, 0.85rem);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .link-btn:hover { background: rgba(24, 255, 98, 0.12); }
+    body.theme-overseer .link-btn:hover { background: rgba(10, 132, 193, 0.16); }
+
+    .recommendation {
+      border: 2px solid var(--pip-green);
+      padding: 2vh 2vw;
+      background: rgba(24, 255, 98, 0.06);
+      margin-top: 1vh;
+    }
+    body.theme-overseer .recommendation { background: rgba(10, 132, 193, 0.08); }
+    .rec-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(0.7rem, 1.3vh, 0.8rem);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      opacity: 0.65;
+    }
+    .rec-value {
+      font-family: var(--font-heading, 'Orbitron', sans-serif);
+      font-size: clamp(1.4rem, 3.2vh, 1.9rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0.5vh 0;
+    }
+    .rec-reason {
+      font-family: 'Rajdhani', monospace;
+      font-size: clamp(0.9rem, 1.7vh, 1rem);
+      opacity: 0.85;
+    }
+
+    .pip-breadcrumb { display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap; }
+    .pip-breadcrumb .spacer { flex: 1; }
+    .not-found { text-align: center; padding: 10vh 0; opacity: 0.6; font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body>
+  <nav class="pip-breadcrumb">
+    <a href="/">HOME</a>
+    <span class="sep">▸</span>
+    <a href="/crew/">CREW BIOS</a>
+    <span class="sep">▸</span>
+    <a href="/">SITE</a>
+    <span class="sep">▸</span>
+    <a href="/command-center/">CREW</a>
+    <span class="sep">▸</span>
+    <span class="active" id="crumb-name">...</span>
+    <span class="spacer"></span>
+    <div data-theme-widget></div>
+  </nav>
+
+  <div class="wrap" id="wrap">
+    <div class="not-found">// loading crew sheet...</div>
+  </div>
+
+  <script>
+    function escapeHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({
+        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+      }[c]));
+    }
+
+    function qs(name) {
+      const m = new URLSearchParams(location.search).get(name);
+      return m || '';
+    }
+
+    const PUBLIC_MODE = true;
+    const MANIFEST_URL = PUBLIC_MODE ? '/command-center/manifests/crew.json' : '/command-center/manifests/crew.json';
+    const BACK_URL = PUBLIC_MODE ? '/command-center/' : '/crew/';
+
+    async function loadSheet() {
+      const id = qs('id');
+      if (!id) {
+        document.getElementById('wrap').innerHTML = '<div class="not-found">// no crew id in URL | return to <a href="' + BACK_URL + '">back</a></div>';
+        return;
+      }
+      try {
+        const res = await fetch(MANIFEST_URL + '?t=' + Date.now());
+        const all = await res.json();
+        const c = all.find(x => x.id === id);
+        if (!c) {
+          document.getElementById('wrap').innerHTML = '<div class="not-found">// crew member "' + escapeHtml(id) + '" not found | <a href="' + BACK_URL + '">back</a></div>';
+          return;
+        }
+        document.title = c.name + ' — Crew Sheet';
+        document.getElementById('crumb-name').textContent = c.name.toUpperCase();
+        render(c);
+        if (!PUBLIC_MODE && c.api_endpoint) loadLive(c);
+      } catch (e) {
+        document.getElementById('wrap').innerHTML = '<div class="not-found">// error: ' + escapeHtml(e.message) + '</div>';
+      }
+    }
+
+    function render(c) {
+      const links = [];
+      links.push('<a class="link-btn" href="' + BACK_URL + '">◂ BACK</a>');
+      if (!PUBLIC_MODE) {
+        if (c.skill_url) {
+          links.push('<a class="link-btn" href="' + escapeHtml(c.skill_url) + '" target="_blank">SKILL.md</a>');
+        }
+        if (c.dashboard_link) {
+          links.push('<a class="link-btn" href="' + escapeHtml(c.dashboard_link) + '">DASHBOARD</a>');
+        }
+        links.push('<a class="link-btn" href="/reports/">REPORTS</a>');
+      } else {
+        links.push('<a class="link-btn" href="/command-center/">CREW BIOS</a>');
+        links.push('<a class="link-btn" href="/blog/">BLOG</a>');
+      }
+
+      const live = (!PUBLIC_MODE && c.api_endpoint)
+        ? `<div class="live-widget" id="live-widget"><span class="tag">LIVE</span>fetching ${escapeHtml(c.api_endpoint)}...</div>`
+        : `<div class="live-widget" style="opacity:0.6"><span class="tag">SNAPSHOT</span>activity snapshot | see numbers above</div>`;
+
+      const html = `
+        <div class="header">
+          <img class="portrait" src="${escapeHtml(c.portrait)}" alt="${escapeHtml(c.name)} portrait">
+          <div>
+            <div class="name">${escapeHtml(c.name)}</div>
+            <div class="persona">${escapeHtml(c.persona)}</div>
+            <div class="meta-grid">
+              <div class="meta-key">Title</div>       <div class="meta-val">${escapeHtml(c.title)}</div>
+              <div class="meta-key">Division</div>    <div class="meta-val">${escapeHtml(c.division)}</div>
+              <div class="meta-key">Reports To</div>  <div class="meta-val">${escapeHtml(c.reports_to)}</div>
+              <div class="meta-key">Schedule</div>    <div class="meta-val">${escapeHtml(c.schedule)}</div>
+              <div class="meta-key">Skill Path</div>  <div class="meta-val">${escapeHtml(c.skill_path)}</div>
+              <div class="meta-key">Review Date</div> <div class="meta-val">${escapeHtml(c.review_date)}</div>
+            </div>
+            <div class="status-pill ${escapeHtml(c.status)}">${escapeHtml(c.status)}</div>
+          </div>
+        </div>
+
+        <section class="block">
+          <h2 class="block-title">Job Description</h2>
+          <div class="prose">${escapeHtml(c.job_description)}</div>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Activity Signals (14 days)</h2>
+          <div class="activity-grid">
+            <div class="activity-cell">
+              <div class="activity-label">Commits</div>
+              <div class="activity-value">${c.commits_14d}</div>
+            </div>
+            <div class="activity-cell">
+              <div class="activity-label">Journal mentions</div>
+              <div class="activity-value">${c.journal_mentions_14d}</div>
+            </div>
+            <div class="activity-cell">
+              <div class="activity-label">Last commit</div>
+              <div class="activity-value" style="font-size:1.1rem">${escapeHtml(c.last_commit || 'none')}</div>
+            </div>
+            <div class="activity-cell">
+              <div class="activity-label">Status</div>
+              <div class="activity-value" style="font-size:1.1rem">${escapeHtml(c.status)}</div>
+            </div>
+          </div>
+          ${live}
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Self-Reflection — in ${escapeHtml(c.name)}'s voice</h2>
+          <div class="prose">${escapeHtml(c.self_reflection)}</div>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Skippy's Performance Review</h2>
+          <div class="prose">${escapeHtml(c.skippy_review)}</div>
+          <div class="recommendation">
+            <div class="rec-label">Recommendation</div>
+            <div class="rec-value">${escapeHtml(c.recommendation)}</div>
+            <div class="rec-reason">${escapeHtml(c.business_reason)}</div>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2 class="block-title">Links</h2>
+          <div class="links-row">${links.join('')}</div>
+        </section>
+      `;
+      document.getElementById('wrap').innerHTML = html;
+    }
+
+    async function loadLive(c) {
+      try {
+        const res = await fetch(c.api_endpoint + '?t=' + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const ct = res.headers.get('content-type') || '';
+        const widget = document.getElementById('live-widget');
+        if (!widget) return;
+        if (ct.includes('application/json')) {
+          const data = await res.json();
+          const preview = JSON.stringify(data, null, 2).slice(0, 900);
+          widget.innerHTML = '<span class="tag">LIVE</span>' + escapeHtml(c.api_endpoint) + '<pre style="margin:0.8vh 0 0 0;white-space:pre-wrap">' + escapeHtml(preview) + '</pre>';
+        } else {
+          const text = (await res.text()).slice(0, 900);
+          widget.innerHTML = '<span class="tag">LIVE</span>' + escapeHtml(c.api_endpoint) + '<pre style="margin:0.8vh 0 0 0;white-space:pre-wrap">' + escapeHtml(text) + '</pre>';
+        }
+      } catch (e) {
+        const widget = document.getElementById('live-widget');
+        if (widget) widget.innerHTML = '<span class="tag">LIVE</span>endpoint unreachable: ' + escapeHtml(e.message);
+      }
+    }
+
+    loadSheet();
+  </script>
+</body>
+</html>

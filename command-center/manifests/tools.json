@@ -1,0 +1,596 @@
+[
+  {
+    "id": "skool",
+    "name": "Skool Content Engine",
+    "description": "Multi-community content management platform | Manages Full Armor AI and Service Operations Skool communities with unified voice translation and course publishing workflow",
+    "department": "Marketing & Intel",
+    "category": "Community Engine",
+    "source_skill": "skool",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/ab-test-setup",
+    "name": "ab-test-setup",
+    "description": "When the user wants to plan, design, or implement an A/B test or experiment.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/ad-creative",
+    "name": "ad-creative",
+    "description": "When the user wants to generate, iterate, or scale ad creative \u2014 headlines, descriptions, primary text, or full ad variations \u2014 for any paid advertising platform.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/ai-seo",
+    "name": "ai-seo",
+    "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/analytics-tracking",
+    "name": "analytics-tracking",
+    "description": "When the user wants to set up, improve, or audit analytics tracking and measurement.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/churn-prevention",
+    "name": "churn-prevention",
+    "description": "When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or implement retention strategies.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/cold-email",
+    "name": "cold-email",
+    "description": "Write B2B cold emails and follow-up sequences that get replies.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/competitor-alternatives",
+    "name": "competitor-alternatives",
+    "description": "When the user wants to create competitor comparison or alternative pages for SEO and sales enablement.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/content-strategy",
+    "name": "content-strategy",
+    "description": "When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/copy-editing",
+    "name": "copy-editing",
+    "description": "When the user wants to edit, review, or improve existing marketing copy.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/copywriting",
+    "name": "copywriting",
+    "description": "When the user wants to write, rewrite, or improve marketing copy for any page \u2014 including homepage, landing pages, pricing pages, feature pages, about pages, or product pages.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/customer-research",
+    "name": "customer-research",
+    "description": "When the user wants to conduct, analyze, or synthesize customer research.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/email-sequence",
+    "name": "email-sequence",
+    "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/form-cro",
+    "name": "form-cro",
+    "description": "When the user wants to optimize any form that is NOT signup/registration \u2014 including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/free-tool-strategy",
+    "name": "free-tool-strategy",
+    "description": "When the user wants to plan, evaluate, or build a free tool for marketing purposes \u2014 lead generation, SEO value, or brand awareness.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/launch-strategy",
+    "name": "launch-strategy",
+    "description": "When the user wants to plan a product launch, feature announcement, or release strategy.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/lead-magnets",
+    "name": "lead-magnets",
+    "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/marketing-ideas",
+    "name": "marketing-ideas",
+    "description": "When the user needs marketing ideas, inspiration, or strategies for their SaaS or software product.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/marketing-psychology",
+    "name": "marketing-psychology",
+    "description": "When the user wants to apply psychological principles, mental models, or behavioral science to marketing.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/onboarding-cro",
+    "name": "onboarding-cro",
+    "description": "When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/page-cro",
+    "name": "page-cro",
+    "description": "When the user wants to optimize, improve, or increase conversions on any marketing page \u2014 including homepage, landing pages, pricing pages, feature pages, or blog posts.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/paid-ads",
+    "name": "paid-ads",
+    "description": "When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/paywall-upgrade-cro",
+    "name": "paywall-upgrade-cro",
+    "description": "When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/popup-cro",
+    "name": "popup-cro",
+    "description": "When the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion purposes.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/pricing-strategy",
+    "name": "pricing-strategy",
+    "description": "When the user wants help with pricing decisions, packaging, or monetization strategy.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/product-marketing-context",
+    "name": "product-marketing-context",
+    "description": "When the user wants to create or update their product marketing context document.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/programmatic-seo",
+    "name": "programmatic-seo",
+    "description": "When the user wants to create SEO-driven pages at scale using templates and data.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/referral-program",
+    "name": "referral-program",
+    "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/revops",
+    "name": "revops",
+    "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/sales-enablement",
+    "name": "sales-enablement",
+    "description": "When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/schema-markup",
+    "name": "schema-markup",
+    "description": "When the user wants to add, fix, or optimize schema markup and structured data on their site.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/seo-audit",
+    "name": "seo-audit",
+    "description": "When the user wants to audit, review, or diagnose SEO issues on their site.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/signup-flow-cro",
+    "name": "signup-flow-cro",
+    "description": "When the user wants to optimize signup, registration, account creation, or trial activation flows.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/site-architecture",
+    "name": "site-architecture",
+    "description": "When the user wants to plan, map, or restructure their website's page hierarchy, navigation, URL structure, or internal linking.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "marketing/social-content",
+    "name": "social-content",
+    "description": "When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, or other platforms.",
+    "department": "Marketing & Intel",
+    "category": "Marketing Skill",
+    "source_skill": "marketing",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-content",
+    "name": "seo-content",
+    "description": "Content quality reviewer. Evaluates E-E-A-T signals, readability, content depth, AI citation readiness, and thin content detection.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-dataforseo",
+    "name": "seo-dataforseo",
+    "description": "DataForSEO data analyst. Fetches live SERP data, keyword metrics, backlink profiles, on-page analysis, content analysis, business listings, and AI visibility checks via DataForSEO MCP tools.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-geo",
+    "name": "seo-geo",
+    "description": "GEO and AI search specialist. Analyzes AI crawler accessibility, llms.txt compliance, passage-level citability, brand mention signals, and platform-specific optimization for Google AI Overviews, ChatGPT, Perplexity, and Bing Copilot.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-google",
+    "name": "seo-google",
+    "description": "Google SEO API analyst. Fetches CWV field data via CrUX, indexation status via GSC, and organic traffic via GA4 for enriched audit data.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-image-gen",
+    "name": "seo-image-gen",
+    "description": "SEO image analyst. Audits existing OG/social preview images, identifies missing or low-quality images, and creates an image generation plan with prompts for key pages. Does NOT auto-generate images.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-local",
+    "name": "seo-local",
+    "description": "Local SEO specialist. Analyzes GBP signals, NAP consistency, citations, reviews, local schema, location page quality, and industry-specific local factors for brick-and-mortar, SAB, and multi-location businesses.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-maps",
+    "name": "seo-maps",
+    "description": "Maps intelligence specialist. Geo-grid rank tracking, GBP profile auditing, review intelligence, cross-platform NAP verification, and competitor radius mapping via DataForSEO and free APIs.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-performance",
+    "name": "seo-performance",
+    "description": "Performance analyzer. Measures and evaluates Core Web Vitals and page load performance.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-schema",
+    "name": "seo-schema",
+    "description": "Schema markup expert. Detects, validates, and generates Schema.org structured data in JSON-LD format.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-sitemap",
+    "name": "seo-sitemap",
+    "description": "Sitemap architect. Validates XML sitemaps, generates new ones with industry templates, and enforces quality gates for location pages.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-technical",
+    "name": "seo-technical",
+    "description": "Technical SEO specialist. Analyzes crawlability, indexability, security, URL structure, mobile optimization, Core Web Vitals, and JavaScript rendering.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo-agent/seo-visual",
+    "name": "seo-visual",
+    "description": "Visual analyzer. Captures screenshots, tests mobile rendering, and analyzes above-the-fold content using Playwright.",
+    "department": "Marketing & Intel",
+    "category": "SEO Agent",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo",
+    "name": "seo",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-audit",
+    "name": "seo-audit",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-backlinks",
+    "name": "seo-backlinks",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-competitor-pages",
+    "name": "seo-competitor-pages",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-content",
+    "name": "seo-content",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-dataforseo",
+    "name": "seo-dataforseo",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-geo",
+    "name": "seo-geo",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-google",
+    "name": "seo-google",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-hreflang",
+    "name": "seo-hreflang",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-image-gen",
+    "name": "seo-image-gen",
+    "description": "AI image generation for SEO assets: OG/social preview images, blog hero images, schema images, product photography, infographics.",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-images",
+    "name": "seo-images",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-local",
+    "name": "seo-local",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-maps",
+    "name": "seo-maps",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-page",
+    "name": "seo-page",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-plan",
+    "name": "seo-plan",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-programmatic",
+    "name": "seo-programmatic",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-schema",
+    "name": "seo-schema",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-sitemap",
+    "name": "seo-sitemap",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  },
+  {
+    "id": "seo/seo-technical",
+    "name": "seo-technical",
+    "description": ">",
+    "department": "Marketing & Intel",
+    "category": "SEO Skill",
+    "source_skill": "seo",
+    "status": "Active"
+  }
+]
