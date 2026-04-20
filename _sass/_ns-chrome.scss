@@ -36,9 +36,11 @@
     font-size: 22px;
     color: var(--ns-cream);
     text-decoration: none;
+    min-width: 0;
 
     img {
       height: 42px;
+      flex-shrink: 0;
       filter: drop-shadow(2px 2px 0 rgba(61, 28, 11, 0.4));
     }
 
@@ -58,7 +60,6 @@
     gap: 20px;
     margin-left: auto;
     align-items: center;
-    flex-wrap: wrap;
 
     a {
       color: var(--ns-cream);
@@ -68,6 +69,7 @@
       letter-spacing: 0.02em;
       padding: 6px 4px;
       border-bottom: 2px solid transparent;
+      white-space: nowrap;
       transition: border-color var(--ns-dur-fast) var(--ns-ease-out),
                   color var(--ns-dur-fast);
 
@@ -76,6 +78,61 @@
         border-bottom-color: var(--ns-cream);
       }
     }
+  }
+
+  // --- Tablet: tighter nav ---
+  @media (max-width: 960px) {
+    gap: 16px;
+    padding: 10px 20px;
+
+    .brand {
+      font-size: 18px;
+      img { height: 36px; }
+    }
+
+    nav {
+      gap: 14px;
+      a { font-size: 13px; }
+    }
+  }
+
+  // --- Phone: stack + horizontal-scroll nav ---
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 16px 0;
+
+    .brand {
+      justify-content: flex-start;
+      font-size: 18px;
+      gap: 10px;
+      .tag { font-size: 9px; }
+    }
+
+    nav {
+      margin-left: 0;
+      gap: 18px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 4px 0 8px;
+      border-top: 1px solid rgba(245, 230, 200, 0.25);
+
+      &::-webkit-scrollbar { display: none; }
+
+      a {
+        flex-shrink: 0;
+        font-size: 13px;
+        padding: 4px 2px;
+      }
+    }
+  }
+
+  // --- Narrow phone: drop subtitle to save room ---
+  @media (max-width: 420px) {
+    .brand .tag { display: none; }
+    .brand img { height: 32px; }
   }
 }
 
