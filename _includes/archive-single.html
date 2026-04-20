@@ -1,42 +1,16 @@
-{% assign locale = include.locale | default: site.locale %}
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item blog-card" itemscope itemtype="https://schema.org/CreativeWork"{% if post.locale %} lang="{{ post.locale }}"{% endif %}>
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
+{% assign _post = include.post | default: post %}
+<a class="ns-post-row" href="{{ _post.url | relative_url }}">
+  <div class="date">{{ _post.date | date: "%B %-d, %Y" }}</div>
+  <div>
+    <h4>{{ _post.title }}</h4>
+    {% if _post.excerpt %}
+    <p style="margin: 4px 0 0; font-size: 14px; color: rgba(61,28,11,0.7); font-family: var(--ns-font-body);">{{ _post.excerpt | strip_html | truncate: 160 }}</p>
     {% endif %}
-    <p class="blog-card__date">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-      <span class="blog-card__sep">&middot;</span>
-      {% include page__meta.html locale=locale type=include.type %}
-    </p>
-    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
-    {% if post.excerpt %}<p class="archive__item-excerpt p-summary" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 200 }}</p>{% endif %}
-    {% if post.tags.size > 0 %}
-      <div class="blog-card__tags">
-        {% for tag in post.tags limit:5 %}
-          <span class="blog-card__tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
+    {% if _post.tags and _post.tags.size > 0 %}
+    <div class="tags">
+      {% for tag in _post.tags limit: 5 %}<span>#{{ tag | slugify }}</span>{% endfor %}
+    </div>
     {% endif %}
-  </article>
-</div>
+  </div>
+  <div class="read">Read &rarr;</div>
+</a>

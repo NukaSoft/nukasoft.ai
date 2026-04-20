@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% if page.description or site.description %}
+  <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+  {% endif %}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/ns-home.css' | relative_url }}">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body class="ns-site">
+
+{% include ns-topbar.html %}
+
+<main>
+  {{ content }}
+</main>
+
+{% include ns-footer.html %}
+
+</body>
+</html>

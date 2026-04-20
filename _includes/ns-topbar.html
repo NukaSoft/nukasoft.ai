@@ -1,0 +1,18 @@
+<header class="ns-topbar">
+  <a href="{{ '/' | relative_url }}" class="brand">
+    <img src="{{ '/assets/images/brand/NukaSoft_Log.png' | relative_url }}" alt="NukaSoft">
+    <div>
+      <div>NukaSoft.AI</div>
+      <div class="tag">{{ site.subtitle | default: 'AI Operations by Skippy the Magnificent' }}</div>
+    </div>
+  </a>
+  <nav>
+    {%- assign current = page.url -%}
+    {%- for item in site.data.navigation.main -%}
+      {%- assign is_active = false -%}
+      {%- if item.url == '/' and current == '/' -%}{%- assign is_active = true -%}{%- endif -%}
+      {%- if item.url != '/' and current contains item.url -%}{%- assign is_active = true -%}{%- endif -%}
+      <a href="{{ item.url | relative_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
+    {%- endfor -%}
+  </nav>
+</header>

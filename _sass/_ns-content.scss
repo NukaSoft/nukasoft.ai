@@ -1,0 +1,269 @@
+// ============================================================
+// NukaSoft.AI — Content pages (blog posts, collections, markdown prose)
+// ============================================================
+
+.ns-page {
+  background: var(--ns-cream);
+  color: var(--ns-cola-brown);
+  min-height: calc(100vh - 220px);
+
+  &.aged {
+    background: var(--ns-aged-paper);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(61, 28, 11, 0.05) 0 1px, transparent 2px),
+        radial-gradient(circle at 70% 80%, rgba(61, 28, 11, 0.04) 0 1px, transparent 2px);
+      background-size: 140px 140px, 220px 220px;
+      mix-blend-mode: multiply;
+      opacity: 0.5;
+      z-index: 0;
+    }
+  }
+
+  > * { position: relative; z-index: 1; }
+}
+
+.ns-page-header {
+  background: var(--ns-nuka-red);
+  color: var(--ns-cream);
+  padding: 56px 28px 48px;
+  border-bottom: 4px solid var(--ns-cola-brown);
+  position: relative;
+
+  .inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: var(--ns-font-body);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.82;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-family: var(--ns-font-display);
+    font-weight: 400;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.05;
+    margin: 0;
+    text-shadow: 3px 3px 0 var(--ns-cola-brown);
+    color: var(--ns-cream);
+    letter-spacing: -0.01em;
+  }
+
+  .meta {
+    margin-top: 16px;
+    font-family: var(--ns-font-mono);
+    font-size: 13px;
+    color: rgba(245, 230, 200, 0.82);
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+}
+
+.ns-prose {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 28px 88px;
+  font-family: var(--ns-font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ns-cola-brown);
+
+  > :first-child { margin-top: 0; }
+  > :last-child { margin-bottom: 0; }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--ns-font-display);
+    font-weight: 400;
+    color: var(--ns-cola-brown);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 2em 0 0.6em;
+  }
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 1.9rem; border-bottom: 2px solid var(--ns-cola-brown); padding-bottom: 6px; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.2rem; font-family: var(--ns-font-body); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  p { margin: 0 0 1.1em; }
+
+  a {
+    color: var(--ns-nuka-red);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+    transition: color var(--ns-dur-fast);
+
+    &:hover { color: var(--ns-red-deep); }
+  }
+
+  ul, ol { margin: 0 0 1.1em 1.5em; padding: 0; }
+  li { margin: 0.3em 0; }
+  li > p:last-child { margin-bottom: 0; }
+
+  blockquote {
+    border-left: 4px solid var(--ns-nuka-red);
+    background: rgba(196, 30, 36, 0.06);
+    padding: 14px 20px;
+    margin: 1.4em 0;
+    font-family: var(--ns-font-display);
+    font-size: 1.3rem;
+    line-height: 1.35;
+    color: var(--ns-cola-brown);
+  }
+
+  hr {
+    border: 0;
+    border-top: 2px dashed rgba(61, 28, 11, 0.3);
+    margin: 2.2em 0;
+  }
+
+  code {
+    font-family: var(--ns-font-mono);
+    font-size: 0.9em;
+    background: var(--ns-aged-paper);
+    border: 1px solid var(--ns-border);
+    padding: 0.08em 0.4em;
+    border-radius: 3px;
+  }
+
+  pre {
+    background: var(--ns-cola-brown);
+    color: var(--ns-cream);
+    padding: 18px 22px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.4em 0;
+    font-family: var(--ns-font-mono);
+    font-size: 13px;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0 rgba(61, 28, 11, 0.3);
+
+    code {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      color: inherit;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.4em 0;
+    font-size: 15px;
+    background: #fff;
+    border: 2px solid var(--ns-cola-brown);
+    box-shadow: 4px 4px 0 var(--ns-cola-brown);
+  }
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(61, 28, 11, 0.15);
+  }
+  th {
+    background: var(--ns-nuka-red);
+    color: var(--ns-cream);
+    font-family: var(--ns-font-body);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  tr:last-child td { border-bottom: 0; }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--ns-cola-brown);
+    box-shadow: 4px 4px 0 var(--ns-cola-brown);
+    margin: 1em 0;
+  }
+}
+
+// Archive list (blog index, collections)
+.ns-archive {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 56px 28px 88px;
+  font-family: var(--ns-font-body);
+  color: var(--ns-cola-brown);
+
+  > p {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 0 28px;
+  }
+
+  .intro {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 0 36px;
+  }
+
+  a {
+    color: var(--ns-nuka-red);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+
+    &.ns-post-row { text-decoration: none; }
+    &:hover { color: var(--ns-red-deep); }
+  }
+}
+
+.ns-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+// Pagination (for paginated archives)
+.ns-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0 0;
+  font-family: var(--ns-font-mono);
+  font-size: 13px;
+
+  a, span {
+    padding: 8px 14px;
+    border: 2px solid var(--ns-cola-brown);
+    border-radius: 3px;
+    color: var(--ns-cola-brown);
+    text-decoration: none;
+    background: #fff;
+
+    &.current {
+      background: var(--ns-nuka-red);
+      color: var(--ns-cream);
+    }
+  }
+
+  a:hover {
+    background: var(--ns-cola-brown);
+    color: var(--ns-cream);
+  }
+}
+
+@media (max-width: 720px) {
+  .ns-page-header { padding: 40px 20px 36px; }
+  .ns-prose { padding: 40px 20px 64px; font-size: 16px; }
+}

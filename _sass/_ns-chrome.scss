@@ -1,0 +1,200 @@
+// ============================================================
+// NukaSoft.AI — Shared chrome (topbar, footer, buttons, ribbon)
+// Ported from Claude Design ui_kits/_shared/chrome.css
+// ============================================================
+
+.ns-site {
+  * { box-sizing: border-box; }
+  margin: 0;
+  padding: 0;
+  font-family: var(--ns-font-body);
+  color: var(--ns-cola-brown);
+  background: var(--ns-cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: var(--ns-lh-body);
+}
+
+// ---------- Top nav ----------
+.ns-topbar {
+  background: var(--ns-nuka-red);
+  color: var(--ns-cream);
+  border-bottom: 3px solid var(--ns-cola-brown);
+  padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--ns-font-display);
+    font-size: 22px;
+    color: var(--ns-cream);
+    text-decoration: none;
+
+    img {
+      height: 42px;
+      filter: drop-shadow(2px 2px 0 rgba(61, 28, 11, 0.4));
+    }
+
+    .tag {
+      font-family: var(--ns-font-body);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.82;
+      line-height: 1;
+      margin-top: 3px;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+      color: var(--ns-cream);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      padding: 6px 4px;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--ns-dur-fast) var(--ns-ease-out),
+                  color var(--ns-dur-fast);
+
+      &:hover,
+      &.active {
+        border-bottom-color: var(--ns-cream);
+      }
+    }
+  }
+}
+
+// ---------- Footer ----------
+.ns-footer {
+  background: var(--ns-cola-brown);
+  color: rgba(245, 230, 200, 0.82);
+  padding: 36px 28px 28px;
+  font-size: 14px;
+
+  .row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h5 {
+    color: var(--ns-cream);
+    font-family: var(--ns-font-display);
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 400;
+  }
+
+  a {
+    color: var(--ns-cream);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+    opacity: 0.82;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+
+  .legal {
+    max-width: 1200px;
+    margin: 24px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(245, 230, 200, 0.15);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    opacity: 0.6;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+// ---------- Buttons ----------
+.ns-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--ns-font-body);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--ns-cola-brown);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--ns-dur-fast) var(--ns-ease-out);
+
+  &.primary {
+    background: var(--ns-cream);
+    color: var(--ns-cola-brown);
+    box-shadow: 2px 2px 0 var(--ns-cola-brown);
+
+    &:hover {
+      background: #FFFFFF;
+      transform: translateY(-1px);
+      box-shadow: 2px 3px 0 var(--ns-cola-brown);
+    }
+
+    &:active {
+      background: var(--ns-cream-dark);
+      box-shadow: none;
+      transform: translateY(1px);
+    }
+  }
+
+  &.dark {
+    background: var(--ns-nuka-red);
+    color: var(--ns-cream);
+    box-shadow: 2px 2px 0 var(--ns-cola-brown);
+
+    &:hover {
+      background: var(--ns-red-bright);
+      transform: translateY(-1px);
+    }
+  }
+
+  &.ghost {
+    background: transparent;
+    color: var(--ns-cream);
+    border-color: var(--ns-cream);
+    box-shadow: none;
+
+    &:hover { background: rgba(245, 230, 200, 0.12); }
+  }
+}
+
+// Ribbon tagline utility
+.ns-ribbon-bar {
+  background: var(--ns-aged-paper);
+  border-top: 3px solid var(--ns-cola-brown);
+  border-bottom: 3px solid var(--ns-cola-brown);
+  padding: 10px 28px;
+  font-family: var(--ns-font-display);
+  font-size: 22px;
+  text-align: center;
+  color: var(--ns-cola-brown);
+  letter-spacing: 0.02em;
+}
