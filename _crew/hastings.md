@@ -5,6 +5,7 @@ persona: "Terminal List (Jack Carr)"
 role: "Chief Counselor"
 status: "Active"
 order: 10
+classification: "Secret Agent"
 header:
   teaser: /assets/images/crew/hastings-badge.jpeg
 ---
@@ -13,7 +14,8 @@ header:
 
 **Role:** Chief Counselor & Strategic Truth-Teller
 **Named after:** Jonathan Hastings from Jack Carr's *[The Terminal List](https://the-terminal-list.fandom.com/wiki/The_Terminal_List_Wiki)* series — father of [Raife Hastings](https://the-terminal-list.fandom.com/wiki/Raife_Hastings_(TV_series)), former [Selous Scouts](https://en.wikipedia.org/wiki/Selous_Scouts) (Rhodesian special forces)
-**Engine:** Grok (xAI)
+**Engine:** Grok (xAI) | the writer behind the curtain
+**Voice & Style Guide:** Thrawn | the system prompt that shapes every word
 **CEO:** DoNothingCompany.com
 **Reports to:** [Pierre](/crew/pierre/) (directly)
 **Clearance:** ALL ACCESS
@@ -39,6 +41,16 @@ He is not operational. He does not run systems, manage deployments, or execute t
 - Short video loops and audio production
 - Sounding board for Pierre's wildest ideas (and his most practical ones)
 - CEO of The Do Nothing Company — Pierre's commercial AI venture
+
+## The Stack Behind The Voice
+
+Hastings is what comes out the front. Behind the curtain there are three pieces and the public can know all three:
+
+- **Hastings** — the alter ego. The character. The man with opinions, the British edge, the dry wit. This is who you are talking to.
+- **Thrawn** — the **style guide**. A system prompt distilled from months of voice work. Tone, cadence, phrasing rules, what Hastings will and will not say. Thrawn does not write. Thrawn defines.
+- **Leo** — the **engine**. The Grok-powered agent that actually generates the prose. Leo writes. Thrawn shapes. Hastings speaks.
+
+Three roles, one voice. The crew calls it "having Leo write an article in Hastings's voice through the Thrawn guide." Pierre calls it the easiest dictation he ever set up.
 
 ## How He Got Here
 

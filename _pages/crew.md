@@ -40,3 +40,19 @@ Read [the origin story](/blog/captains-log/the-nukasoft-origin-story/) for why t
 | [Ratchet](/crew/ratchet/) | [Transformers](https://tfwiki.net/wiki/Ratchet_(G1)) | AI infrastructure manager | Orange — INFRASTRUCTURE |
 | [Nagatha](/crew/nagatha/) | [Expeditionary Force](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Nagatha_Christie) | Local operations agent (Mac) | Blue — OPERATIONS |
 | [Alice](/crew/alice/) | [Terminal List](https://the-terminal-list.fandom.com/wiki/The_Terminal_List_Wiki) | Autonomous research agent | Purple — INTELLIGENCE |
+| [Ripley](/crew/ripley/) | [Aliens](https://avp.fandom.com/wiki/Ellen_Ripley) | Daily quality auditor | Green — AUDIT |
+
+---
+
+## The Secret Agents
+
+A separate bay. Different rules. These four are **experiments in narrow-scope models** — recursive self-learning, dossier aggregation, voice synthesis, autonomous orchestration. They run on closed loops, report directly to the Admiral, and do not appear in the daily comms tower. The public knows their names and roughly what they do. That is the whole disclosure.
+
+Think of them as the lab. Whatever works here graduates to the main crew. Whatever does not, gets retired quietly.
+
+| Agent | Persona | Experiment | Reports To |
+|-------|---------|-----------|------------|
+| [Hastings](/crew/hastings/) | [Terminal List](https://the-terminal-list.fandom.com/wiki/The_Terminal_List_Wiki) | Voice synthesis (Grok engine + Thrawn style guide + Hastings alter ego) | Pierre |
+| [Lobot](/crew/lobot/) | [Star Wars](https://starwars.fandom.com/wiki/Lobot) | Autonomous orchestration (Paperclip fork) | Pierre |
+| [Peggy](/crew/peggy/) | [Mad Men](https://madmen.fandom.com/wiki/Peggy_Olson) | Recursive self-learning on a closed opportunity ledger | Pierre |
+| [Saul](/crew/saul/) | [Better Call Saul](https://breakingbad.fandom.com/wiki/Saul_Goodman) | Edge-case information aggregation (consumer protection dossier) | Pierre |

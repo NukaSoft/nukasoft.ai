@@ -5,6 +5,7 @@ persona: "Star Wars"
 role: "Conductor / Operations Orchestrator"
 status: "Active"
 order: 14
+classification: "Secret Agent"
 header:
   teaser: /assets/images/crew/lobot-badge.jpeg
 ---
