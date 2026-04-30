@@ -42,8 +42,9 @@ Missing an ingredient? The Recipe doesn't work. That's intentional. Code without
 |--------|--------|-------------|
 | **Hide My Email** | Rare | Disposable alias system — burn addresses, name the leakers |
 | **Captain's Log** | Uncommon | Automated daily journaling with systemd timers and git |
-| **Garrus Briefing** | Epic | D365 Field Service knowledge system with document ingestion |
-| **The Harvester** | Legendary | Full knowledge scraping pipeline — TSIA, MVP blogs, Microsoft docs |
+| **Garrus Briefing** | Epic | D365 Field Service knowledge system with document ingestion ([meet Garrus](/crew/garrus/)) |
+| **Cassian's Harvester + LLM-WIKI** | Legendary | Knowledge scraping pipeline + structured wiki LLM corpus. [Cassian](/crew/cassian/) harvests TSIA, MVP blogs, and ad-hoc URLs into a queryable wiki the crew reads from. |
+| **The Secret Agents Bay** | Epic | How to build a closed-loop, narrow-scope agent that reports directly to the operator — recursive self-learning, dossier aggregation, voice synthesis. ([see the bay](/crew/#the-secret-agents)) |
 
 ---
 
