@@ -44,10 +44,10 @@ newline         ::= "\n"
 **Entries MUST be ordered newest-first.** The most recent entry appears at the top of the file. This is not a convention — it is a protocol requirement. The autonomous conflict resolution capability of MEP depends on this ordering being machine-parseable.
 
 ```
-## 2026-04-03 — Hot Rod (main)        ← newest, read first
+## 2026-04-03 — My-Server (main)        ← newest, read first
 ...
 
-## 2026-04-02 — Hot Rod (main)        ← previous
+## 2026-04-02 — My-Server (main)        ← previous
 ...
 
 ## 2026-04-01 — Mac (Nagatha/worktree) ← oldest in window
@@ -177,7 +177,7 @@ date-header     ::= "## " ISO-DATE " — " agent-context
 agent-context   ::= agent-name " | " platform " | " session-type
 
 agent-name      ::= text                    # "Skippy" | "Grok" | "ChatGPT" | "Pierre"
-platform        ::= text                    # "Claude (Hot Rod)" | "Grok (X)" | "ChatGPT" | "Gemini"
+platform        ::= text                    # "Claude (My-Server)" | "Grok (X)" | "ChatGPT" | "Gemini"
 session-type    ::= text                    # "code" | "cowork" | "brainstorm" | "research"
 
 agent-tag       ::= "**Tag-in:** " timestamp " | " "**Tag-out:** " timestamp
@@ -187,12 +187,12 @@ agent-tag       ::= "**Tag-in:** " timestamp " | " "**Tag-out:** " timestamp
 
 **v1 format (still valid):**
 ```markdown
-## 2026-04-13 — Hot Rod (main)
+## 2026-04-13 — My-Server (main)
 ```
 
 **v2 format (multi-agent):**
 ```markdown
-## 2026-04-13 — Skippy | Claude (Hot Rod) | code
+## 2026-04-13 — Skippy | Claude (My-Server) | code
 **Tag-in:** 14:30 ET | **Tag-out:** 16:45 ET
 ```
 
@@ -263,7 +263,7 @@ When the handoff file lives on a shared surface (Google Drive) accessible to all
 ### One Template, Not Many
 
 The handoff schema is the SAME for:
-- Machine-to-machine (Claude Hot Rod → Claude Mac)
+- Machine-to-machine (Claude My-Server → Claude Mac)
 - LLM-to-LLM (Grok → Claude → ChatGPT)
 - Shared surface (Google Drive read by all)
 - Internal repo (machines/handoff.md)

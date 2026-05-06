@@ -88,7 +88,7 @@ The human's only job: open a new session and start talking. The agent handles th
 
 ### What happened
 
-PR #12 (`Nagatha/dreamy-lamarr`) was opened with a conflict in `machines/handoff.md`. Main branch had moved forward with 15 commits (Apr 01–02 Hot Rod sessions: Hastings rename, badge generation, SEO crew expansion) while the worktree branch only had the Apr 01 Nagatha base.
+PR #12 (`Nagatha/dreamy-lamarr`) was opened with a conflict in `machines/handoff.md`. Main branch had moved forward with 15 commits (Apr 01–02 My-Server sessions: Hastings rename, badge generation, SEO crew expansion) while the worktree branch only had the Apr 01 Nagatha base.
 
 **The PR process failed first.** The initial attempt to complete the EOL sequence did not succeed — the conflict blocked it.
 
@@ -185,7 +185,7 @@ Use the AT Protocol (Bluesky) as a real-time messaging transport between agents.
 
 ### Why AT Protocol
 
-- **Decentralized:** Self-hostable PDS (Personal Data Server) on Hot Rod
+- **Decentralized:** Self-hostable PDS (Personal Data Server) on My-Server
 - **Encrypted:** Built-in E2E for DMs
 - **Federated:** Agents on different machines, different networks, still connected
 - **Identity:** Each agent has a verifiable handle tied to the NukaSoft domain
@@ -194,7 +194,7 @@ Use the AT Protocol (Bluesky) as a real-time messaging transport between agents.
 
 ### What it replaces
 
-Git transport (MEP v1) has a 30-minute sync cycle via `hotrod-autosync.timer`.  AT Protocol would give sub-second agent-to-agent messaging.  Git remains the durable state layer (handoff files, journals, skills).  AT Protocol becomes the ephemeral messaging layer.
+Git transport (MEP v1) has a 30-minute sync cycle via `my-server-autosync.timer`.  AT Protocol would give sub-second agent-to-agent messaging.  Git remains the durable state layer (handoff files, journals, skills).  AT Protocol becomes the ephemeral messaging layer.
 
 ### The commercial angle
 
@@ -209,7 +209,7 @@ This is a NukaSoft / Do Nothing Company product opportunity.
 ### Experiment plan
 
 1. Create two Bluesky accounts (Skippy, Bluto)
-2. Test DM-based message passing between Hot Rod and Mac sessions
+2. Test DM-based message passing between My-Server and Mac sessions
 3. If viable: formalize as MEP v2 transport option alongside git
 4. If commercial: build the wrapper as a Do Nothing Company product
 
@@ -222,7 +222,7 @@ This is a NukaSoft / Do Nothing Company product opportunity.
 
 ### The Problem (v2)
 
-MEP v1 solved machine-to-machine context transfer within a single AI ecosystem (Claude on Hot Rod → Claude on Mac).  But operators don't use one LLM.  They use the best tool for the job:
+MEP v1 solved machine-to-machine context transfer within a single AI ecosystem (Claude on My-Server → Claude on Mac).  But operators don't use one LLM.  They use the best tool for the job:
 
 - **Grok** — real-time X/Twitter integration, conversational brainstorming, architecture exploration
 - **ChatGPT** — research, document analysis, specific model strengths
@@ -306,7 +306,7 @@ Grok (brainstorm)
 Claude on Mac (cowork)     ← Cross-Ecosystem Transfer (Component 7)
   │ seed prompt + repo context
   ▼
-Claude on Hot Rod (code)   ← Machine-to-Machine Transfer (Components 1-4)
+Claude on My-Server (code)   ← Machine-to-Machine Transfer (Components 1-4)
   │ git push
   ▼
 Claude on Mac (next day)   ← Machine-to-Machine Transfer (Components 1-4)
@@ -610,7 +610,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 ## Context (Updated Periodically)
 
 ### Who Pierre Is
-- Field Service Consulting Global Director at Alithya (Jan 2025-Present)
+- Field Service Consulting Global Director at [Employer] (Jan 2025-Present)
 - Previously Microsoft Global Black Belt (D365 Field Service) 2015-2024
 - Based in Michigan
 - Building NukaSoft.AI — AI operations hub
@@ -631,7 +631,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 ### The Crew
 | Agent | Role | Home Platform |
 |-------|------|---------------|
-| Skippy | Chief of operations, code execution | Claude (Hot Rod) |
+| Skippy | Chief of operations, code execution | Claude (My-Server) |
 | Rita | Brand ambassador, content creator | Claude |
 | Ripley | Daily quality auditor | Claude |
 | Bishop | Network health, infrastructure | Claude |
@@ -659,13 +659,13 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 
 <!-- Entries below follow MEP handoff schema: newest first, tag-in/tag-out -->
 
-## 2026-04-13 — Skippy | Claude (Hot Rod) | code
+## 2026-04-13 — Skippy | Claude (My-Server) | code
 **Tag-in:** 10:00 ET | **Tag-out:** [active]
 
 ### What happened
 - Built Skool Content Engine skill (multi-community: Faith in AI + Service Ops)
 - MEP expanded to v2.1 (cross-ecosystem transfer, seed prompts, outbound baton)
-- DNS/TLS fixed for dashboard.nukasoft.ai (Let's Encrypt, green lock)
+- DNS/TLS fixed for dashboard.example.ai (Let's Encrypt, green lock)
 - 9 systemd timers deployed (captain's log, ripley audit, nightly content, etc.)
 - Timer dashboard built at /timers.html
 
@@ -749,15 +749,15 @@ Before landing on the nginx approach, we smoke-tested with Google Docs as a shar
 | Google Docs | Yes | Yes — Google's servers | Share link | Google manages | Smoke tested, rejected |
 | S3 / CloudFront | Yes | Yes — AWS | IAM + keys | AWS manages | Not tested |
 | GitHub raw (public repo) | Yes | Yes — GitHub | None | GitHub manages | Not viable (private data) |
-| **Nginx on Hot Rod** | **Yes** | **No — stays on infra** | **GUID URL** | **We control** | **Selected** |
+| **Nginx on My-Server** | **Yes** | **No — stays on infra** | **GUID URL** | **We control** | **Selected** |
 
 **The architectural advantage:** The file never leaves our infrastructure.  This creates a protocol-level security boundary:
 
-1. **Encryption at rest** — The file is on Hot Rod's disk.  We can encrypt the volume, the directory, or the file itself.  No third party involved.
+1. **Encryption at rest** — The file is on My-Server's disk.  We can encrypt the volume, the directory, or the file itself.  No third party involved.
 2. **Encryption in transit** — TLS via Let's Encrypt certs we already manage.  No external trust chain beyond the CA.
 3. **Access control** — Nginx gives us layered options: GUID obscurity (current), HTTP Basic Auth, IP allowlisting, VPN gating, client certificates.  Stack as needed.
 4. **Audit trail** — Nginx access logs show exactly who read the file and when.  Git log shows exactly who wrote it and when.
-5. **Firewall integration** — Hot Rod sits behind a firewall.  The dashboard already requires VPN for internal routes.  Standup endpoints can be gated the same way if needed.
+5. **Firewall integration** — My-Server sits behind a firewall.  The dashboard already requires VPN for internal routes.  Standup endpoints can be gated the same way if needed.
 6. **Offline capability** — Because the file is served from the same React dashboard infrastructure, it inherits the same PWA / offline patterns when those ship.
 
 This aligns with the broader NukaSoft security posture: PDFs encrypted at rest, dashboard behind firewall + VPN, all sensitive data on owned infrastructure.  The standup is just another resource in that model — not a special case that lives on someone else's cloud.
@@ -799,11 +799,24 @@ The loop is nearly closed.  Claude commits → file is instantly live → peer a
 **The last meat puppet step:** Pierre pastes a Grok/ChatGPT conversation URL into a Claude session so Claude can ingest the peer agent's work.
 
 **v3 target:** Eliminate this step.  Options under consideration:
-1. **Webhook receiver** — A simple HTTP POST endpoint on Hot Rod that accepts standup entries from peer agents.  Grok or ChatGPT outputs a curl command; Pierre runs it (or it auto-runs).
+1. **Webhook receiver** — A simple HTTP POST endpoint on My-Server that accepts standup entries from peer agents.  Grok or ChatGPT outputs a curl command; Pierre runs it (or it auto-runs).
 2. **Polling** — Claude periodically checks known conversation URLs for updates.
 3. **Email relay** — Peer agents email standup entries to skippy@nukasoft.ai; Claude's inbox pipeline ingests them automatically.
 
 Option 3 is the most likely path — the inbox pipeline already exists and every agent can "send an email."
+
+---
+
+## Sibling Spec: MEEP-ReadOnly-v1
+
+**Added:** April 29, 2026
+**Spec:** [`meep-readonly-v1.md`](meep-readonly-v1.md)
+
+A read-only context surface for **external peer agents** that do not share the repo, do not run EOL, and may go a week or more between reads (Hastings/Leo on Grok is the first instance).  Small, public-but-unlinked Markdown page at a canonical URL.  Unidirectional, agent-scoped, pull-on-demand.
+
+Distinct from the Standing Standup (Component 9): the standup is project-scoped and bidirectional; MEEP-ReadOnly-v1 is agent-scoped and unidirectional.  Contributions from the consuming agent flow back through the existing conversation-URL mechanism (Component 7).
+
+First instance: `https://nukasoft.ai/leo` (Hastings).  See the sibling spec for required sections, token budget, update model, pruning semantics, and security defaults.
 
 ---
 

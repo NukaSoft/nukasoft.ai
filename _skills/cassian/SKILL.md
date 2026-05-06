@@ -27,7 +27,6 @@ When invoked as `/cassian`, parse arguments for these commands:
 | `trends` | `/cassian trends [--topic TOPIC]` | Analyze content for emerging themes |
 | `search` | `/cassian search QUERY [--source S] [--tag T]` | Search manifest by keyword/tag/source/date |
 | `config` | `/cassian config [sources\|profiles\|settings]` | View or edit configuration files on NAS |
-| `deploy` | `/cassian deploy` | Deploy engine code from local project to NAS |
 | `relay` | `/cassian relay [start\|stop]` | Start/stop the local URL queue relay server |
 | `help` | `/cassian help` | Show available commands and current status |
 
@@ -37,33 +36,52 @@ If no command is given, show the help table and current status summary.
 
 ## Environment
 
+### Host
+- **Machine**: My-Server (Ubuntu 24.04 LTS)
+- **Engine source**: `~/Dev/skippy-brain/engine/` (canonical — run from here)
+- **Engine venv**: `~/Dev/skippy-brain/engine/.venv/`
+
 ### NAS Details (shared with Codsworth)
 - **Hostname**: my-nas
-- **IP**: 192.168.1.100
+- **IP**: 192.168.1.129
 - **DSM Port**: 5000 (HTTP)
-- **SkippyKB Share**: `\\my-nas\SkippyKB`
-- **Drive Letter**: S:
-- **Credential Target**: `NAS-Credential` (Windows Credential Manager)
-- **Volume**: Volume 1 (Btrfs)
+- **Share**: `SkippyKB` (Btrfs Volume 1)
+- **Linux mount**: `/mnt/nas` (NFS, configured in `/etc/fstab` or mounted via `mount.nfs`)
+- **Credential storage**: libsecret (`secret-tool`) under collection `default`, label `synology-nas`
 
-### Project Paths
-- **Brain repo**: `\\my-nas\SkippyKB\`
-- **Engine code**: `\\my-nas\SkippyKB\engine\`
-- **NAS engine (deployed)**: `S:\engine\`
-- **NAS config**: `S:\config\`
-- **NAS manifest**: `S:\manifest.db`
-- **NAS logs**: `S:\logs\`
-- **NAS queue**: `S:\queue\`
-- **NAS briefings**: `S:\briefings\`
+### NAS Paths (Linux NFS)
+| Purpose | Path |
+|---------|------|
+| Config | `/mnt/nas/config/` |
+| Manifest DB | `/mnt/nas/manifest.db` |
+| Logs | `/mnt/nas/logs/` |
+| Queue | `/mnt/nas/queue/` |
+| Briefings | `/mnt/nas/briefings/` |
+| Scraped sources | `/mnt/nas/sources/` |
+
+### Path Resolution (cross-platform aware)
+
+The engine resolves the NAS base via `engine.config.resolve_nas_base()` in priority order:
+
+1. `$SKIPPYKB_PATH` env var (explicit override)
+2. `/mnt/nas` (Linux NFS — My-Server default)
+3. `S:/` (Windows mapped drive — legacy)
+4. `\\my-nas\SkippyKB` (UNC fallback — legacy)
+
+If you need to point at a non-standard mount, set `SKIPPYKB_PATH` before invoking.
 
 ### Python Execution
-Always run Python through the virtual environment:
+
+Always run through the engine venv from the repo:
+
 ```bash
-cd "//my-nas/KnowledgeBase"
+cd ~/Dev/skippy-brain
+source engine/.venv/bin/activate
 python -m engine [command]
 ```
 
 ### Source Types
+
 | Source | Type Key | Auth | Schedule | Content |
 |--------|----------|------|----------|---------|
 | TSIA Portal | `tsia` | Auth0 SSO (manual login) | Weekly | Research reports, DataViews, frameworks |
@@ -80,15 +98,32 @@ python -m engine [command]
 
 **Step 1: Check NAS connectivity**
 
-Check if S: drive is mapped:
 ```bash
-ls /s/config/settings.yaml 2>/dev/null
+# Is the NAS mounted?
+mountpoint -q /mnt/nas && echo "mounted" || echo "NOT mounted"
+
+# Can we read the config?
+ls /mnt/nas/config/settings.yaml 2>/dev/null
 ```
 
-If not available, map it. Write this to a temp .ps1 file and execute:
-```powershell
-# Use the CredStore pattern from Codsworth to read credentials
-# Then: New-SmbMapping -LocalPath 'S:' -RemotePath '\\my-nas\SkippyKB' -UserName $user -Password $pass -Persistent $true
+If the NAS is not mounted, attempt to mount it:
+
+```bash
+sudo mount /mnt/nas
+```
+
+If `/etc/fstab` doesn't have an entry yet, mount manually with credentials from libsecret:
+
+```bash
+SYNO_USER=$(secret-tool lookup label synology-nas attribute user)
+SYNO_PASS=$(secret-tool lookup label synology-nas attribute pass)
+
+# NFS (preferred — no auth headache):
+sudo mount -t nfs 192.168.1.129:/volume1/SkippyKB /mnt/nas
+
+# CIFS/SMB fallback (if NFS export not configured on the NAS):
+sudo mount -t cifs //my-nas/KnowledgeBase /mnt/nas \
+    -o "username=$SYNO_USER,password=$SYNO_PASS,uid=$(id -u),gid=$(id -g),iocharset=utf8"
 ```
 
 If NAS is completely unreachable, suggest: *"NAS appears to be offline. Try `/codsworth status` to diagnose."*
@@ -98,11 +133,12 @@ If NAS is completely unreachable, suggest: *"NAS appears to be offline. Try `/co
 1. Verify NAS connectivity (Step 1 above)
 2. Activate venv and run the engine:
    ```bash
-   cd "//my-nas/KnowledgeBase"
+   cd ~/Dev/skippy-brain
+   source engine/.venv/bin/activate
    python -m engine run [--source SOURCE] [--dry-run]
    ```
-3. For TSIA and LinkedIn: The browser will open and the user needs to log in manually (~30 seconds), then the scraper takes over automatically
-4. Parse console output and the latest log file from `S:\logs\`
+3. For TSIA and LinkedIn: a Chromium browser opens and the user logs in manually (~30 seconds), then the scraper takes over automatically.
+4. Parse console output and the latest log file from `/mnt/nas/logs/`.
 5. Present a formatted summary:
    ```
    Harvest Complete:
@@ -115,24 +151,27 @@ If NAS is completely unreachable, suggest: *"NAS appears to be offline. Try `/co
 ### `/cassian queue add` — Queue a URL
 
 ```bash
-cd "//my-nas/KnowledgeBase"
+cd ~/Dev/skippy-brain
+source engine/.venv/bin/activate
 python -m engine queue add "URL" --title "Title" --tags "tag1,tag2"
 ```
 
 ### `/cassian status` — System Status
 
 ```bash
-cd "//my-nas/KnowledgeBase"
+cd ~/Dev/skippy-brain
+source engine/.venv/bin/activate
 python -m engine status
 ```
 
 Present as a formatted status card:
+
 ```
 Skippy KB Status:
-  NAS: Connected via S: (\\my-nas\SkippyKB)
+  NAS: mounted at /mnt/nas (192.168.1.129:/volume1/SkippyKB)
   Content: 245 items (TSIA: 120, Microsoft: 80, MVP: 30, LinkedIn: 10, Ad-hoc: 5)
   Queue: 3 pending URLs
-  Last Run: 2026-02-23 14:30 UTC (tsia - 12 new)
+  Last Run: 2026-04-22 14:30 UTC (tsia - 12 new)
 ```
 
 ### `/cassian briefing` — Weekly Briefing
@@ -141,16 +180,16 @@ This leverages YOUR (Claude's) native summarization capabilities:
 
 1. Query the manifest for content scraped in the target week:
    ```bash
-   python -m engine search "" --since "2026-02-17"
+   python -m engine search "" --since "2026-04-22"
    ```
-2. Read the Markdown files for the top 20 most recent items from the NAS
+2. Read the Markdown files for the top 20 most recent items from `/mnt/nas/sources/`.
 3. Synthesize a briefing covering:
    - Key themes and topics across all sources
    - Notable new research or data points
    - Emerging trends compared to previous weeks
    - Actionable insights for the user
-4. Save the briefing to `S:\briefings\YYYY-MM-DD-weekly.md`
-5. Present it to the user in a clean format
+4. Save the briefing to `/mnt/nas/briefings/YYYY-MM-DD-weekly.md`.
+5. Present it to the user in a clean format.
 
 ### `/cassian trends` — Trend Analysis
 
@@ -161,20 +200,11 @@ This leverages YOUR (Claude's) native summarization capabilities:
    - **Cross-source patterns**: When TSIA, Microsoft, and MVPs all discuss the same thing
 3. Present findings ranked by strength/confidence
 
-### `/cassian deploy` — Deploy Engine to NAS
-
-Write a deployment .ps1 script and run it:
-```powershell
-$source = "\\my-nas\SkippyKB\engine"
-$dest = "S:\engine"
-robocopy $source $dest /MIR /XD __pycache__ .venv /XF *.pyc *.db
-Copy-Item "\\my-nas\SkippyKB\requirements.txt" "S:\engine\requirements.txt" -Force
-```
-
 ### `/cassian relay start` — Start Extension Relay
 
 ```bash
-cd "//my-nas/KnowledgeBase"
+cd ~/Dev/skippy-brain
+source engine/.venv/bin/activate
 python -m engine.relay_server &
 ```
 
@@ -182,58 +212,27 @@ The relay listens on `http://localhost:8766` for the Chrome extension.
 
 ---
 
-## PowerShell Safety Rule
-
-**CRITICAL**: Always write PowerShell to a `.ps1` file, then execute it. NEVER run PowerShell inline from Git Bash — the `$_` and other dollar-sign variables get mangled by bash.
-
-```bash
-# CORRECT — always do this
-powershell -ExecutionPolicy Bypass -File "script.ps1"
-
-# WRONG — will break in Git Bash
-powershell -Command "Get-SmbMapping | Where { $_.LocalPath -eq 'S:' }"
-```
-
----
-
 ## Credential Management
 
-Use the same CredStore pattern as Codsworth. Credentials are stored in Windows Credential Manager under target `NAS-Credential`.
+NAS credentials live in libsecret (the same store every other Linux app uses for keychain). Codsworth owns the storage pattern — read its SKILL for create/update flows.
 
-Reading credentials (write this to a .ps1 file):
-```powershell
-Add-Type -TypeDefinition @"
-using System;
-using System.Runtime.InteropServices;
-public class CredStore {
-    [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-    public static extern bool CredRead(string target, int type, int reservedFlag, out IntPtr credentialPtr);
-    [DllImport("advapi32.dll", SetLastError = true)]
-    public static extern bool CredFree(IntPtr cred);
-    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-    public struct CREDENTIAL {
-        public int Flags; public int Type; public string TargetName; public string Comment;
-        public long LastWritten; public int CredentialBlobSize; public IntPtr CredentialBlob;
-        public int Persist; public int AttributeCount; public IntPtr Attributes;
-        public string TargetAlias; public string UserName;
-    }
-    public static string[] Read(string target) {
-        IntPtr credPtr;
-        if (CredRead(target, 1, 0, out credPtr)) {
-            CREDENTIAL cred = (CREDENTIAL)Marshal.PtrToStructure(credPtr, typeof(CREDENTIAL));
-            byte[] passwordBytes = new byte[cred.CredentialBlobSize];
-            Marshal.Copy(cred.CredentialBlob, passwordBytes, 0, cred.CredentialBlobSize);
-            string password = System.Text.Encoding.Unicode.GetString(passwordBytes);
-            CredFree(credPtr);
-            return @($cred.UserName, $password)
-        }
-        return $null
-    }
-}
-"@
-$creds = [CredStore]::Read("NAS-Credential")
-# $creds[0] = username, $creds[1] = password
+### Read credentials
+
+```bash
+SYNO_USER=$(secret-tool lookup label synology-nas attribute user)
+SYNO_PASS=$(secret-tool lookup label synology-nas attribute pass)
 ```
+
+### Store credentials (one-time setup)
+
+```bash
+secret-tool store --label='synology-nas' attribute user
+# enter username when prompted
+secret-tool store --label='synology-nas' attribute pass
+# enter password when prompted
+```
+
+NEVER hardcode credentials in scripts. NEVER write them to disk. Always read from libsecret at call time.
 
 ---
 
@@ -274,7 +273,7 @@ Clean extracted Markdown content...
 ## NAS Directory Structure
 
 ```
-S:\ (\\my-nas\SkippyKB)
+/mnt/nas/   (Synology share: 192.168.1.129:/volume1/SkippyKB)
 ├── config/
 │   ├── sources.yaml        # Source connector definitions
 │   ├── profiles.yaml       # LinkedIn profiles + MVP blogs to track
@@ -292,12 +291,10 @@ S:\ (\\my-nas\SkippyKB)
 │   └── failed/             # Failed with error
 ├── briefings/              # Generated weekly briefings
 ├── logs/                   # Scrape run logs
-├── skills/                 # Network-accessible Claude skills
-│   ├── codsworth/SKILL.md
-│   └── cassian/SKILL.md
-├── engine/                 # Deployed Python scraper code
 └── manifest.db             # SQLite content index
 ```
+
+The engine source itself stays in the repo at `~/Dev/skippy-brain/engine/` — there's no longer a "deploy to NAS" step. The NAS is the data store; the code is local.
 
 ---
 
@@ -307,9 +304,4 @@ S:\ (\\my-nas\SkippyKB)
 - When presenting harvested content, organize by theme not by source
 - Keep briefings concise — bullet points and key takeaways, not full summaries
 - If a scrape fails, diagnose the issue before suggesting a fix
-- Track what the user finds most valuable and prioritize those sources
-- When spotting trends, quantify them: "3 of 5 TSIA reports this month mention AI-driven CS"
-
----
-
-*"I've been in this fight since I was six years old." — Cassian Andor*
+- If the NAS isn't mounted, mount it first (don't fall back to a partial run)
