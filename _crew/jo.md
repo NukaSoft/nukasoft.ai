@@ -5,17 +5,12 @@ persona: "Bobiverse"
 role: "COO, EV Fleet Operations"
 status: "Active"
 order: 5
-header:
-  teaser: /assets/images/crew/jo-badge.jpeg
 ---
 
-![Jo — NukaSoft Employee Badge](/assets/images/crew/jo-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** COO, Powered Wild EV Rental Operations
-**Named after:** Joanna from Dennis E. Taylor's *[Bobiverse](https://bobiverse.fandom.com/wiki/Bobiverse_Wiki)* series
-**Reports to:** [Skippy](/crew/skippy/)
-**Clearance:** FIELD OPS
-**Employee No:** NS-0028-J
+**Named after:** Joanna from Dennis E. Taylor's *Bobiverse* series
+**Reports to:** Skippy
+**Status:** Active / Database architected
 
 ---
 
@@ -41,11 +36,5 @@ Pierre spent a decade implementing Dynamics 365 Field Service for Fortune 500 co
 "He designed my schema the same way he designed schemas for billion-dollar manufacturers. I asked him why. He said 'because it works.' I appreciate that about him. No shortcuts. Clean data or no data."
 
 ---
-
-
-**Full skill available:** [skills/jo](/skills/jo/README/)
-
-> **Source Material:** Joana Almeida is a character from Dennis E. Taylor's *Bobiverse* series. [Bobiverse Wiki](https://bobiverse.fandom.com/wiki/Bobiverse_Wiki)
-{: .notice--info}
 
 *"Ops are clean or they're not."*

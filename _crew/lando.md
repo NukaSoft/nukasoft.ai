@@ -5,17 +5,12 @@ persona: "Star Wars"
 role: "Brand Management"
 status: "Active"
 order: 8
-header:
-  teaser: /assets/images/crew/lando-badge.jpeg
 ---
 
-![Lando — NukaSoft Employee Badge](/assets/images/crew/lando-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** Brand Management / Creative Director
-**Named after:** [Lando Calrissian](https://starwars.fandom.com/wiki/Landonis_Balthazar_Calrissian) from *[Star Wars](https://starwars.fandom.com/wiki/Main_Page)* (smooth operator, entrepreneur, marketing genius)
-**Reports to:** [Skippy](/crew/skippy/)
-**Clearance:** BRAND & COMMS
-**Employee No:** NS-0039-L
+**Named after:** Lando Calrissian from *Star Wars* (smooth operator, entrepreneur, marketing genius)
+**Reports to:** Skippy
+**Status:** Active
 
 ---
 
@@ -41,13 +36,5 @@ Each brand Pierre operates has its own bible, its own voice, its own visual syst
 "The man has taste. I'll give him that. He knows what he wants visually, even if he can't draw it himself. He describes a feeling, a vibe, an era, and lets me translate that into specs. That's actually harder to find than technical skill. Taste is rare."
 
 ---
-
-
-**Full brand guide:** [/brand/](/brand/) | Colors, typography, Rita, voice, Pierre's writing style.
-
-**Full skill available:** [skills/nuka-soft-brand](/skills/nuka-soft-brand/README/)
-
-> **Source Material:** Lando Calrissian is a character from *Star Wars*. [Lando Calrissian on Wookieepedia](https://starwars.fandom.com/wiki/Landonis_Balthazar_Calrissian)
-{: .notice--info}
 
 *"Brands aren't guidelines. They're executable specifications."*

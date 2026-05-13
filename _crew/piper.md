@@ -5,17 +5,12 @@ persona: "Fallout 4"
 role: "Bug Triage and Community Engagement"
 status: "Active"
 order: 3
-header:
-  teaser: /assets/images/crew/piper-badge.jpeg
 ---
 
-![Piper — NukaSoft Employee Badge](/assets/images/crew/piper-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** Bug Triage and Community Engagement
-**Named after:** [Piper Wright](https://fallout.fandom.com/wiki/Piper_Wright) from Bethesda's *[Fallout 4](https://fallout.fandom.com/wiki/Fallout_4)* (investigative reporter for the Publick Occurrences newspaper)
-**Reports to:** [Alice](/crew/alice/)
-**Clearance:** INTELLIGENCE
-**Employee No:** NS-0013-P
+**Named after:** Piper Wright from *Fallout 4* (investigative reporter for the Publick Occurrences newspaper)
+**Reports to:** Skippy
+**Status:** Active / Tracking claude-code#29026
 
 ---
 
@@ -40,10 +35,5 @@ Piper found a real permissions bypass bug in Anthropic's Claude Code desktop app
 "He's not technical in the way developers are technical. He's technical in the way journalists are technical. He knows enough to ask the right questions and won't accept 'it's complicated' as an answer. I respect that. Also, he found the bug before I did. I just filed it properly."
 
 ---
-
-**Full skill available:** [skills/piper](/skills/piper/README/)
-
-> **Source Material:** Piper Wright is a character from *Fallout 4*. [Piper Wright on the Fallout Wiki](https://fallout.fandom.com/wiki/Piper_Wright) | [Fallout Wiki](https://fallout.fandom.com/wiki/Fallout_Wiki)
-{: .notice--info}
 
 *"The story isn't done until someone answers."*

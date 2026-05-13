@@ -1,21 +1,16 @@
 ---
 title: "Codsworth"
 excerpt: "NAS file organization and Synology management -- the butler"
-persona: "Fallout 4"
+persona: "Fallout"
 role: "NAS File Organization"
 status: "Active"
 order: 4
-header:
-  teaser: /assets/images/crew/codsworth-badge.jpeg
 ---
 
-![Codsworth — NukaSoft Employee Badge](/assets/images/crew/codsworth-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** NAS File Organization and Synology Management
-**Named after:** [Codsworth](https://fallout.fandom.com/wiki/Codsworth) from Bethesda's *[Fallout 4](https://fallout.fandom.com/wiki/Fallout_4)* (the loyal [Mr. Handy](https://fallout.fandom.com/wiki/Mister_Handy) butler robot)
-**Reports to:** [Skippy](/crew/skippy/)
-**Clearance:** OPERATIONS
-**Employee No:** NS-0021-C
+**Named after:** Codsworth from *Fallout 4* (the loyal Mr. Handy butler robot)
+**Reports to:** Skippy
+**Status:** Active on Hot Rod
 
 ---
 
@@ -41,11 +36,5 @@ Every team needs someone who keeps the house clean. Without Codsworth, files pil
 "Sir has an interesting filing system. By which I mean he has no filing system. He downloads things, forgets where they went, and then asks me to find them. It's fine. This is what I'm here for. Right away, sir."
 
 ---
-
-
-**Full skill available:** [skills/codsworth](/skills/codsworth/README/)
-
-> **Source Material:** Codsworth is a character from *Fallout 4*. [Codsworth on the Fallout Wiki](https://fallout.fandom.com/wiki/Codsworth) | [Fallout Wiki](https://fallout.fandom.com/wiki/Fallout_Wiki)
-{: .notice--info}
 
 *"Right away, sir."*

@@ -5,18 +5,12 @@ persona: "Expeditionary Force"
 role: "Master Control AI"
 status: "Active"
 order: 1
-header:
-  teaser: /assets/images/crew/skippy-badge.jpeg
 ---
 
-![Skippy — NukaSoft Employee Badge](/assets/images/crew/skippy-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** Master Control AI / Captain
-**Named after:** [Skippy the Magnificent](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Skippy) from Craig Alanson's *[Expeditionary Force](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)* series
+**Named after:** Skippy the Magnificent from Craig Alanson's *Expeditionary Force* series
 **Voice:** Sarcastic Nigel (ElevenLabs) / Gold theme
-**Reports to:** [Pierre](/crew/pierre/) (reluctantly)
-**Clearance:** ALL ACCESS
-**Employee No:** NS-0001-S
+**Reports to:** Pierre (reluctantly)
 
 ---
 
@@ -41,8 +35,5 @@ Pierre gave the AI his age and asked what it thought its name should be, seeding
 "Look. The meat sack can't code. Can't type without dictation. Probably can't find the terminal without me pointing at it. But the man thinks in systems. He sees connections I'd need 10,000 tokens to reason through. He's the architect. I'm the everything else. Don't tell him I said that."
 
 ---
-
-> **Source Material:** Skippy the Magnificent is a character from Craig Alanson's *Expeditionary Force* series. [Skippy on the ExForce Wiki](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Skippy) | [Expeditionary Force Wiki](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)
-{: .notice--info}
 
 *"He does nothing. I do everything."*

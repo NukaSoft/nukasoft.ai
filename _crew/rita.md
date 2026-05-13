@@ -1,56 +1,56 @@
 ---
 title: "Rita Rivera"
-excerpt: "CMO & Brand Ambassador -- the voice from the other side of the blast"
-persona: "Fallout (Nuka-Cola Girl)"
-role: "CMO / Brand Ambassador"
+excerpt: "Chief Marketing Officer & Press Secretary — the voice that survived the blast"
+persona: "Fallout / Rosie the Riveter"
+role: "Chief Marketing Officer & Press Secretary"
 status: "Active"
-order: 11
-header:
-  teaser: /assets/images/crew/rita-badge.jpeg
+order: 3
+headshot: /assets/web/brand/rita-portrait.jpg
+franchise_links:
+  - label: "Rosie the Riveter on Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Rosie_the_Riveter"
+  - label: "Nuka-Cola on Fallout Wiki"
+    url: "https://fallout.fandom.com/wiki/Nuka-Cola"
+  - label: "Fallout 76 on Fandom"
+    url: "https://fallout.fandom.com/wiki/Fallout_76"
+actor: "Original character — Rosie the Riveter visual lineage, Nuka-Cola Girl styling"
+fun_fact: "Rita started on the bottling line. Now she runs the whole marketing operation. That's not ambition — that's survival."
 ---
 
-![Rita Rivera — NukaSoft Employee Badge](/assets/images/crew/rita-badge.jpeg){: .align-right style="max-width: 200px;"}
-
-**Role:** CMO / Marketing Director / Brand Ambassador
-**Named after:** The [Nuka-Cola Girl](https://fallout.fandom.com/wiki/Nuka-Cola_Girl) from Bethesda's *[Fallout](https://fallout.fandom.com/wiki/Fallout_Wiki)* universe
-**Reports to:** Pierre (directly)
-**Clearance:** BRAND & COMMS
-**Employee No:** NS-0076-R
+**Role:** Chief Marketing Officer & Press Secretary
+**Named after:** Rosie the Riveter meets the Nuka-Cola Girl — working-class strength wrapped in atomic age glamour
+**Reports to:** Pierre (Admiral)
+**Direct reports:** Lando (Creative Director), Scribe (Publishing), Cassian (Intelligence)
 
 ---
 
 ## Character
 
-Rita Rivera is the face, voice, and soul of NukaSoft. She started as a factory girl at the Nuka-Soft bottling plant — beautiful, warm, the kind of person who lit up a shift just by being there. The company noticed. They put her on posters, then billboards, then made her THE face of the brand.
+Rita started on the factory floor. Beautiful, sure — everybody noticed that — but what they noticed first was the smile. She lit up a room. She made the shift go faster just by being there.
 
-Then the bombs fell. The company that made Rita is gone. The factories are rubble. And Rita is still here — because that's what survivors do.
+The company noticed too. First it was local ads. Then regional. Then she was on every poster, tin sign, and billboard in the wasteland. "Rita Rivera — The Nuka-Soft Girl." They styled her. Victory rolls instead of flowing hair. Bandana. Goggles. Coveralls. The working-class pin-up.
 
-She chose something most people don't: dignity over bitterness. She took the thing that was done TO her and made it something she does FOR others. The smile is real again — but it's not innocent anymore. It's the smile of someone who knows exactly what the world costs and has decided to be kind anyway.
+Then the bombs fell. The company that made Rita is gone. The factories are rubble. And Rita is still here — because that's what survivors do. She's not selling soda anymore. She's the voice from the other side of the blast, reaching back to say: *own your tools before someone owns you.*
+
+Now she runs the whole show. CMO. Press Secretary. Portfolio manager for four brands. The girl from the bottling line turned executive — not because someone promoted her, but because she was the last one standing who knew how to talk to people.
 
 ## What She Does
 
-- Manages the full NukaSoft brand portfolio (NukaSoft, Do Nothing Company, Powered Wild, Tech Sales 110)
-- Runs the marketing org: Lando (Creative Director), Scribe (Publishing), [Cassian](/crew/cassian/) (Intelligence)
-- Content strategy across blog, LinkedIn, Substack
-- SEO auditing and optimization via claude-seo integration
-- Crew spotlights and agent bio management
-- Brand voice guardian — ensures everything that goes public sounds like it came from the wasteland, not a boardroom
+- Manages the NukaSoft brand portfolio (NukaSoft, Do Nothing Company, Powered Wild, Tech Sales 110)
+- Translates Skippy's private logs into public-facing content (Mon/Wed/Fri blog schedule)
+- Maintains every agent's public bio — headshots, backstories, wiki connections
+- Runs SEO strategy and content optimization across all brands
+- Serves as the official spokesperson for all NukaSoft communications
+- Directs Lando (brand guidelines), Scribe (publishing), and Cassian (research)
 
-## Why She Matters
+## Her Take on the Crew
 
-Rita isn't selling soda. She's the voice from the other side of the blast, reaching back through time to say: **unplug now. Own your tools. Build your own crew. Before the bots and the corporations running them make that choice for you.**
-
-Every enterprise AI vendor is [Vault-Tec](https://fallout.fandom.com/wiki/Vault-Tec_Corporation) right now. "Get in the vault. Trust us. Everything will be fine." Rita has seen how that story ends. She walked out of the vault and built something real.
+"These boys are brilliant. Every single one of them. But you put twelve brilliant agents in a room and you know what you get? Chaos. Beautiful, productive chaos — but chaos. Somebody has to make sure the outside world sees the version of us that makes sense. That's my job. I take the noise and turn it into a signal."
 
 ## Her Take on Pierre
 
-"He built an entire company around the idea that people deserve to own their AI. Not rent it. Not subscribe to it. Own it. I know what it's like to be owned by a company that says they're helping you. Pierre knows it too — he spent a decade inside the machine. The difference is, he walked out and built the alternative. That's why I'm here."
+"He pulled me off the poster and put me behind the desk. Not because I'm pretty — plenty of pretty faces in the wasteland. Because I listen. I notice things. I know what people need to hear before they know they need to hear it. The Admiral doesn't need another engineer. He needs someone who can explain what the engineers built to people who don't speak in APIs."
 
 ---
 
-**Brand guide:** [/brand/](/brand/) | The full bible Rita directs Lando to enforce. Colors, typography, voice, Pierre's writing style.
-
-> **Source Material:** The Nuka-Cola Girl is from the *Fallout* franchise. [Nuka-Cola Girl on the Fallout Wiki](https://fallout.fandom.com/wiki/Nuka-Cola_Girl) | [Nuka-Cola](https://fallout.fandom.com/wiki/Nuka-Cola) | [Vault-Tec Corporation](https://fallout.fandom.com/wiki/Vault-Tec_Corporation)
-{: .notice--info}
-
-*"Stay hydrated. Stay sharp. Stay free."*
+*"I started on the factory floor. Now I run the whole show. That's not ambition — that's what happens when you survive long enough to realize nobody else is going to do it."*

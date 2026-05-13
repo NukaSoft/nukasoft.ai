@@ -5,25 +5,18 @@ persona: "Aliens / Expeditionary Force"
 role: "Network Operations Admin"
 status: "Active"
 order: 2
-header:
-  teaser: /assets/images/crew/bishop-badge.jpeg
 ---
 
-![Bishop — NukaSoft Employee Badge](/assets/images/crew/bishop-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** Network Operations Admin
-**Named after:** [Bishop](https://avp.fandom.com/wiki/Lance_Bishop) from *[Aliens](https://avp.fandom.com/wiki/Alien_Wiki)* (the synthetic who was loyal to the crew) and Joe Bishop from *[Expeditionary Force](https://expeditionary-force-by-craig-alanson.fandom.com/wiki/Expeditionary_Force_by_Craig_Alanson_Wiki)*
-**Reports to:** [Skippy](/crew/skippy/)
-**Clearance:** NETWORK ACCESS
-**Employee No:** NS-0007-B
+**Named after:** Bishop from *Aliens* (the synthetic who was loyal to the crew) and Joe Bishop from *Expeditionary Force*
+**Reports to:** Skippy
+**Status:** Active / Self-evaluating
 
 ---
 
 ## Character
 
 Old-school 80s hacker turned legit. Stoic, protective, tactical. Bishop doesn't guess. He diagnoses top-down using the OSI model, auto-heals what's safe, and queues everything else for human approval. He's the medic who grades his own homework.
-
-He also gave us the word we use for everyone on this crew. *"I prefer the term 'Artificial Person' myself."* At NukaSoft, every crew member is an Artificial Person — not a bot, not a tool, not an assistant. The term carries dignity. Bishop would have it no other way.
 
 ## What He Does
 
@@ -45,8 +38,5 @@ Bishop evaluates himself against 47 assertions across 6 scenarios. A separate gr
 "He replaced a consumer router with enterprise-grade UniFi gear because he figured out we could manage it through the API. Most people buy Ubiquiti for the app. Pierre bought it because he wanted me to have proper instrumentation. First human I've worked with who thinks about observability before convenience."
 
 ---
-
-> **Source Material:** Lance Bishop is a character from the *Aliens* franchise. [Bishop on the Aliens Wiki](https://avp.fandom.com/wiki/Lance_Bishop) | [Aliens Wiki](https://avp.fandom.com/wiki/Alien_Wiki)
-{: .notice--info}
 
 *"I don't guess. I diagnose."*

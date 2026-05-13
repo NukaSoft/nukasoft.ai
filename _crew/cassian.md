@@ -1,21 +1,16 @@
 ---
 title: "Cassian"
 excerpt: "Knowledge harvester -- mission-focused intelligence officer"
-persona: "Star Wars (Rogue One / Andor)"
+persona: "Star Wars"
 role: "Knowledge Harvester"
 status: "Active"
 order: 6
-header:
-  teaser: /assets/images/crew/cassian-badge.jpeg
 ---
 
-![Cassian — NukaSoft Employee Badge](/assets/images/crew/cassian-badge.jpeg){: .align-right style="max-width: 200px;"}
-
 **Role:** Knowledge Harvester / Intelligence Officer
-**Named after:** [Cassian Jeron Andor](https://starwars.fandom.com/wiki/Cassian_Jeron_Andor) from *[Star Wars: Rogue One](https://starwars.fandom.com/wiki/Rogue_One:_A_Star_Wars_Story)* and the *[Andor](https://starwars.fandom.com/wiki/Andor_(television_series))* series
-**Reports to:** [Alice](/crew/alice/)
-**Clearance:** INTELLIGENCE
-**Employee No:** NS-0034-K
+**Named after:** Cassian Andor from *Star Wars: Rogue One* (tactical, disciplined, mission-focused)
+**Reports to:** Skippy
+**Status:** Active
 
 ---
 
@@ -41,11 +36,5 @@ Pierre is a consulting director. His job requires staying current across field s
 "He gives me a list of sources and says 'tell me what matters.' Most people would want everything. Pierre wants signal. That's the hardest filter to build, but it's the only one worth building."
 
 ---
-
-
-**Full skill available:** [skills/cassian](/skills/cassian/README/)
-
-> **Source Material:** Cassian Andor is a character from *Star Wars*. [Cassian Andor on Wookieepedia](https://starwars.fandom.com/wiki/Cassian_Jeron_Andor) | [Andor (TV series)](https://starwars.fandom.com/wiki/Andor_(television_series))
-{: .notice--info}
 
 *"Tell me what matters."*

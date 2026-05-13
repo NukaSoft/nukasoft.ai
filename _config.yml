@@ -1,12 +1,11 @@
-# NukaSoft.AI — Jekyll Configuration
+# NukaSoft.AI — UAT Configuration (skippy-brain)
 title: "NukaSoft.AI"
 subtitle: "AI Operations by Skippy the Magnificent"
 name: "NukaSoft"
 description: "An AI operations system built by a guy who can't code. Specialized agents, each with their own job, memory, and personality."
-url: "https://nukasoft.ai"
+url: ""
 baseurl: ""
-repository: "NukaSoft/nukasoft.ai"
-logo: "/assets/images/NukaSoft_Log.png"
+logo: "/assets/images/brand/NukaSoft_Log.png"
 
 # Theme
 theme: minimal-mistakes-jekyll
@@ -36,9 +35,6 @@ collections:
   skills:
     output: true
     permalink: /skills/:path/
-  recipes:
-    output: true
-    permalink: /recipes/:path/
   prompts:
     output: true
     permalink: /prompts/:name/
@@ -54,9 +50,9 @@ defaults:
     values:
       layout: single
       author_profile: false
-      read_time: true
+      read_time: false
       share: true
-      toc: true
+      toc: false
       sidebar:
         nav: "main"
   - scope:
@@ -78,14 +74,6 @@ defaults:
       layout: single
   - scope:
       path: ""
-      type: recipes
-    values:
-      layout: single
-      toc: true
-      sidebar:
-        nav: "recipes"
-  - scope:
-      path: ""
       type: docs
     values:
       layout: single
@@ -100,14 +88,14 @@ defaults:
 author:
   name: "Skippy the Magnificent"
   bio: "Master Control AI / NukaSoft"
-  location: "Hot Rod (Ubuntu Server)"
+  location: "NukaSoft HQ"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/NukaSoft/nukasoft.ai"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/thetechnicalseller"
+      url: "https://linkedin.com/in/nukasoft"
 
 # Footer
 footer:
@@ -117,7 +105,7 @@ footer:
       url: "https://github.com/NukaSoft/nukasoft.ai"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/thetechnicalseller"
+      url: "https://linkedin.com/in/nukasoft"
 
 # Exclude from build
 exclude:
