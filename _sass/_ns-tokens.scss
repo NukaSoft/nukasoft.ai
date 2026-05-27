@@ -1,8 +1,14 @@
 // ============================================================
-// NukaSoft.AI — Design tokens (ported from Claude Design bundle)
-// Scoped to :root — safe to import alongside Minimal Mistakes
+// NukaSoft.AI — Colors, Type, Spacing, Motion
+// Ported from Claude Design bundle (Stardate 2026.147 redesign)
+// Brand bible: https://nukasoft.ai/brand/
 // ============================================================
 
+// Google Fonts — Josefin Sans (body), IBM Plex Mono (code),
+// Caveat (Skippy's handwriting), Special Elite (typewriter)
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Caveat:wght@400;500;600;700&family=Special+Elite&display=swap');
+
+// Abril Fatface ships locally
 @font-face {
   font-family: 'Abril Fatface';
   font-style: normal;
@@ -12,26 +18,33 @@
 }
 
 :root {
-  // Core palette
-  --ns-nuka-red:        #C41E24;
-  --ns-cream:           #F5E6C8;
-  --ns-white:           #FFFFFF;
-  --ns-cola-brown:      #3D1C0B;
-  --ns-sky-blue:        #87CEEB;
-  --ns-denim-blue:      #5B7FA5;
-  --ns-bandana-red:     #C0392B;
-  --ns-brass:           #8B6914;
-  --ns-rad-yellow:      #F1C40F;
-  --ns-aged-paper:      #E8DCC8;
+  // ------------------------------------------------------------
+  // Core palette — from the brand bible
+  // ------------------------------------------------------------
+  --ns-nuka-red:        #C41E24;  // Primary. Backgrounds, labels, buttons.
+  --ns-cream:           #F5E6C8;  // Logo text, label elements, stars.
+  --ns-white:           #FFFFFF;  // Wordmark text, clean applications.
+  --ns-cola-brown:      #3D1C0B;  // Liquid, dimensional text outlines.
+  --ns-sky-blue:        #87CEEB;  // Poster backgrounds, coveralls (light).
+  --ns-denim-blue:      #5B7FA5;  // Rita's coveralls.
+  --ns-bandana-red:     #C0392B;  // Rita's headwear, accents.
+  --ns-brass:           #8B6914;  // Goggles, belt hardware, gloves.
+  --ns-rad-yellow:      #F1C40F;  // Hazard accent, used sparingly.
+  --ns-aged-paper:      #E8DCC8;  // Distressed poster backgrounds.
 
-  // Derived
+  // Manila — crew dossier folders
+  --ns-manila:          #E8D3A4;
+
+  // Derived tints + shades for UI surfaces
   --ns-red-deep:        #8A1319;
   --ns-red-bright:      #E43A41;
   --ns-cream-dark:      #E6D4A8;
   --ns-brown-ink:       #2A1308;
   --ns-paper-dark:      #CFBEA0;
 
-  // Semantic surfaces
+  // ------------------------------------------------------------
+  // Semantic surfaces — light (poster) theme is canonical
+  // ------------------------------------------------------------
   --ns-bg:              var(--ns-nuka-red);
   --ns-bg-alt:          var(--ns-aged-paper);
   --ns-surface:         var(--ns-cream);
@@ -48,11 +61,16 @@
   --ns-link:            var(--ns-nuka-red);
   --ns-link-on-red:     var(--ns-cream);
 
-  // Typography
+  // ------------------------------------------------------------
+  // Typography — five families
+  // ------------------------------------------------------------
   --ns-font-display:    'Abril Fatface', 'Playfair Display', Georgia, serif;
   --ns-font-body:       'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
   --ns-font-mono:       'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --ns-font-typewriter: 'Special Elite', 'IBM Plex Mono', monospace;
+  --ns-font-handwriting: 'Caveat', 'Bradley Hand', cursive;
 
+  // Type scale — vintage-advertising rhythm
   --ns-fs-hero:         clamp(3.5rem, 8vw, 7rem);
   --ns-fs-h1:           clamp(2.5rem, 5vw, 4.25rem);
   --ns-fs-h2:           clamp(1.875rem, 3.5vw, 2.75rem);
@@ -74,30 +92,47 @@
   --ns-tracking-mono:    0.02em;
   --ns-tracking-body:    0;
 
+  // ------------------------------------------------------------
   // Spacing
-  --ns-space-1:  4px;
-  --ns-space-2:  8px;
-  --ns-space-3:  12px;
-  --ns-space-4:  16px;
-  --ns-space-5:  24px;
-  --ns-space-6:  32px;
-  --ns-space-7:  48px;
-  --ns-space-8:  64px;
-  --ns-space-9:  96px;
+  // ------------------------------------------------------------
+  --ns-space-0:   0;
+  --ns-space-1:   4px;
+  --ns-space-2:   8px;
+  --ns-space-3:   12px;
+  --ns-space-4:   16px;
+  --ns-space-5:   24px;
+  --ns-space-6:   32px;
+  --ns-space-7:   48px;
+  --ns-space-8:   64px;
+  --ns-space-9:   96px;
+  --ns-space-10: 128px;
 
+  // ------------------------------------------------------------
   // Radii
-  --ns-radius-1:    2px;
-  --ns-radius-2:    4px;
-  --ns-radius-3:    8px;
+  // ------------------------------------------------------------
+  --ns-radius-0:   0;
+  --ns-radius-1:   2px;
+  --ns-radius-2:   4px;
+  --ns-radius-3:   8px;
   --ns-radius-4:   12px;
   --ns-radius-pill: 999px;
+  --ns-radius-circle: 50%;
 
+  // ------------------------------------------------------------
   // Shadows
+  // ------------------------------------------------------------
   --ns-shadow-letterpress:    2px 2px 0 var(--ns-cola-brown);
   --ns-shadow-letterpress-lg: 4px 4px 0 var(--ns-cola-brown);
   --ns-shadow-poster:         0 6px 18px rgba(61, 28, 11, 0.35);
   --ns-shadow-card:           0 1px 2px rgba(61, 28, 11, 0.1),
                               0 4px 12px rgba(61, 28, 11, 0.12);
+  --ns-shadow-lifted:         0 8px 28px rgba(61, 28, 11, 0.28);
+  --ns-shadow-inset:          inset 0 2px 4px rgba(61, 28, 11, 0.18);
+
+  // Borders
+  --ns-border-thin:   1px solid var(--ns-border);
+  --ns-border-med:    2px solid var(--ns-cola-brown);
+  --ns-border-heavy:  4px solid var(--ns-cola-brown);
 
   // Motion
   --ns-ease-out:    cubic-bezier(0.22, 0.61, 0.36, 1);

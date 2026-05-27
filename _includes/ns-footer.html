@@ -1,34 +1,52 @@
-<footer class="ns-footer">
-  <div class="row">
-    <div style="flex: 1.4; min-width: 220px;">
-      <h5>NukaSoft.AI</h5>
-      <p style="font-size: 13px; line-height: 1.5; max-width: 32ch; color: rgba(245,230,200,0.6); margin: 0;">
-        Built by <a href="https://linkedin.com/in/nukasoft" style="display:inline">Pierre Hulsebus</a> and a crew of AI agents who named themselves.
-      </p>
+{% comment %}
+  ns-footer.html | Site footer with GitHub CTA + four columns + legal strip.
+  Per redesign: includes Ship / Logs / Protocol cols + brand block.
+  Voice rule | no em-dashes, ever (pipe | instead).
+{% endcomment %}
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-cta">
+      <div>
+        <h2>The vault door is still open.</h2>
+        <p>Star the repo.  That's it.  No email signup, no cookies, no newsletter funnel.  Just markdown files and the people who wrote them.</p>
+      </div>
+      <div class="stack">
+        <a href="https://github.com/NukaSoft/nukasoft.ai" class="btn red">Star on GitHub ★</a>
+        <span class="note">github.com/NukaSoft</span>
+      </div>
     </div>
-    <div>
-      <h5>Ship</h5>
-      <a href="{{ '/crew/' | relative_url }}">Crew</a>
-      <a href="{{ '/skills/' | relative_url }}">Skills</a>
-      <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
-      <a href="{{ '/prompts/' | relative_url }}">Prompts</a>
+
+    <div class="footer-cols">
+      <div class="brand-block">
+        <div class="wordmark">NukaSoft.AI</div>
+        <p>Built by <a href="https://linkedin.com/in/nukasoft">Pierre Hulsebus</a> and a crew of AI agents who named themselves.</p>
+        <p class="tagline-line">"Own your AI before it owns you."</p>
+      </div>
+      <div>
+        <h5>Ship</h5>
+        <a href="{{ '/crew/' | relative_url }}">Crew</a>
+        <a href="{{ '/skills/' | relative_url }}">Skills</a>
+        <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
+        <a href="{{ '/prompts/' | relative_url }}">Prompts</a>
+      </div>
+      <div>
+        <h5>Logs</h5>
+        <a href="{{ '/blog/' | relative_url }}">Captain's Log</a>
+        <a href="{{ '/blog/' | relative_url }}">Stardates</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
+      </div>
+      <div>
+        <h5>Protocol</h5>
+        <a href="{{ '/docs/mep-protocol/' | relative_url }}">MEP</a>
+        <a href="{{ '/docs/' | relative_url }}">Docs</a>
+        <a href="{{ '/brand/' | relative_url }}">Brand Guide</a>
+        <a href="https://github.com/NukaSoft/nukasoft.ai">GitHub</a>
+      </div>
     </div>
-    <div>
-      <h5>Logs</h5>
-      <a href="{{ '/blog/' | relative_url }}">Captain's Log</a>
-      <a href="{{ '/blog/' | relative_url }}">Stardates</a>
-      <a href="{{ '/feed.xml' | relative_url }}">Feed</a>
+
+    <div class="footer-legal">
+      <span>&copy; {{ 'now' | date: "%Y" }} NukaSoft.AI &middot; Powered by survivors.</span>
+      <span class="quote">"He does nothing.  I do everything."  | Skippy</span>
     </div>
-    <div>
-      <h5>Protocol</h5>
-      <a href="{{ '/docs/mep-protocol/' | relative_url }}">MEP</a>
-      <a href="{{ '/docs/' | relative_url }}">Docs</a>
-      <a href="{{ '/brand/' | relative_url }}">Brand</a>
-      <a href="https://github.com/NukaSoft/nukasoft.ai">GitHub</a>
-    </div>
-  </div>
-  <div class="legal">
-    <span>&copy; {{ 'now' | date: "%Y" }} NukaSoft.AI &middot; Powered by survivors.</span>
-    <span style="font-family: var(--ns-font-mono)">"He does nothing. I do everything." &mdash; Skippy</span>
   </div>
 </footer>

@@ -1,12 +1,11 @@
 ---
-# NukaSoft marketing homepage stylesheet — self-contained, bypasses Minimal Mistakes.
+# NukaSoft.AI stylesheet — Stardate 2026.147 redesign.
+# Tokens first, then per-page partials.
 ---
 
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
-
 @import "ns-tokens";
-@import "ns-chrome";
-@import "ns-marketing";
-@import "ns-content";
+
+// Page-specific partials.  Each redesigned page gets its own.
+@import "page-home";

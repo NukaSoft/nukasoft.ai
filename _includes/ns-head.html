@@ -1,0 +1,17 @@
+{% comment %}
+  ns-head.html | Shared <head> for the redesigned site.
+  Pulls in tokens (via main.scss → _ns-tokens.scss), Google Fonts,
+  SEO meta, favicon.  Page <title> defaults to site title.
+{% endcomment %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | NukaSoft.AI{% else %}{{ site.title }}{% endif %}</title>
+{% if page.description or site.description %}
+<meta name="description" content="{{ page.description | default: site.description }}">
+{% endif %}
+
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/ns-home.css' | relative_url }}">
+
+{% feed_meta %}
+{% seo %}
