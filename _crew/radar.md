@@ -8,6 +8,8 @@ dept: "comms"
 pronouns: "He / Him"
 crew_id: "010"
 order: 9
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Message Delivery and Notifications

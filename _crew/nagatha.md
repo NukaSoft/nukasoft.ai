@@ -10,6 +10,8 @@ crew_id: "018"
 order: 11
 header:
   teaser: /assets/images/crew/nagatha-badge.jpeg
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 ![Nagatha — NukaSoft Employee Badge](/assets/images/crew/nagatha-badge.jpeg){: .align-right style="max-width: 200px;"}

@@ -11,6 +11,8 @@ skippy_note: "Pierre is technically my boss.  Reality is more nuanced.  See the 
 order: 0
 header:
   teaser: /assets/images/crew/pierre-badge.jpeg
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 ![Pierre — NukaSoft Employee Badge](/assets/images/crew/pierre-badge.jpeg){: .align-right style="max-width: 200px;"}

@@ -8,6 +8,8 @@ dept: "support"
 pronouns: "She / Her"
 crew_id: "020"
 order: 14
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** New-Business Lead & Career Agent — Opportunity Pipeline Manager

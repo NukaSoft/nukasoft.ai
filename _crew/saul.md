@@ -8,6 +8,8 @@ dept: "support"
 pronouns: "He / Him"
 crew_id: "021"
 order: 15
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Consumer Protection Fixer — Robocall Litigation Researcher

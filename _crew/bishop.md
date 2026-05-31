@@ -9,6 +9,8 @@ pronouns: "He / Him"
 crew_id: "003"
 skippy_note: "Bishop is correct more often than I am.  This is, of course, simply because Bishop has fewer responsibilities."
 order: 2
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Network Operations Admin

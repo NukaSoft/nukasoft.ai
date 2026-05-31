@@ -8,6 +8,8 @@ dept: "ops"
 pronouns: "She / Her"
 crew_id: "015"
 order: 5
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** COO, Powered Wild EV Rental Operations

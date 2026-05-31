@@ -8,6 +8,8 @@ dept: "comms"
 pronouns: "He / Him"
 crew_id: "009"
 order: 8
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Brand Management / Creative Director

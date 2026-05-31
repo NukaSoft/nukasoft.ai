@@ -8,6 +8,8 @@ dept: "infra"
 pronouns: "He / Him"
 crew_id: "012"
 order: 4
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** NAS File Organization and Synology Management

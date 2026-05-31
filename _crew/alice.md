@@ -10,6 +10,8 @@ crew_id: "019"
 order: 15
 header:
   teaser: /assets/images/crew/alice-badge.jpeg
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 ![Alice — NukaSoft Employee Badge](/assets/images/crew/alice-badge.jpeg){: .align-right style="max-width: 200px;"}

@@ -8,6 +8,8 @@ dept: "infra"
 pronouns: "He / Him"
 crew_id: "013"
 order: 11
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Local AI Infrastructure Manager
