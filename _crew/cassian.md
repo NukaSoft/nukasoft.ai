@@ -10,6 +10,8 @@ crew_id: "004"
 skippy_note: "Cassian will tell you everything about a topic.  Including, eventually, the bit you wanted.  Patience."
 order: 6
 layout: dayroom
+dayroom_hero_image: "/assets/images/crew/dayrooms/cassian-studio.png"
+dayroom_hero_pos: "center 50%"
 page_css: /assets/css/ns-dayroom.css
 ---
 

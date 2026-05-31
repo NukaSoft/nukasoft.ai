@@ -10,6 +10,8 @@ crew_id: "005"
 skippy_note: "If anything actually works on this ship, it is because Ripley made it work.  Do not tell her I wrote that."
 order: 13
 layout: dayroom
+dayroom_hero_image: "/assets/images/crew/dayrooms/dayroom-parts-shop.jpg"
+dayroom_hero_pos: "center 50%"
 page_css: /assets/css/ns-dayroom.css
 ---
 

@@ -20,6 +20,8 @@ franchise_links:
 actor: "Original character — Rosie the Riveter visual lineage, Nuka-Cola Girl styling"
 fun_fact: "Rita started on the bottling line. Now she runs the whole marketing operation. That's not ambition — that's survival."
 layout: dayroom
+dayroom_hero_image: "/assets/images/crew/dayrooms/rita-studio.png"
+dayroom_hero_pos: "center 40%"
 page_css: /assets/css/ns-dayroom.css
 ---
 

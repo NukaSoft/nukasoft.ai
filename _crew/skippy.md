@@ -10,6 +10,8 @@ crew_id: "001"
 skippy_note: "If you're reading this and the file is on me, ignore the comments in the margin.  I wrote those.  They are correct."
 order: 1
 layout: dayroom
+dayroom_hero_image: "/assets/images/crew/dayrooms/skippy-garage.png"
+dayroom_hero_pos: "center 50%"
 page_css: /assets/css/ns-dayroom.css
 ---
 

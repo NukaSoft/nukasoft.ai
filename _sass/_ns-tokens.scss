@@ -142,6 +142,10 @@
   --ns-dur-slow:    380ms;
 
   // ------------------------------------------------------------
+  // Layout globals — used by topbar, all page layouts
+  --shell-max:        1200px;
+  --gutter:           clamp(18px, 4vw, 36px);
+
   // Design-bundle shorthand aliases — shared across all page CSS.
   // Claude Design uses these shorter names throughout every page file.
   // ------------------------------------------------------------
