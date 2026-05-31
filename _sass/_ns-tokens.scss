@@ -140,4 +140,18 @@
   --ns-dur-fast:    120ms;
   --ns-dur-med:     220ms;
   --ns-dur-slow:    380ms;
+
+  // ------------------------------------------------------------
+  // Design-bundle shorthand aliases — shared across all page CSS.
+  // Claude Design uses these shorter names throughout every page file.
+  // ------------------------------------------------------------
+  --paper:            #F2E6C8;                       // aged paper surface
+  --paper-edge:       #D9C9A8;                       // slightly darker edge
+  --ink-blue:         #2D4A6A;                       // handwritten blue ink
+  --ink-red:          #8A1319;                       // annotation red
+  --ink-faded:        rgba(61, 28, 11, 0.55);        // de-emphasised ink
+  --manila-edge:      #C9AE7A;                       // manila folder edge
+  --manila-shadow:    rgba(61, 28, 11, 0.22);        // dossier drop shadow
+  --font-typewriter:  var(--ns-font-typewriter);     // alias
+  --font-hand:        var(--ns-font-handwriting);    // alias
 }

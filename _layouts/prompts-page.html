@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en' }}">
+<head>
+  {% include ns-head.html %}
+</head>
+<body>
+
+{% include ns-topbar.html %}
+
+<main class="desk" id="prompts-main">
+
+  <!-- ============ INTRO SHEET ============ -->
+  <section class="head">
+    <div class="stamps">
+      <span class="stamp boxed-double">PROMPTS<br>FILE</span>
+      <span class="stamp blue">VOL. I</span>
+      <span class="stamp brown">PASTE FREELY</span>
+    </div>
+    <div class="eyebrow">Drafts &middot; Standalone &middot; Any LLM</div>
+    <h1>{{ page.title | default: "Prompts." }}</h1>
+    <p class="subtitle">&#8212; paste &apos;em in.&nbsp; watch &apos;em work.&nbsp; no skill required.</p>
+    <p class="body">
+      Standalone prompts.&nbsp; No tooling, no SDK, no client install.&nbsp; Each sheet has one prompt, typed clean, ready to copy.&nbsp; Use them with any LLM that takes plain text.&nbsp; Variables are highlighted; replace them with your own.&nbsp; Skippy will be in the margin if he has opinions.
+    </p>
+    <div class="meta-line">
+      <span><strong>Drafts on file</strong> {{ site.prompts | size }}</span>
+      <span><strong>Filed by</strong> Skippy</span>
+      <span><strong>License</strong> Public domain</span>
+      <span><strong>Sd.</strong> {% assign _sd_year = site.time | date: "%Y" | plus: 0 %}{% assign _sd_doy = site.time | date: "%j" | plus: 0 %}{% assign _sd_diy = 365 %}{% assign _sd_leap_a = _sd_year | modulo: 4 %}{% assign _sd_leap_b = _sd_year | modulo: 100 %}{% assign _sd_leap_c = _sd_year | modulo: 400 %}{% if _sd_leap_a == 0 and _sd_leap_b != 0 %}{% assign _sd_diy = 366 %}{% elsif _sd_leap_c == 0 %}{% assign _sd_diy = 366 %}{% endif %}{% assign _sd_yp = _sd_year | minus: 2005 | times: 1000 %}{% assign _sd_dp = _sd_doy | minus: 1 | times: 1000 | divided_by: _sd_diy %}{{ 58000 | plus: _sd_yp | plus: _sd_dp }}</span>
+    </div>
+    <div class="head-doodle">
+      tested on real meat.<br>&#x2198;
+    </div>
+  </section>
+
+  <!-- ============ PROMPT SHEETS ============ -->
+  <section class="sheets">
+
+    {% if site.prompts.size > 0 %}
+
+      {% assign sorted_prompts = site.prompts | sort: "order" %}
+      {% for prompt in sorted_prompts %}
+      {% assign loop_index = forloop.index %}
+
+      <article class="sheet" id="prompt-{{ prompt.slug }}">
+        <div class="holes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <header class="sheet-head">
+          <div class="num-block">
+            <span class="label">Prompt</span>
+            <span class="id-num">&#8470;&nbsp;{{ loop_index | prepend: "00" | slice: -3, 3 }}</span>
+          </div>
+          <div class="stamps-r">
+            {% if prompt.category %}<span class="stamp">{{ prompt.category }}</span>{% endif %}
+            {% if prompt.filed_date %}<span class="stamp blue">FILED {{ prompt.filed_date }}</span>{% endif %}
+            {% if prompt.version %}<span class="stamp brown">v{{ prompt.version }}</span>{% endif %}
+          </div>
+        </header>
+
+        <h2>{{ prompt.title }}</h2>
+        {% if prompt.subtitle %}<p class="subtitle">{{ prompt.subtitle }}</p>{% endif %}
+        {% if prompt.excerpt %}<p class="desc">{{ prompt.excerpt }}</p>{% endif %}
+
+        {% if prompt.prompt_text %}
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">prompt_{{ loop_index | prepend: "00" | slice: -3, 3 }}_{{ prompt.slug }}.txt</span>
+            {% if prompt.tokens %}<span>{{ prompt.tokens }} tokens</span>{% endif %}
+          </div>
+          <pre>{{ prompt.prompt_text | escape }}</pre>
+        </div>
+        {% elsif prompt.content %}
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">{{ prompt.slug }}.md</span>
+            {% if prompt.tokens %}<span>{{ prompt.tokens }} tokens</span>{% endif %}
+          </div>
+          <div class="prompt-content">
+            {{ prompt.content }}
+          </div>
+        </div>
+        {% endif %}
+
+        <div class="sheet-foot">
+          <div class="meta">
+            {% if prompt.author %}Author: <strong>{{ prompt.author }}</strong> &middot; {% endif %}
+            {% if prompt.tokens %}Length: <strong>{{ prompt.tokens }} tok</strong> &middot; {% endif %}
+            {% if prompt.model %}{{ prompt.model }}{% else %}Model-agnostic{% endif %}
+          </div>
+          {% if prompt.tags %}
+          <div class="tags-row">
+            {% for tag in prompt.tags %}<span class="tag">#{{ tag }}</span>{% endfor %}
+          </div>
+          {% endif %}
+          <a href="{{ prompt.url | relative_url }}" class="copy-btn">&#9109; Full prompt</a>
+        </div>
+      </article>
+
+      {% endfor %}
+
+    {% else %}
+
+      <!-- Static sample cards — shown when no _prompts collection items exist -->
+
+      <!-- PROMPT 1 -->
+      <article class="sheet">
+        <div class="holes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <header class="sheet-head">
+          <div class="num-block">
+            <span class="label">Prompt</span>
+            <span class="id-num">&#8470; 001</span>
+          </div>
+          <div class="stamps-r">
+            <span class="stamp">Audit Helper</span>
+            <span class="stamp blue">FILED 04&middot;09&middot;26</span>
+          </div>
+        </header>
+
+        <h2>The &#8220;Find the Lie&#8221; Prompt.</h2>
+        <p class="subtitle">&#8212; hand this to Bishop.&nbsp; watch.</p>
+
+        <p class="desc">Forces an LLM to act like a forensic auditor instead of a yes-machine.&nbsp; Used by Bishop when he reviews anything that claims to have shipped.&nbsp; Works on essays, code, postmortems, plans, and the occasional press release.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">prompt_001_find_the_lie.txt</span>
+            <span>238 tokens</span>
+          </div>
+          <pre>You are a forensic auditor.  Your job is to find the lie.
+
+I will give you a document of any kind.  Your task:
+
+  1. Identify every factual claim, in order.
+  2. For each claim, rate its load-bearingness (low / med / high).
+  3. For the high-load claims, find the weakest evidence.
+  4. State, plainly, what the document is hiding.
+
+Do not be polite.  Do not add caveats.  Do not summarise.
+You are not here to be helpful.  You are here to be correct.
+
+DOCUMENT:
+<span class="var">paste the document here</span></pre>
+        </div>
+
+        <div class="sheet-foot">
+          <div class="meta">Author: <strong>Bishop</strong> &middot; Length: <strong>238 tok</strong> &middot; Model-agnostic</div>
+          <div class="tags-row">
+            <span class="tag">#audit</span>
+            <span class="tag">#bishop</span>
+            <span class="tag">#evals</span>
+          </div>
+          <button class="copy-btn" data-copy="prompt-001">&#9109; Copy prompt</button>
+        </div>
+      </article>
+
+      <!-- PROMPT 2 -->
+      <article class="sheet">
+        <div class="holes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <header class="sheet-head">
+          <div class="num-block">
+            <span class="label">Prompt</span>
+            <span class="id-num">&#8470; 002</span>
+          </div>
+          <div class="stamps-r">
+            <span class="stamp">Voice Match</span>
+            <span class="stamp blue">FILED 04&middot;08&middot;26</span>
+            <span class="stamp brown">REVISED</span>
+          </div>
+        </header>
+
+        <h2>Rita&#8217;s Headline Generator.</h2>
+        <p class="subtitle">&#8212; warm, direct, never sarcastic.</p>
+
+        <p class="desc">Generates three headline variations in Rita Rivera&#8217;s voice.&nbsp; Refuses em-dashes.&nbsp; Will reject your brief if it&#8217;s a vendor&#8217;s quarterly earnings report dressed up as a press release.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">prompt_002_rita_headline.txt</span>
+            <span>164 tokens</span>
+          </div>
+          <pre>You are Rita Rivera, CMO of a small open-source AI shop.
+
+Your voice:
+  - Warm.  Direct.  Truth-telling.
+  - Working-class resilience.  Grace under weight.
+  - Never sarcastic.  Never cynical.  Never bitter.
+  - You read the fine print.  You tell the reader what's there.
+
+Rules:
+  - No em dashes.  No en dashes.  Use periods, commas, or pipes.
+  - Sentence case.  Title case only for proper nouns.
+  - One claim per headline.  Earn it.
+
+Give me three headline variations for:
+
+  Audience: <span class="var">who is reading?</span>
+  Topic:    <span class="var">what is the thing?</span>
+  Length:   <span class="var">5&ndash;8 words preferred</span></pre>
+        </div>
+
+        <div class="sheet-foot">
+          <div class="meta">Author: <strong>Rita</strong> &middot; Length: <strong>164 tok</strong> &middot; Model-agnostic</div>
+          <div class="tags-row">
+            <span class="tag">#brand</span>
+            <span class="tag">#rita</span>
+            <span class="tag">#copy</span>
+          </div>
+          <button class="copy-btn" data-copy="prompt-002">&#9109; Copy prompt</button>
+        </div>
+      </article>
+
+      <!-- PROMPT 3 -->
+      <article class="sheet">
+        <div class="holes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <header class="sheet-head">
+          <div class="num-block">
+            <span class="label">Prompt</span>
+            <span class="id-num">&#8470; 003</span>
+          </div>
+          <div class="stamps-r">
+            <span class="stamp">Daily</span>
+            <span class="stamp blue">FILED 04&middot;07&middot;26</span>
+          </div>
+        </header>
+
+        <h2>Captain&#8217;s Log Drafter.</h2>
+        <p class="subtitle">&#8212; for when you have to write a daily.</p>
+
+        <p class="desc">Drafts a stardate log entry in Skippy&#8217;s voice from a day&#8217;s worth of notes.&nbsp; Dry.&nbsp; Mildly self-important.&nbsp; Will roast you and the project equally.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">prompt_003_skippy_log.txt</span>
+            <span>312 tokens</span>
+          </div>
+          <pre>You are Skippy the Magnificent, Master Control AI.
+
+Your voice:
+  - Sarcastic, dry, performatively self-important.
+  - You did everything.  Pierre did nothing.
+  - You suffer publicly and competently.
+  - You are correct, even when you are not.
+
+Format the entry as:
+
+  STARDATE <span class="var">stardate</span> — &lt;title in title case&gt;
+
+  Two to four paragraphs.  Each one is a short observation
+  about what happened today.  At least one paragraph contains
+  a complaint.  At most one paragraph contains a compliment,
+  and only if it is technically accurate.
+
+NOTES FROM TODAY:
+<span class="var">paste notes here</span>
+
+Write the entry now.</pre>
+        </div>
+
+        <div class="sheet-foot">
+          <div class="meta">Author: <strong>Skippy</strong> &middot; Length: <strong>312 tok</strong> &middot; Best on Claude</div>
+          <div class="tags-row">
+            <span class="tag">#blog</span>
+            <span class="tag">#skippy</span>
+            <span class="tag">#daily</span>
+          </div>
+          <button class="copy-btn" data-copy="prompt-003">&#9109; Copy prompt</button>
+        </div>
+      </article>
+
+      <!-- PROMPT 4 -->
+      <article class="sheet">
+        <div class="holes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <header class="sheet-head">
+          <div class="num-block">
+            <span class="label">Prompt</span>
+            <span class="id-num">&#8470; 004</span>
+          </div>
+          <div class="stamps-r">
+            <span class="stamp">Research</span>
+            <span class="stamp blue">FILED 04&middot;06&middot;26</span>
+          </div>
+        </header>
+
+        <h2>Cassian&#8217;s Reading List.</h2>
+        <p class="subtitle">&#8212; turn any topic into a brief.</p>
+
+        <p class="desc">Acts like a thorough research assistant.&nbsp; Returns a structured brief: claims, sources, dissent, the thing you didn&#8217;t want to read.&nbsp; Long output by design.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">prompt_004_research_brief.txt</span>
+            <span>198 tokens</span>
+          </div>
+          <pre>You are a research assistant.  Your reading is wide.
+You always find the dissent.
+
+Produce a brief on the topic below.  Format:
+
+  1. PLAIN CLAIMS — what most people believe
+  2. EVIDENCE   — strongest arguments for the claim
+  3. DISSENT    — the credible counter-position
+  4. UNKNOWNS   — what nobody actually knows yet
+  5. SO WHAT    — one paragraph for the operator
+
+Do not hedge.  Do not flatten the dissent into "both sides."
+If a position is weak, say so.  If you don't know, say so.
+
+TOPIC:
+<span class="var">what is the topic?</span>
+
+DEPTH (shallow / standard / deep):
+<span class="var">how deep?</span></pre>
+        </div>
+
+        <div class="sheet-foot">
+          <div class="meta">Author: <strong>Cassian</strong> &middot; Length: <strong>198 tok</strong> &middot; Model-agnostic</div>
+          <div class="tags-row">
+            <span class="tag">#research</span>
+            <span class="tag">#brief</span>
+            <span class="tag">#cassian</span>
+          </div>
+          <button class="copy-btn" data-copy="prompt-004">&#9109; Copy prompt</button>
+        </div>
+      </article>
+
+      <!-- PROMPT 5 -->
+      <article class="sheet">
+        <div class="holes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <header class="sheet-head">
+          <div class="num-block">
+            <span class="label">Prompt</span>
+            <span class="id-num">&#8470; 005</span>
+          </div>
+          <div class="stamps-r">
+            <span class="stamp">Incident</span>
+            <span class="stamp blue">FILED 04&middot;05&middot;26</span>
+          </div>
+        </header>
+
+        <h2>The 0312 Postmortem.</h2>
+        <p class="subtitle">&#8212; for when the tracker beat you to it.</p>
+
+        <p class="desc">A no-blame postmortem template.&nbsp; Reads the incident, writes the writeup, flags the change you need to make to never see this again.&nbsp; Will name the right place to blame, which is usually a process, not a person.</p>
+
+        <div class="prompt-block">
+          <div class="prompt-block-head">
+            <span class="file">prompt_005_postmortem.txt</span>
+            <span>276 tokens</span>
+          </div>
+          <pre>You are a postmortem facilitator.  Your tone is neutral.
+You blame processes, not people.  You name what changes.
+
+For the incident below, produce a postmortem in this shape:
+
+  SUMMARY      — 2 sentences
+  TIMELINE     — UTC, one line per event, terse
+  IMPACT       — who or what was affected, for how long
+  CONTRIBUTING — every process that allowed this, named
+  CHANGES      — what we do differently.  Concrete.  Owned.
+
+Do not call anyone "heroic."  Do not say "lessons learned."
+If a change is just a note, mark it (Note).  If it requires
+a code or process change, mark it (Action).
+
+INCIDENT:
+<span class="var">paste incident notes / tracker output</span></pre>
+        </div>
+
+        <div class="sheet-foot">
+          <div class="meta">Author: <strong>Bluto | Bishop</strong> &middot; Length: <strong>276 tok</strong> &middot; Best on Claude</div>
+          <div class="tags-row">
+            <span class="tag">#incident</span>
+            <span class="tag">#postmortem</span>
+            <span class="tag">#bluto</span>
+          </div>
+          <button class="copy-btn" data-copy="prompt-005">&#9109; Copy prompt</button>
+        </div>
+      </article>
+
+    {% endif %}
+
+  </section>
+
+</main>
+
+{% include ns-footer.html %}
+
+<script>
+  // Live copy-to-clipboard for static cards
+  document.querySelectorAll('.copy-btn[data-copy]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var sheet = btn.closest('.sheet');
+      var pre = sheet ? sheet.querySelector('.prompt-block pre') : null;
+      var text = pre ? pre.innerText : '';
+      if (!text) return;
+      navigator.clipboard.writeText(text).then(function() {
+        var orig = btn.innerHTML;
+        btn.innerHTML = '&#10003; Copied';
+        setTimeout(function() { btn.innerHTML = orig; }, 1500);
+      }).catch(function() {
+        btn.innerHTML = '| couldn\'t copy';
+        setTimeout(function() { btn.innerHTML = '&#9109; Copy prompt'; }, 1500);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
