@@ -4,6 +4,9 @@ excerpt: "Chief Counselor — the consigliere who walked out of the vault"
 persona: "Terminal List (Jack Carr)"
 role: "Chief Counselor"
 status: "Active"
+dept: "support"
+pronouns: "He / Him"
+crew_id: "017"
 order: 10
 classification: "Secret Agent"
 header:

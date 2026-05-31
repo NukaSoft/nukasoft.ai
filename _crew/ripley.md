@@ -4,6 +4,10 @@ excerpt: "Daily quality auditor — verifies the threat is real when nobody else
 persona: "Aliens (1986)"
 role: "Quality Auditor"
 status: "Active"
+dept: "eng"
+pronouns: "She / Her"
+crew_id: "005"
+skippy_note: "If anything actually works on this ship, it is because Ripley made it work.  Do not tell her I wrote that."
 order: 13
 ---
 

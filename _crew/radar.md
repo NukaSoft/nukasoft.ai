@@ -4,6 +4,9 @@ excerpt: "Message delivery and notifications -- always knows what's needed"
 persona: "M*A*S*H"
 role: "Message Delivery"
 status: "Active"
+dept: "comms"
+pronouns: "He / Him"
+crew_id: "010"
 order: 9
 ---
 

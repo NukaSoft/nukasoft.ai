@@ -4,6 +4,9 @@ excerpt: "Brand management and creative direction -- smooth operator"
 persona: "Star Wars"
 role: "Brand Management"
 status: "Active"
+dept: "comms"
+pronouns: "He / Him"
+crew_id: "009"
 order: 8
 ---
 

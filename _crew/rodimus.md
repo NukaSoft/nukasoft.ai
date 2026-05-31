@@ -4,6 +4,9 @@ excerpt: "General-purpose automation -- the generalist, simplest approach first"
 persona: "Transformers"
 role: "General-Purpose Automation"
 status: "Active"
+dept: "eng"
+pronouns: "He / Him"
+crew_id: "007"
 order: 7
 ---
 

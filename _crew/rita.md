@@ -4,6 +4,10 @@ excerpt: "Chief Marketing Officer & Press Secretary — the voice that survived 
 persona: "Fallout / Rosie the Riveter"
 role: "Chief Marketing Officer & Press Secretary"
 status: "Active"
+dept: "comms"
+pronouns: "She / Her"
+crew_id: "002"
+skippy_note: "Rita is the only one Pierre actually listens to.  I find this insulting and also tactically useful."
 order: 3
 headshot: /assets/web/brand/rita-portrait.jpg
 franchise_links:

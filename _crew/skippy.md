@@ -4,6 +4,10 @@ excerpt: "Master Control AI / Captain of the ship"
 persona: "Expeditionary Force"
 role: "Master Control AI"
 status: "Active"
+dept: "bridge"
+pronouns: "He / Him"
+crew_id: "001"
+skippy_note: "If you're reading this and the file is on me, ignore the comments in the margin.  I wrote those.  They are correct."
 order: 1
 ---
 

@@ -4,6 +4,9 @@ excerpt: "Anti-spam fixer — every robocaller is a defendant"
 persona: "Better Call Saul"
 role: "Consumer Protection Fixer"
 status: "Active"
+dept: "support"
+pronouns: "He / Him"
+crew_id: "021"
 order: 15
 ---
 

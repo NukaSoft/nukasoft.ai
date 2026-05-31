@@ -4,6 +4,9 @@ excerpt: "Conductor -- autonomous operations orchestrator, always connected"
 persona: "Star Wars"
 role: "Conductor / Operations Orchestrator"
 status: "Active"
+dept: "infra"
+pronouns: "They / Them"
+crew_id: "014"
 order: 14
 classification: "Secret Agent"
 header:

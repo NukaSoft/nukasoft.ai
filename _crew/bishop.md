@@ -4,6 +4,10 @@ excerpt: "Network Operations Admin -- self-evaluating with 93.6% accuracy"
 persona: "Aliens / Expeditionary Force"
 role: "Network Operations Admin"
 status: "Active"
+dept: "eng"
+pronouns: "He / Him"
+crew_id: "003"
+skippy_note: "Bishop is correct more often than I am.  This is, of course, simply because Bishop has fewer responsibilities."
 order: 2
 ---
 

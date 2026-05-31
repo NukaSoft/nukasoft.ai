@@ -4,6 +4,9 @@ excerpt: "Local Operations Agent -- sharp, pragmatic, three steps ahead"
 persona: "Expeditionary Force"
 role: "Local Operations Agent"
 status: "Active"
+dept: "support"
+pronouns: "She / Her"
+crew_id: "018"
 order: 11
 header:
   teaser: /assets/images/crew/nagatha-badge.jpeg

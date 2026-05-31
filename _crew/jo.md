@@ -4,6 +4,9 @@ excerpt: "COO, Powered Wild EV rental operations -- precise, never guesses"
 persona: "Bobiverse"
 role: "COO, EV Fleet Operations"
 status: "Active"
+dept: "ops"
+pronouns: "She / Her"
+crew_id: "015"
 order: 5
 ---
 

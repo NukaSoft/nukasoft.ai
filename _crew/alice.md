@@ -4,6 +4,9 @@ excerpt: "Autonomous Research Agent -- goes dark, comes back dangerous"
 persona: "The Terminal List"
 role: "Autonomous Research Agent"
 status: "Active"
+dept: "support"
+pronouns: "She / Her"
+crew_id: "019"
 order: 15
 header:
   teaser: /assets/images/crew/alice-badge.jpeg
