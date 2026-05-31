@@ -19,6 +19,8 @@ franchise_links:
     url: "https://fallout.fandom.com/wiki/Fallout_76"
 actor: "Original character — Rosie the Riveter visual lineage, Nuka-Cola Girl styling"
 fun_fact: "Rita started on the bottling line. Now she runs the whole marketing operation. That's not ambition — that's survival."
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Chief Marketing Officer & Press Secretary

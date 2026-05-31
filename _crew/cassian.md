@@ -9,6 +9,8 @@ pronouns: "He / Him"
 crew_id: "004"
 skippy_note: "Cassian will tell you everything about a topic.  Including, eventually, the bit you wanted.  Patience."
 order: 6
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Knowledge Harvester / Intelligence Officer

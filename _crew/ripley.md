@@ -9,6 +9,8 @@ pronouns: "She / Her"
 crew_id: "005"
 skippy_note: "If anything actually works on this ship, it is because Ripley made it work.  Do not tell her I wrote that."
 order: 13
+layout: dayroom
+page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Quality Auditor — Cross-Agent Outcome Verification
