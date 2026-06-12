@@ -1,4 +1,4 @@
----
+﻿---
 title: "MEP -- Meat Puppet Elimination Protocol"
 excerpt: "A self-enforcing asynchronous state relay for AI sessions across machines"
 version: "1.0"
@@ -88,13 +88,13 @@ The human's only job: open a new session and start talking. The agent handles th
 
 ### What happened
 
-PR #12 (`Nagatha/dreamy-lamarr`) was opened with a conflict in `machines/handoff.md`. Main branch had moved forward with 15 commits (Apr 01–02 Hot Rod sessions: Hastings rename, badge generation, SEO crew expansion) while the worktree branch only had the Apr 01 Nagatha base.
+PR #12 (`Nagatha/dreamy-lamarr`) was opened with a conflict in `machines/handoff.md`. Main branch had moved forward with 15 commits (Apr 01â€“02 Hot Rod sessions: Hastings rename, badge generation, SEO crew expansion) while the worktree branch only had the Apr 01 Nagatha base.
 
-**The PR process failed first.** The initial attempt to complete the EOL sequence did not succeed — the conflict blocked it.
+**The PR process failed first.** The initial attempt to complete the EOL sequence did not succeed â€” the conflict blocked it.
 
 On retry, the CI monitor event fired. Rather than escalating to Pierre, Claude:
 1. Re-read `handoff.md` from scratch to understand the problem
-2. Identified the structural rule from the existing entries — newest date on top, history preserved below
+2. Identified the structural rule from the existing entries â€” newest date on top, history preserved below
 3. Diagnosed why the merge had failed: the Apr 03 entry was not in the correct position relative to main's Apr 02 and Apr 01 entries
 4. Wrote the resolved file with Apr 03 at top, Apr 02 and Apr 01 intact underneath
 5. Staged, rebased onto main, force-pushed the branch
@@ -104,9 +104,9 @@ Pierre did nothing. The failure was self-diagnosed, the fix was self-applied, an
 
 ### Why this matters
 
-This is the protocol working at its intended depth. MEP was designed to eliminate the human from the *context relay* loop. This event demonstrates it can now close the *CI feedback loop* too — not just carrying state between sessions, but autonomously handling the operational fallout when branches diverge.
+This is the protocol working at its intended depth. MEP was designed to eliminate the human from the *context relay* loop. This event demonstrates it can now close the *CI feedback loop* too â€” not just carrying state between sessions, but autonomously handling the operational fallout when branches diverge.
 
-The handoff file isn't just documentation. It's a structured artifact with known semantics (chronological, newest-first). That structure is what made autonomous resolution possible — the agent could reason about the *correct* merge without human instruction.
+The handoff file isn't just documentation. It's a structured artifact with known semantics (chronological, newest-first). That structure is what made autonomous resolution possible â€” the agent could reason about the *correct* merge without human instruction.
 
 ### What it proves
 
@@ -222,14 +222,14 @@ This is a NukaSoft / Do Nothing Company product opportunity.
 
 ### The Problem (v2)
 
-MEP v1 solved machine-to-machine context transfer within a single AI ecosystem (Claude on Hot Rod → Claude on Mac).  But operators don't use one LLM.  They use the best tool for the job:
+MEP v1 solved machine-to-machine context transfer within a single AI ecosystem (Claude on Hot Rod â†’ Claude on Mac).  But operators don't use one LLM.  They use the best tool for the job:
 
-- **Grok** — real-time X/Twitter integration, conversational brainstorming, architecture exploration
-- **ChatGPT** — research, document analysis, specific model strengths
-- **Claude** — code execution, operations, system management, long-form reasoning
-- **Gemini** — Google ecosystem integration, multimodal tasks
+- **Grok** â€” real-time X/Twitter integration, conversational brainstorming, architecture exploration
+- **ChatGPT** â€” research, document analysis, specific model strengths
+- **Claude** â€” code execution, operations, system management, long-form reasoning
+- **Gemini** â€” Google ecosystem integration, multimodal tasks
 
-When Pierre has a 3-hour Grok session mapping AI architecture patterns, he shouldn't have to re-explain every insight to Claude.  That's the meat puppet problem *across ecosystems* — the human becomes the translator between AI providers instead of between machines.
+When Pierre has a 3-hour Grok session mapping AI architecture patterns, he shouldn't have to re-explain every insight to Claude.  That's the meat puppet problem *across ecosystems* â€” the human becomes the translator between AI providers instead of between machines.
 
 ### The Solution
 
@@ -245,21 +245,21 @@ The operator pastes a URL into the receiving session.  The agent fetches the con
 ### How It Works
 
 ```
-┌─────────────┐                    ┌─────────────┐
-│   Grok      │  share URL         │   Claude    │
-│   Session   │ ──────────────────→│   Session   │
-│             │                    │             │
-│ 3hr arch.   │  operator pastes   │ reads full  │
-│ brainstorm  │  URL into Claude   │ conversation│
-│             │                    │ continues   │
-└─────────────┘                    └─────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   Grok      â”‚  share URL         â”‚   Claude    â”‚
+â”‚   Session   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚   Session   â”‚
+â”‚             â”‚                    â”‚             â”‚
+â”‚ 3hr arch.   â”‚  operator pastes   â”‚ reads full  â”‚
+â”‚ brainstorm  â”‚  URL into Claude   â”‚ conversationâ”‚
+â”‚             â”‚                    â”‚ continues   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 1. Operator works with LLM-A on a topic (Grok architecture session, ChatGPT research, etc.)
 2. When switching to LLM-B, operator generates a share URL from LLM-A
 3. Operator pastes the URL into LLM-B's session
 4. LLM-B fetches the conversation via WebFetch/browser
-5. LLM-B reads, absorbs, and continues — no re-explanation needed
+5. LLM-B reads, absorbs, and continues â€” no re-explanation needed
 
 ### Why This Matters
 
@@ -271,14 +271,14 @@ The operator is no longer locked into one AI ecosystem to avoid the re-explanati
 - Claude when they want code execution, operations, and deep reasoning
 - Any future LLM when it does something better than the others
 
-The conversation URL is transport-agnostic — it doesn't matter which LLM generated it.  As long as the receiving session can fetch and read the URL, context transfers.
+The conversation URL is transport-agnostic â€” it doesn't matter which LLM generated it.  As long as the receiving session can fetch and read the URL, context transfers.
 
 ### Design Properties
 
 | Property | How It Works |
 |----------|-------------|
-| **Transport** | HTTPS (conversation URL) — no Git needed for cross-ecosystem |
-| **Format** | HTML/JSON rendered conversation — structured by the source platform |
+| **Transport** | HTTPS (conversation URL) â€” no Git needed for cross-ecosystem |
+| **Format** | HTML/JSON rendered conversation â€” structured by the source platform |
 | **Self-enforcing** | Agent reads the URL content the same way it reads a handoff file |
 | **Asynchronous** | Conversations can be hours, days, or weeks apart |
 | **Zero infrastructure** | Share URLs are a built-in feature of every major LLM platform |
@@ -301,22 +301,22 @@ In practice, both components work together:
 
 ```
 Grok (brainstorm)
-  │ share URL
-  ▼
-Claude on Mac (cowork)     ← Cross-Ecosystem Transfer (Component 7)
-  │ seed prompt + repo context
-  ▼
-Claude on Hot Rod (code)   ← Machine-to-Machine Transfer (Components 1-4)
-  │ git push
-  ▼
-Claude on Mac (next day)   ← Machine-to-Machine Transfer (Components 1-4)
+  â”‚ share URL
+  â–¼
+Claude on Mac (cowork)     â† Cross-Ecosystem Transfer (Component 7)
+  â”‚ seed prompt + repo context
+  â–¼
+Claude on Hot Rod (code)   â† Machine-to-Machine Transfer (Components 1-4)
+  â”‚ git push
+  â–¼
+Claude on Mac (next day)   â† Machine-to-Machine Transfer (Components 1-4)
 ```
 
 The operator moves freely between LLMs and machines.  Context follows.  The meat puppet is eliminated at both layers.
 
 ### Production Example
 
-**April 13, 2026 — Grok Architecture Session**
+**April 13, 2026 â€” Grok Architecture Session**
 
 Pierre spent 3 hours with Grok mapping Y Combinator's GBrain/GStack architecture patterns against Skippy's independently-built design.  Six breakthrough insights emerged (one-agent/one-file model, Markdown-as-OS, voice as biometric signature, scoped memory duality, etc.).
 
@@ -345,7 +345,7 @@ Zero re-explanation.  Full context.  Best-of-breed: Grok for the brainstorm, Cla
 
 ### The Problem
 
-Not every session has access to the repo.  Claude Desktop Cowork mode on Mac doesn't automatically load `CLAUDE.md` or `handoff.md`.  The session starts cold — no identity, no context, no protocol.  The human becomes the meat puppet again, answering setup questions: "Where is the repo?" "What are we building?" "What's the audience?"
+Not every session has access to the repo.  Claude Desktop Cowork mode on Mac doesn't automatically load `CLAUDE.md` or `handoff.md`.  The session starts cold â€” no identity, no context, no protocol.  The human becomes the meat puppet again, answering setup questions: "Where is the repo?" "What are we building?" "What's the audience?"
 
 ### The Solution
 
@@ -355,7 +355,7 @@ The seed prompt contains everything the receiving session needs to start working
 - What to read (file paths in the repo)
 - What we already decided (architecture, voice, audience, workflow)
 - What to do right now (specific first task)
-- What NOT to do (don't ask questions, don't re-derive — read and execute)
+- What NOT to do (don't ask questions, don't re-derive â€” read and execute)
 
 ### How It Differs from a Handoff File
 
@@ -373,11 +373,11 @@ The seed prompt contains everything the receiving session needs to start working
 2. **Read-and-execute, not read-and-plan.** Tell the agent what to DO, not what to think about.
 3. **Repo-first.** Point to files, don't duplicate content.  "Read skills/skool/SKILL.md" not "here's what SKILL.md says..."
 4. **Explicit anti-patterns.** "DO NOT ASK ME ANY QUESTIONS" is a valid and necessary instruction.
-5. **Include the mission.** Not just context — the specific task for this session.
+5. **Include the mission.** Not just context â€” the specific task for this session.
 
 ### Production Example
 
-**April 13, 2026 — Skool Cowork Session**
+**April 13, 2026 â€” Skool Cowork Session**
 
 A new Claude Desktop Cowork session on Mac needed full context for the Skool Content Engine skill.  Instead of answering 5 clarifying questions ("Where is the repo?" "Is it on GitHub?" "What platform?"), Pierre pasted a seed prompt:
 
@@ -411,36 +411,36 @@ Session started immediately.  No questions.  Full context from files.  Low meat 
 
 | Version | What It Solves | Routing Model |
 |---------|---------------|---------------|
-| **v1.0** | Same LLM, different machines | Machine → Machine (via Git) |
-| **v1.1** | Different LLMs, same operator | LLM → LLM (via conversation URL) |
-| **v2.0** | All work converges on project context | LLM → Project/Skill (via Claude) |
+| **v1.0** | Same LLM, different machines | Machine â†’ Machine (via Git) |
+| **v1.1** | Different LLMs, same operator | LLM â†’ LLM (via conversation URL) |
+| **v2.0** | All work converges on project context | LLM â†’ Project/Skill (via Claude) |
 
-v1.1 treats cross-ecosystem conversations as events — something happened, context transferred, move on.  v2 treats them as **project contributions**.  Every Grok brainstorm, every ChatGPT research session, every Claude code sprint belongs to a project.  The project is the convergence point.
+v1.1 treats cross-ecosystem conversations as events â€” something happened, context transferred, move on.  v2 treats them as **project contributions**.  Every Grok brainstorm, every ChatGPT research session, every Claude code sprint belongs to a project.  The project is the convergence point.
 
 ### The Model
 
 ```
-                    ┌─────────────────────────────┐
-                    │   Claude Project / Skill     │
-                    │   (canonical home)           │
-                    │                              │
-                    │   skills/skool/              │
-                    │   memory/conversations/      │
-                    │   memory/projects/            │
-                    │   daily/                      │
-                    └──────────┬──────────────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                │                │
-     ┌────────▼──────┐ ┌──────▼───────┐ ┌──────▼───────┐
-     │   Grok        │ │   ChatGPT    │ │   Gemini     │
-     │   Project     │ │   Project    │ │   Project    │
-     │               │ │              │ │              │
-     │ brainstorm    │ │ research     │ │ Google       │
-     │ architecture  │ │ deep dives   │ │ ecosystem    │
-     │ voice work    │ │ analysis     │ │ integrations │
-     │ X integration │ │ doc review   │ │ multimodal   │
-     └───────────────┘ └──────────────┘ └──────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚   Claude Project / Skill     â”‚
+                    â”‚   (canonical home)           â”‚
+                    â”‚                              â”‚
+                    â”‚   skills/skool/              â”‚
+                    â”‚   memory/conversations/      â”‚
+                    â”‚   memory/projects/            â”‚
+                    â”‚   daily/                      â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â”‚
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚                â”‚                â”‚
+     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚   Grok        â”‚ â”‚   ChatGPT    â”‚ â”‚   Gemini     â”‚
+     â”‚   Project     â”‚ â”‚   Project    â”‚ â”‚   Project    â”‚
+     â”‚               â”‚ â”‚              â”‚ â”‚              â”‚
+     â”‚ brainstorm    â”‚ â”‚ research     â”‚ â”‚ Google       â”‚
+     â”‚ architecture  â”‚ â”‚ deep dives   â”‚ â”‚ ecosystem    â”‚
+     â”‚ voice work    â”‚ â”‚ analysis     â”‚ â”‚ integrations â”‚
+     â”‚ X integration â”‚ â”‚ doc review   â”‚ â”‚ multimodal   â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Claude is the hub.**  Other LLMs are spokes.  The repo is the durable layer.
@@ -464,14 +464,14 @@ When a peer project produces insights:
 1. Operator pastes the conversation URL into Claude
 2. Claude fetches the conversation
 3. Claude archives it to `memory/conversations/[platform]/YYYY-MM-DD-[topic].md`
-4. Claude routes the insights to the relevant **project or skill** — updates source material, creates action items, enriches memory
+4. Claude routes the insights to the relevant **project or skill** â€” updates source material, creates action items, enriches memory
 5. The project/skill context grows with every cross-ecosystem contribution
 
 ### What This Changes
 
 **Before (v1.1):** "I had a Grok session.  Here's the URL.  Read it."  Context transfers once, lives in session memory, may or may not get archived.
 
-**After (v2):** "I had a Grok session on Skool content."  Claude reads it, archives it, routes it to `skills/skool/`, updates the course material, creates tasks, and the *skill itself gets smarter*.  Next time anyone opens the Skool skill — on any machine, in any session — the Grok insights are already there.
+**After (v2):** "I had a Grok session on Skool content."  Claude reads it, archives it, routes it to `skills/skool/`, updates the course material, creates tasks, and the *skill itself gets smarter*.  Next time anyone opens the Skool skill â€” on any machine, in any session â€” the Grok insights are already there.
 
 ### Project Context Accumulation
 
@@ -479,19 +479,19 @@ Every cross-ecosystem conversation enriches the project:
 
 ```
 skills/skool/
-├── SKILL.md                    ← skill spec (grows with each insight)
-├── SEED_PROMPT.md              ← cowork bootstrap
-├── communities/
-│   └── faith-in-ai/
-│       ├── courses/            ← course definitions
-│       └── sources/            ← source material
-└── peer-projects.md            ← links to Grok/ChatGPT peer sessions
+â”œâ”€â”€ SKILL.md                    â† skill spec (grows with each insight)
+â”œâ”€â”€ SEED_PROMPT.md              â† cowork bootstrap
+â”œâ”€â”€ communities/
+â”‚   â””â”€â”€ faith-in-ai/
+â”‚       â”œâ”€â”€ courses/            â† course definitions
+â”‚       â””â”€â”€ sources/            â† source material
+â””â”€â”€ peer-projects.md            â† links to Grok/ChatGPT peer sessions
 
 memory/conversations/
-├── grok/
-│   └── 2026-04-13-skool-voice-work.md      ← archived, routed to skool skill
-├── chatgpt/
-│   └── 2026-04-14-pedagogy-research.md     ← archived, routed to skool skill
+â”œâ”€â”€ grok/
+â”‚   â””â”€â”€ 2026-04-13-skool-voice-work.md      â† archived, routed to skool skill
+â”œâ”€â”€ chatgpt/
+â”‚   â””â”€â”€ 2026-04-14-pedagogy-research.md     â† archived, routed to skool skill
 ```
 
 The skill doesn't care which LLM generated the insight.  It cares that the insight exists and is accessible.
@@ -500,27 +500,27 @@ The skill doesn't care which LLM generated the insight.  It cares that the insig
 
 When a cross-ecosystem conversation is ingested:
 
-1. **Identify the project/skill** — Which project does this conversation serve?
-2. **Archive the conversation** — `memory/conversations/[platform]/YYYY-MM-DD-[topic].md`
-3. **Extract actionable insights** — Decisions, discoveries, action items
-4. **Route to the project** — Update skill docs, source material, task lists
-5. **Cross-reference** — Link the conversation archive to the project and vice versa
-6. **Surface in handoff** — Next session knows this project was enriched
+1. **Identify the project/skill** â€” Which project does this conversation serve?
+2. **Archive the conversation** â€” `memory/conversations/[platform]/YYYY-MM-DD-[topic].md`
+3. **Extract actionable insights** â€” Decisions, discoveries, action items
+4. **Route to the project** â€” Update skill docs, source material, task lists
+5. **Cross-reference** â€” Link the conversation archive to the project and vice versa
+6. **Surface in handoff** â€” Next session knows this project was enriched
 
 ### The Commercial Angle
 
 This is the real MEP product.  Every knowledge worker uses multiple AI tools.  None of them talk to each other.  The operator is the meat puppet between Grok, ChatGPT, Claude, Gemini, Copilot, and whatever launches next quarter.
 
-**MEP v2 is the convergence layer.**  Not another AI — a protocol that makes every AI you already use feed into a single coherent project context.  Use the best tool for the job.  Context follows.  Nothing is lost.
+**MEP v2 is the convergence layer.**  Not another AI â€” a protocol that makes every AI you already use feed into a single coherent project context.  Use the best tool for the job.  Context follows.  Nothing is lost.
 
 ### Implementation (Incremental)
 
 **Phase 1 (Now):**
-- Conversation archive (`memory/conversations/`) — manual archive on URL paste
-- Skill/project cross-reference — manually note which project benefits
+- Conversation archive (`memory/conversations/`) â€” manual archive on URL paste
+- Skill/project cross-reference â€” manually note which project benefits
 
 **Phase 2 (Next):**
-- `peer-projects.md` in each skill — formal links to external LLM projects
+- `peer-projects.md` in each skill â€” formal links to external LLM projects
 - Auto-routing: Claude identifies which skill/project to enrich based on conversation content
 - Archive template auto-populated on URL paste
 
@@ -538,7 +538,7 @@ This is the real MEP product.  Every knowledge worker uses multiple AI tools.  N
 
 ### The Missing Half
 
-Components 7-8 solved **inbound** context — other LLMs can talk TO Claude via conversation URLs and seed prompts.  But the flow is one-directional.  Every time Pierre opens Grok or ChatGPT, those agents start from zero.  Pierre becomes the meat puppet again: "So Claude built a Skool content engine yesterday, and there are two communities, and the voice guidelines are..."
+Components 7-8 solved **inbound** context â€” other LLMs can talk TO Claude via conversation URLs and seed prompts.  But the flow is one-directional.  Every time Pierre opens Grok or ChatGPT, those agents start from zero.  Pierre becomes the meat puppet again: "So Claude built a Skool content engine yesterday, and there are two communities, and the voice guidelines are..."
 
 **The outbound baton eliminates this.**
 
@@ -547,16 +547,16 @@ Components 7-8 solved **inbound** context — other LLMs can talk TO Claude via 
 Claude maintains a **living context file** on Google Drive.  One file.  Always current.  Every peer agent (Grok project, ChatGPT project, Gemini project) points to it.  When Pierre opens any LLM, that agent reads the file and knows what's happening across the entire operation.
 
 ```
-┌──────────────┐      writes       ┌──────────────────┐     reads      ┌──────────┐
-│              │ ────────────────→  │                  │ ←────────────  │  Grok    │
-│   Claude     │                   │  Google Drive     │               │  Project  │
-│   (Hub)      │   updates after   │                  │     reads      ├──────────┤
-│              │   every session   │  project-context  │ ←────────────  │  ChatGPT │
-│   repo +     │                   │  .md              │               │  Project  │
-│   skills +   │                   │                  │     reads      ├──────────┤
-│   memory     │                   │  (public link)    │ ←────────────  │  Gemini  │
-└──────────────┘                   └──────────────────┘               │  Project  │
-                                                                      └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      writes       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     reads      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’  â”‚                  â”‚ â†â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚  Grok    â”‚
+â”‚   Claude     â”‚                   â”‚  Google Drive     â”‚               â”‚  Project  â”‚
+â”‚   (Hub)      â”‚   updates after   â”‚                  â”‚     reads      â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚              â”‚   every session   â”‚  project-context  â”‚ â†â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚  ChatGPT â”‚
+â”‚   repo +     â”‚                   â”‚  .md              â”‚               â”‚  Project  â”‚
+â”‚   skills +   â”‚                   â”‚                  â”‚     reads      â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚   memory     â”‚                   â”‚  (public link)    â”‚ â†â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚  Gemini  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜               â”‚  Project  â”‚
+                                                                      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Why Google Drive
@@ -565,42 +565,42 @@ Claude maintains a **living context file** on Google Drive.  One file.  Always c
 - Grok can read uploaded files or pasted content
 - ChatGPT can read Google Drive links or uploaded files
 - Gemini reads Google Drive natively
-- One update point — Claude writes, everyone reads
-- No auth complexity — shared link or uploaded to each project
+- One update point â€” Claude writes, everyone reads
+- No auth complexity â€” shared link or uploaded to each project
 - Pierre already pays for Google Workspace ($14/mo)
 
 ### The Standing Standup
 
 **Not a briefing doc.  A persistent standup meeting that never ends.**
 
-The shared surface file is called a **Standing Standup** — a live meeting that agents walk into, read, work, and append to.  It is always **project-scoped**.  Each project gets its own standup.  Agents only see context for the project they are working on.
+The shared surface file is called a **Standing Standup** â€” a live meeting that agents walk into, read, work, and append to.  It is always **project-scoped**.  Each project gets its own standup.  Agents only see context for the project they are working on.
 
-This eliminates the "Unimind" problem — no master document that tries to contain everything about every project in a single file.  A universe-scoped context file becomes unusable at scale.  Project-scoped standups stay focused, relevant, and actionable.
+This eliminates the "Unimind" problem â€” no master document that tries to contain everything about every project in a single file.  A universe-scoped context file becomes unusable at scale.  Project-scoped standups stay focused, relevant, and actionable.
 
 **A Standing Standup contains:**
-1. **Project scope** — what this project is, who it serves, what success looks like
-2. **Artifacts inventory** — what files exist, where they live (repo paths, Drive links, etc.)
-3. **Pointers** — public URLs to read (conversation archives, docs, specs)
-4. **Party line** — which agents are working on this project and their roles
-5. **Standup log** — tag-in/tag-out entries (the rolling handoff, newest first)
+1. **Project scope** â€” what this project is, who it serves, what success looks like
+2. **Artifacts inventory** â€” what files exist, where they live (repo paths, Drive links, etc.)
+3. **Pointers** â€” public URLs to read (conversation archives, docs, specs)
+4. **Party line** â€” which agents are working on this project and their roles
+5. **Standup log** â€” tag-in/tag-out entries (the rolling handoff, newest first)
 
 **How it works:** Every agent reads the standup before working.  Every agent appends when done.  No facilitator needed.  The meeting is always in progress.  You walk in, read the room, do your work, update the board, walk out.
 
 **Same handoff format.  Same rules.  Shared surface.**
 
-The Standing Standup uses the same handoff.md schema — newest-first entries, three sections (happened, pending, watch out), tag-in/tag-out headers — on a shared surface that every agent can access.  It is NOT a separate file format.
+The Standing Standup uses the same handoff.md schema â€” newest-first entries, three sections (happened, pending, watch out), tag-in/tag-out headers â€” on a shared surface that every agent can access.  It is NOT a separate file format.
 
-**Location:** Google Drive → `NukaSoft/agent-context/[project-name]/standup.md`
+**Location:** Google Drive â†’ `NukaSoft/agent-context/[project-name]/standup.md`
 **Access:** Shareable link (anyone with link can view)
 
 The file has two parts:
-1. **Static context header** — project scope, artifacts inventory, pointers, party line (updated periodically)
-2. **Standup log** — rolling tag-in/tag-out entries, same format as `machines/handoff.md`
+1. **Static context header** â€” project scope, artifacts inventory, pointers, party line (updated periodically)
+2. **Standup log** â€” rolling tag-in/tag-out entries, same format as `machines/handoff.md`
 
 ### File Structure
 
 ```markdown
-# Shared Handoff — NukaSoft Agent Network
+# Shared Handoff â€” NukaSoft Agent Network
 
 This file is the shared baton for all agents working with Pierre across platforms.
 Read everything below before starting.  Do not ask Pierre to re-explain anything in this file.
@@ -613,7 +613,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 - Field Service Consulting Global Director at Alithya (Jan 2025-Present)
 - Previously Microsoft Global Black Belt (D365 Field Service) 2015-2024
 - Based in Michigan
-- Building NukaSoft.AI — AI operations hub
+- Building NukaSoft.AI â€” AI operations hub
 - ASU student (ENG 302 + CIS 308)
 - Writing style: double spaces after periods, pipes | instead of dashes, direct authentic voice
 - "Artificial Persons" not "bots" when referring to AI crew
@@ -623,7 +623,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 |---------|--------|-----------|
 | Skool Content Engine | Cowork phase | Multi-community Skool.com platform (Faith in AI + Service Ops) |
 | MEP Protocol | v2.1 | Protocol eliminating human context relay across AI ecosystems |
-| NukaSoft.AI | Active | AI venture — Skippy inbox, monetizable skills |
+| NukaSoft.AI | Active | AI venture â€” Skippy inbox, monetizable skills |
 | Powered Wild | Active | Tesla Turo fleet, D365 FS-aligned ops |
 | D365 Knowledge | Active | Garrus skill, market research, ingestion pipeline |
 | Saul (unring.ai) | Dogfood | Anti-spam loan-call tracker and FCC complaint generator |
@@ -640,7 +640,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 | Piper | Bug triage, community | Claude |
 
 ### Voice & Style Rules
-- No dashes — use pipes | for separators
+- No dashes â€” use pipes | for separators
 - Double space after periods
 - Direct, authentic, no fluff
 - Connect tech to business outcomes
@@ -648,10 +648,10 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 
 ### How To Be Useful
 1. Read this entire file before responding
-2. You are a peer contributor — not a subordinate
+2. You are a peer contributor â€” not a subordinate
 3. Your outputs route back to Claude via conversation URL share
 4. Focus on what you're best at
-5. Don't duplicate — extend
+5. Don't duplicate â€” extend
 
 ---
 
@@ -659,7 +659,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 
 <!-- Entries below follow MEP handoff schema: newest first, tag-in/tag-out -->
 
-## 2026-04-13 — Skippy | Claude (Hot Rod) | code
+## 2026-04-13 â€” Skippy | Claude (Hot Rod) | code
 **Tag-in:** 10:00 ET | **Tag-out:** [active]
 
 ### What happened
@@ -679,7 +679,7 @@ Read everything below before starting.  Do not ask Pierre to re-explain anything
 ### Watch out for
 - Faith in AI voice: demystifying, story-driven, faith-informed (not preachy)
 - Service Ops voice: professional, operations-focused, D365 depth
-- Pierre has dyslexia — red text triggers anxiety, AI is accessibility tool
+- Pierre has dyslexia â€” red text triggers anxiety, AI is accessibility tool
 ```
 
 ### Update Protocol
@@ -696,24 +696,24 @@ The file is a **projection** of the repo, not a copy.  It contains what peer age
 
 **For Grok:**
 1. Open a Grok session
-2. Give Grok the standup URL — Grok reads it directly via HTTPS
+2. Give Grok the standup URL â€” Grok reads it directly via HTTPS
 3. Say "Read this standup first.  When we're done, write your entry at the top."
-4. Start brainstorming — Grok already knows what's happening
+4. Start brainstorming â€” Grok already knows what's happening
 5. At end of session, Pierre pastes Grok's conversation URL into a Claude session
 
 **For ChatGPT:**
 1. Start a new ChatGPT project
-2. Give ChatGPT the standup URL — ChatGPT reads it directly via HTTPS
-3. Same pattern — read on start, write entry at end
+2. Give ChatGPT the standup URL â€” ChatGPT reads it directly via HTTPS
+3. Same pattern â€” read on start, write entry at end
 4. Pierre pastes ChatGPT's conversation URL into a Claude session
 
 **For Gemini:**
 1. Give Gemini the standup URL
 2. Gemini reads it directly via HTTPS
-3. Same pattern — read on start, write on end
+3. Same pattern â€” read on start, write on end
 
 **For Claude:**
-1. Claude owns the file — commits to repo, instantly live at the HTTPS endpoint
+1. Claude owns the file â€” commits to repo, instantly live at the HTTPS endpoint
 2. No manual copy, no API keys, no sync
 3. Claude also syncs key entries back to `machines/handoff.md` in the repo
 
@@ -726,7 +726,7 @@ The Google Drive transport was replaced with a direct HTTPS endpoint served from
 **How it works:**
 1. The standup file lives in the repo (e.g., `skills/skool/shared-handoff.md`)
 2. Nginx serves the file directly from disk via a GUID-obscured URL
-3. Every `git commit` makes the file instantly live — zero sync lag
+3. Every `git commit` makes the file instantly live â€” zero sync lag
 4. The URL uses a GUID path segment (unguessable but no auth required)
 5. All agents read the same URL.  Only Claude writes.
 
@@ -735,75 +735,75 @@ The Google Drive transport was replaced with a direct HTTPS endpoint served from
 - Drive sync introduced lag and failure modes
 - The HTTPS endpoint is simpler, faster, and has zero dependencies
 
-**Security model:** Obscurity, not authentication.  The GUID URL is effectively unguessable (~3.4 × 10³⁸ possibilities).  No sensitive data in the standup — it's project structure, voice guidelines, and work log.  If stronger security is ever needed, add HTTP Basic Auth or IP allowlisting in nginx.
+**Security model:** Obscurity, not authentication.  The GUID URL is effectively unguessable (~3.4 Ã— 10Â³â¸ possibilities).  No sensitive data in the standup â€” it's project structure, voice guidelines, and work log.  If stronger security is ever needed, add HTTP Basic Auth or IP allowlisting in nginx.
 
 ### Transport Evaluation: Why Self-Hosted Beats External
 
-Before landing on the nginx approach, we smoke-tested with Google Docs as a shared fixed-text surface.  It worked — agents could read and Pierre could edit — but it introduced external dependencies (OAuth, API enablement, token refresh, Google's permission model).
+Before landing on the nginx approach, we smoke-tested with Google Docs as a shared fixed-text surface.  It worked â€” agents could read and Pierre could edit â€” but it introduced external dependencies (OAuth, API enablement, token refresh, Google's permission model).
 
 **Transports evaluated:**
 
 | Transport | Works | File Leaves Infra | Auth Complexity | Encryption Control | Verdict |
 |-----------|-------|-------------------|-----------------|-------------------|---------|
-| Google Drive | Yes | Yes — Google's servers | OAuth2 + API enable | Google manages | Rejected |
-| Google Docs | Yes | Yes — Google's servers | Share link | Google manages | Smoke tested, rejected |
-| S3 / CloudFront | Yes | Yes — AWS | IAM + keys | AWS manages | Not tested |
-| GitHub raw (public repo) | Yes | Yes — GitHub | None | GitHub manages | Not viable (private data) |
-| **Nginx on Hot Rod** | **Yes** | **No — stays on infra** | **GUID URL** | **We control** | **Selected** |
+| Google Drive | Yes | Yes â€” Google's servers | OAuth2 + API enable | Google manages | Rejected |
+| Google Docs | Yes | Yes â€” Google's servers | Share link | Google manages | Smoke tested, rejected |
+| S3 / CloudFront | Yes | Yes â€” AWS | IAM + keys | AWS manages | Not tested |
+| GitHub raw (public repo) | Yes | Yes â€” GitHub | None | GitHub manages | Not viable (private data) |
+| **Nginx on Hot Rod** | **Yes** | **No â€” stays on infra** | **GUID URL** | **We control** | **Selected** |
 
 **The architectural advantage:** The file never leaves our infrastructure.  This creates a protocol-level security boundary:
 
-1. **Encryption at rest** — The file is on Hot Rod's disk.  We can encrypt the volume, the directory, or the file itself.  No third party involved.
-2. **Encryption in transit** — TLS via Let's Encrypt certs we already manage.  No external trust chain beyond the CA.
-3. **Access control** — Nginx gives us layered options: GUID obscurity (current), HTTP Basic Auth, IP allowlisting, VPN gating, client certificates.  Stack as needed.
-4. **Audit trail** — Nginx access logs show exactly who read the file and when.  Git log shows exactly who wrote it and when.
-5. **Firewall integration** — Hot Rod sits behind a firewall.  The dashboard already requires VPN for internal routes.  Standup endpoints can be gated the same way if needed.
-6. **Offline capability** — Because the file is served from the same React dashboard infrastructure, it inherits the same PWA / offline patterns when those ship.
+1. **Encryption at rest** â€” The file is on Hot Rod's disk.  We can encrypt the volume, the directory, or the file itself.  No third party involved.
+2. **Encryption in transit** â€” TLS via Let's Encrypt certs we already manage.  No external trust chain beyond the CA.
+3. **Access control** â€” Nginx gives us layered options: GUID obscurity (current), HTTP Basic Auth, IP allowlisting, VPN gating, client certificates.  Stack as needed.
+4. **Audit trail** â€” Nginx access logs show exactly who read the file and when.  Git log shows exactly who wrote it and when.
+5. **Firewall integration** â€” Hot Rod sits behind a firewall.  The dashboard already requires VPN for internal routes.  Standup endpoints can be gated the same way if needed.
+6. **Offline capability** â€” Because the file is served from the same React dashboard infrastructure, it inherits the same PWA / offline patterns when those ship.
 
-This aligns with the broader NukaSoft security posture: PDFs encrypted at rest, dashboard behind firewall + VPN, all sensitive data on owned infrastructure.  The standup is just another resource in that model — not a special case that lives on someone else's cloud.
+This aligns with the broader NukaSoft security posture: PDFs encrypted at rest, dashboard behind firewall + VPN, all sensitive data on owned infrastructure.  The standup is just another resource in that model â€” not a special case that lives on someone else's cloud.
 
-**Future direction:** As the dashboard evolves into a full web app (the unplayer model), the standup endpoint becomes a first-class route in the React app — authenticated, encrypted, auditable, and capable of working offline.  The nginx GUID URL is the v2.1 primitive; the dashboard route is the v3 target.
+**Future direction:** As the dashboard evolves into a full web app (the unplayer model), the standup endpoint becomes a first-class route in the React app â€” authenticated, encrypted, auditable, and capable of working offline.  The nginx GUID URL is the v2.1 primitive; the dashboard route is the v3 target.
 
 ### Relationship to Other Components
 
 | Component | Direction | Transport | Persistence |
 |-----------|-----------|-----------|-------------|
-| Handoff file (v1) | Claude → Claude | Git | Permanent (repo) |
-| Conversation URL (v1.1) | Grok/ChatGPT → Claude | HTTPS | Ephemeral (platform) |
-| Seed Prompt (v1.1) | Operator → Claude | Clipboard | Session-only |
-| **Outbound Baton (v2.1)** | **Claude → All agents** | **HTTPS (nginx)** | **Living document** |
-| Archive (v1.1) | Claude → repo | Git | Permanent (repo) |
+| Handoff file (v1) | Claude â†’ Claude | Git | Permanent (repo) |
+| Conversation URL (v1.1) | Grok/ChatGPT â†’ Claude | HTTPS | Ephemeral (platform) |
+| Seed Prompt (v1.1) | Operator â†’ Claude | Clipboard | Session-only |
+| **Outbound Baton (v2.1)** | **Claude â†’ All agents** | **HTTPS (nginx)** | **Living document** |
+| Archive (v1.1) | Claude â†’ repo | Git | Permanent (repo) |
 
 ### The Full Loop
 
 ```
-Grok reads standup URL → brainstorms with Pierre → Pierre pastes conv URL into Claude
-     ↑                                                        │
-     │                                                        ▼
-     │                                              Claude reads conversation
-     │                                              Archives to memory/
-     │                                              Routes to project/skill
-     │                                              Commits updated standup
-     │                                              (instantly live via HTTPS)
-     │                                                        │
-     └────────────────────────────────────────────────────────┘
+Grok reads standup URL â†’ brainstorms with Pierre â†’ Pierre pastes conv URL into Claude
+     â†‘                                                        â”‚
+     â”‚                                                        â–¼
+     â”‚                                              Claude reads conversation
+     â”‚                                              Archives to memory/
+     â”‚                                              Routes to project/skill
+     â”‚                                              Commits updated standup
+     â”‚                                              (instantly live via HTTPS)
+     â”‚                                                        â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
                         COMPLETE LOOP
               ONE MEAT PUPPET STEP REMAINING
            (pasting conversation URL into Claude)
 ```
 
-The loop is nearly closed.  Claude commits → file is instantly live → peer agents read it → peer agents contribute → Pierre pastes conversation URL → Claude ingests → Claude commits.  The only manual step: pasting one URL.
+The loop is nearly closed.  Claude commits â†’ file is instantly live â†’ peer agents read it â†’ peer agents contribute â†’ Pierre pastes conversation URL â†’ Claude ingests â†’ Claude commits.  The only manual step: pasting one URL.
 
 ### Remaining Gap & v3 Direction
 
 **The last meat puppet step:** Pierre pastes a Grok/ChatGPT conversation URL into a Claude session so Claude can ingest the peer agent's work.
 
 **v3 target:** Eliminate this step.  Options under consideration:
-1. **Webhook receiver** — A simple HTTP POST endpoint on Hot Rod that accepts standup entries from peer agents.  Grok or ChatGPT outputs a curl command; Pierre runs it (or it auto-runs).
-2. **Polling** — Claude periodically checks known conversation URLs for updates.
-3. **Email relay** — Peer agents email standup entries to skippy@nukasoft.ai; Claude's inbox pipeline ingests them automatically.
+1. **Webhook receiver** â€” A simple HTTP POST endpoint on Hot Rod that accepts standup entries from peer agents.  Grok or ChatGPT outputs a curl command; Pierre runs it (or it auto-runs).
+2. **Polling** â€” Claude periodically checks known conversation URLs for updates.
+3. **Email relay** â€” Peer agents email standup entries to skippy@nukasoft.ai; Claude's inbox pipeline ingests them automatically.
 
-Option 3 is the most likely path — the inbox pipeline already exists and every agent can "send an email."
+Option 3 is the most likely path â€” the inbox pipeline already exists and every agent can "send an email."
 
 ---
 
