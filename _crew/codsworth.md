@@ -4,12 +4,7 @@ excerpt: "NAS file organization and Synology management -- the butler"
 persona: "Fallout"
 role: "NAS File Organization"
 status: "Active"
-dept: "infra"
-pronouns: "He / Him"
-crew_id: "012"
 order: 4
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** NAS File Organization and Synology Management

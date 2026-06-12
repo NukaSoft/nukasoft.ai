@@ -4,15 +4,10 @@ excerpt: "Conductor -- autonomous operations orchestrator, always connected"
 persona: "Star Wars"
 role: "Conductor / Operations Orchestrator"
 status: "Active"
-dept: "infra"
-pronouns: "They / Them"
-crew_id: "014"
 order: 14
 classification: "Secret Agent"
 header:
   teaser: /assets/images/crew/lobot-badge.jpeg
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 ![Lobot — NukaSoft Employee Badge](/assets/images/crew/lobot-badge.jpeg){: .align-right style="max-width: 200px;"}

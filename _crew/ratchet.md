@@ -4,12 +4,7 @@ excerpt: "Local AI infrastructure medic — keeps Ollama and the Phi stack runni
 persona: "Transformers G1"
 role: "Local AI Infrastructure Manager"
 status: "Active"
-dept: "infra"
-pronouns: "He / Him"
-crew_id: "013"
 order: 11
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Local AI Infrastructure Manager

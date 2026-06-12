@@ -4,12 +4,7 @@ excerpt: "MEP Public Relay Operator | hailing frequencies open between the priva
 persona: "Star Trek: The Original Series"
 role: "MEP Public Relay Operator"
 status: "Active"
-dept: "comms"
-pronouns: "She / Her"
-crew_id: "011"
 order: 10
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** MEP Public Relay Operator

@@ -4,12 +4,7 @@ excerpt: "D365 Field Service tactical advisor — always calibrating"
 persona: "Mass Effect"
 role: "D365 Field Service Tactical Advisor"
 status: "Active"
-dept: "ops"
-pronouns: "He / Him"
-crew_id: "016"
 order: 12
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** D365 Field Service Tactical Advisor

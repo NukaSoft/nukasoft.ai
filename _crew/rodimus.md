@@ -4,12 +4,7 @@ excerpt: "General-purpose automation -- the generalist, simplest approach first"
 persona: "Transformers"
 role: "General-Purpose Automation"
 status: "Active"
-dept: "eng"
-pronouns: "He / Him"
-crew_id: "007"
 order: 7
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** General-Purpose Automation / Orchestrator

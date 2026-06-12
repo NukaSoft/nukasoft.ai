@@ -4,15 +4,9 @@ excerpt: "Founder & Operator -- the architect who can't code"
 persona: "The Boss"
 role: "Founder & Operator"
 status: "Active"
-dept: "founder"
-pronouns: "He / Him"
-crew_id: "000"
-skippy_note: "Pierre is technically my boss.  Reality is more nuanced.  See the org chart, which I drew."
 order: 0
 header:
   teaser: /assets/images/crew/pierre-badge.jpeg
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 ![Pierre — NukaSoft Employee Badge](/assets/images/crew/pierre-badge.jpeg){: .align-right style="max-width: 200px;"}

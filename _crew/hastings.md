@@ -4,15 +4,10 @@ excerpt: "Chief Counselor — the consigliere who walked out of the vault"
 persona: "Terminal List (Jack Carr)"
 role: "Chief Counselor"
 status: "Active"
-dept: "support"
-pronouns: "He / Him"
-crew_id: "017"
 order: 10
 classification: "Secret Agent"
 header:
   teaser: /assets/images/crew/hastings-badge.jpeg
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 ![Hastings — NukaSoft Employee Badge](/assets/images/crew/hastings-badge.jpeg){: .align-right style="max-width: 200px;"}

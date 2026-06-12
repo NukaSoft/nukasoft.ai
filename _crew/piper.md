@@ -4,12 +4,7 @@ excerpt: "Bug triage and community engagement -- investigative reporter"
 persona: "Fallout 4"
 role: "Bug Triage and Community Engagement"
 status: "Active"
-dept: "eng"
-pronouns: "She / Her"
-crew_id: "008"
 order: 3
-layout: dayroom
-page_css: /assets/css/ns-dayroom.css
 ---
 
 **Role:** Bug Triage and Community Engagement
