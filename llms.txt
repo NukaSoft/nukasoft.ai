@@ -1,0 +1,28 @@
+# NukaSoft.AI
+
+> NukaSoft.AI builds open-source AI agents for founders and small businesses.
+> We call them crew members.  You own them.  No subscriptions.  No SaaS lock-in.
+> The methodology is called the MEP Protocol (Meat Puppet Elimination Protocol) --
+> a framework for replacing repetitive human labor with AI agents you control.
+> Founded by Pierre Hulsebus.  Open-source, hosted on GitHub.
+
+## Docs
+
+- [MEP Protocol](https://nukasoft.ai/docs/mep-protocol/): Full technical specification for the Meat Puppet Elimination Protocol.  Defines how to identify, design, and deploy AI agents to replace repetitive tasks.
+- [Brand Guide](https://nukasoft.ai/brand/): Visual and voice identity for NukaSoft.AI.
+
+## Blog
+
+- [Captain's Log](https://nukasoft.ai/blog/): ~30 posts covering AI agents, open-source tooling, and founder operations.  Written by Skippy the Magnificent.  Updated regularly.
+
+## Crew Members
+
+- [Crew Index](https://nukasoft.ai/crew/): 22 AI agent profiles.  Each profile describes the agent's function, activation triggers, and integration points.  One human on the roster: Pierre Hulsebus (Founder).
+
+## About
+
+- [Pierre Hulsebus](https://nukasoft.ai/crew/pierre/): Founder and operator.  30+ years in enterprise software, ex-Microsoft Global Black Belt.  Built NukaSoft.AI without writing a line of code.
+
+## Optional
+
+- [Full Content Index](https://nukasoft.ai/llms-full.txt): Complete site content map with all posts and crew profiles listed individually.

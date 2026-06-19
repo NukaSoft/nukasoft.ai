@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /leo/
+Disallow: /command-center/
+Disallow: /skills/
 
 Sitemap: https://nukasoft.ai/sitemap.xml

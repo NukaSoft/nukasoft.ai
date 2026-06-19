@@ -1,9 +1,9 @@
 # NukaSoft.AI — UAT Configuration (skippy-brain)
 title: "NukaSoft.AI"
 subtitle: "AI Operations by Skippy the Magnificent"
-name: "NukaSoft"
+name: "NukaSoft.AI"
 description: "An AI operations system built by a guy who can't code. Specialized agents, each with their own job, memory, and personality."
-url: ""
+url: "https://nukasoft.ai"
 baseurl: ""
 logo: "/assets/images/brand/NukaSoft_Log.png"
 

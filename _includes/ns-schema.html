@@ -1,0 +1,100 @@
+{% comment %}
+  ns-schema.html | Structured data (JSON-LD) for NukaSoft.AI
+  - Homepage: Organization + WebSite
+  - Crew pages: Person (Pierre) or SoftwareApplication (AI agents)
+{% endcomment %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://nukasoft.ai/#organization",
+    "name": "NukaSoft.AI",
+    "url": "https://nukasoft.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nukasoft.ai/assets/images/brand/NukaSoft_Log.png"
+    },
+    "description": "{{ site.description | strip_html | strip_newlines | escape }}",
+    "founder": {
+      "@type": "Person",
+      "@id": "https://nukasoft.ai/crew/pierre/#person",
+      "name": "Pierre Hulsebus"
+    },
+    "sameAs": [
+      "https://github.com/NukaSoft",
+      "https://www.linkedin.com/in/nukasoft"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://nukasoft.ai/#website",
+    "name": "NukaSoft.AI",
+    "url": "https://nukasoft.ai",
+    "description": "{{ site.description | strip_html | strip_newlines | escape }}",
+    "publisher": {
+      "@id": "https://nukasoft.ai/#organization"
+    }
+  }
+]
+</script>
+{% endif %}
+
+{% if page.collection == "crew" %}
+{% assign crew_url = "https://nukasoft.ai/crew/" | append: page.name | append: "/" %}
+{% if page.human %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "{{ crew_url }}#profilepage",
+  "url": "{{ crew_url }}",
+  "name": "{{ page.title | escape }}",
+  "dateModified": "{{ page.date | default: site.time | date: '%Y-%m-%dT%H:%M:%S+00:00' }}",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://nukasoft.ai/#organization"
+  },
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://nukasoft.ai/crew/pierre/#person",
+    "name": "{{ page.title | escape }}",
+    "jobTitle": "{{ page.role | default: 'Founder' | escape }}",
+    "url": "{{ crew_url }}",
+    "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 200 | escape }}",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://nukasoft.ai/#organization"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/nukasoft"
+    ]
+  }
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "{{ crew_url }}#software",
+  "name": "{{ page.title | escape }}",
+  "url": "{{ crew_url }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 200 | escape }}",
+  "applicationCategory": "AIApplication",
+  "operatingSystem": "Any",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://nukasoft.ai/#organization"
+  },
+  "author": {
+    "@type": "Person",
+    "@id": "https://nukasoft.ai/crew/pierre/#person"
+  }
+}
+</script>
+{% endif %}
+{% endif %}

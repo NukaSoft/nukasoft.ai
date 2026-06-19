@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-# NukaSoft Brand Guide
+## NukaSoft Brand Guide
 
 *The full bible. Colors, typography, voice, Rita, the rocket bottle, Pierre's writing style. Everything you need to format or write on-brand.*
 

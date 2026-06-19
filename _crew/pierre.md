@@ -1,8 +1,10 @@
 ---
 title: "Pierre \"Ownz\" Hulsebus"
+description: "Founder of NukaSoft.AI.  30+ years enterprise software, ex-Microsoft Global Black Belt.  Built an AI operations crew without writing a single line of code.  Architect of the MEP Protocol and the H.A.C.K.S. framework."
 excerpt: "Founder & Operator -- the architect who can't code"
 persona: "The Boss"
 role: "Founder & Operator"
+human: true
 status: "Active"
 order: 0
 header:
