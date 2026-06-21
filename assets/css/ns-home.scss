@@ -6,6 +6,8 @@
 @charset "utf-8";
 
 @import "ns-tokens";
+@import "ns-chrome";
+@import "ns-content";
 
 // Page-specific partials.  Each redesigned page gets its own.
 @import "page-home";
