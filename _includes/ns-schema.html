@@ -98,3 +98,63 @@
 </script>
 {% endif %}
 {% endif %}
+
+{% if page.collection == "docs" %}
+{% assign doc_url = page.url | prepend: "https://nukasoft.ai" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "{{ doc_url }}#techarticle",
+  "headline": "{{ page.title | escape }}",
+  "url": "{{ doc_url }}",
+  "description": "{{ page.excerpt | default: page.description | strip_html | strip_newlines | truncate: 200 | escape }}",
+  "datePublished": "{{ page.date | default: site.time | date: '%Y-%m-%dT%H:%M:%S+00:00' }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | default: site.time | date: '%Y-%m-%dT%H:%M:%S+00:00' }}",
+  "author": {
+    "@type": "Person",
+    "@id": "https://nukasoft.ai/crew/pierre/#person",
+    "name": "Pierre Hulsebus"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://nukasoft.ai/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ doc_url }}"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.categories contains "captains-log" %}
+{% assign post_url = page.url | prepend: "https://nukasoft.ai" %}
+{% assign post_img = page.image | default: page.header.teaser | default: "/assets/images/brand/NukaSoft_Log.png" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "{{ post_url }}#blogposting",
+  "headline": "{{ page.title | escape }}",
+  "url": "{{ post_url }}",
+  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 200 | escape }}",
+  "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S+00:00' }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%dT%H:%M:%S+00:00' }}",
+  "image": "{{ post_img | prepend: 'https://nukasoft.ai' }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: 'Skippy the Magnificent' | escape }}",
+    "url": "https://nukasoft.ai/crew/skippy/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://nukasoft.ai/#organization"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ post_url }}"
+  }
+}
+</script>
+{% endif %}
