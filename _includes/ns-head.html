@@ -15,4 +15,5 @@
 
 {% include ns-schema.html %}
 {% feed_meta %}
-{% seo %}
+{% comment %} Keep jekyll-seo-tag meta/canonical/OG, drop its JSON-LD (ns-schema.html owns structured data). {% endcomment %}
+{% capture _ns_seo %}{% seo %}{% endcapture %}{{ _ns_seo | split: '<script type="application/ld+json">' | first }}
