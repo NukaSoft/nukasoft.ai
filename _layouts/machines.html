@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% comment %} Meta description is owned by jekyll-seo-tag below (single, untruncated). No manual duplicate here. {% endcomment %}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/ns-home.css' | relative_url }}">
+  {% comment %} Campaign styles load AFTER the site sheet. Every rule is scoped under
+     .ns-machines, so the mockup's .topbar / .btn / .star cannot touch site chrome. {% endcomment %}
+  <link rel="stylesheet" href="{{ '/assets/css/ns-machines.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kaushan+Script&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  {% feed_meta %}
+  {% comment %} Keep jekyll-seo-tag meta/canonical/OG, drop its JSON-LD (ns-schema.html owns structured data). {% endcomment %}
+  {% capture _ns_seo %}{% seo %}{% endcapture %}{{ _ns_seo | split: '<script type="application/ld+json">' | first }}
+  {% include ns-schema.html %}
+</head>
+<body class="ns-site">
+
+{% include ns-topbar.html %}
+
+<main>
+  <div class="ns-machines">
+    {{ content }}
+  </div>
+</main>
+
+{% include ns-footer.html %}
+
+</body>
+</html>

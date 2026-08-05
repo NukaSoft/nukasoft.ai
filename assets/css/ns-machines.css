@@ -1,0 +1,153 @@
+/* NukaSoft Machines | campaign styles.
+   Every selector is scoped under .ns-machines so the mockup cannot restyle site chrome.
+   The mockup defines .topbar, .btn and .star, all of which the site also uses. */
+.ns-machines{--nuka-red:#C41E24;
+    --nuka-red-dark:#9E141A;
+    --cream:#F5E6C8;
+    --white:#FFFFFF;
+    --cola:#3D1C0B;
+    --sky:#87CEEB;
+    --denim:#5B7FA5;
+    --brass:#8B6914;
+    --rad:#F1C40F;
+    --aged:#E8DCC8;
+    --ink:#2A1710;}
+.ns-machines *{box-sizing:border-box;}
+.ns-machines{margin:0;
+    font-family:"Work Sans",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    -webkit-font-smoothing:antialiased;}
+.ns-machines h1,.ns-machines h2,.ns-machines h3,.ns-machines h4{margin:0;line-height:1.05;}
+.ns-machines a{color:inherit;}
+.ns-machines .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.ns-machines .script{font-family:"Kaushan Script",cursive;}
+.ns-machines .slab{font-family:"Alfa Slab One",serif;}
+.ns-machines .cond{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.06em;}
+
+/* faint print-grain overlay on dark bands */
+.ns-machines .grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* ---- top utility nav ---- */
+.ns-machines .topbar{background:var(--cola);color:var(--cream);font-size:13px;}
+.ns-machines .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:40px;}
+.ns-machines .topbar .crumb{letter-spacing:.14em;text-transform:uppercase;font-family:"Oswald",sans-serif;opacity:.85;}
+.ns-machines .rad-badge{display:inline-flex;align-items:center;gap:7px;font-family:"Oswald",sans-serif;letter-spacing:.1em;text-transform:uppercase;font-size:12px;color:var(--rad);}
+.ns-machines .trefoil{width:16px;height:16px;flex:0 0 auto;}
+
+/* ---- hero ---- */
+.ns-machines .hero{position:relative;overflow:hidden;background:
+      radial-gradient(120% 90% at 78% 15%, #E23A3F 0%, var(--nuka-red) 42%, var(--nuka-red-dark) 100%);
+    color:var(--cream);}
+.ns-machines .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:56px;padding-bottom:56px;position:relative;z-index:2;}
+.ns-machines .kicker{display:inline-block;background:var(--cream);color:var(--nuka-red);font-family:"Oswald",sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12px;padding:6px 14px;border-radius:2px;margin-bottom:18px;box-shadow:2px 2px 0 rgba(0,0,0,.25);}
+.ns-machines .hero h1{font-size:clamp(40px,6vw,74px);color:var(--white);text-shadow:3px 3px 0 rgba(0,0,0,.28);}
+.ns-machines .hero h1 .script{display:block;color:var(--cream);font-size:.62em;text-shadow:2px 2px 0 rgba(0,0,0,.28);transform:rotate(-3deg);margin-bottom:4px;}
+.ns-machines .hero p.lede{font-size:19px;line-height:1.5;max-width:30em;margin:20px 0 10px;color:#FBEFD8;}
+.ns-machines .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;}
+.ns-machines .btn{display:inline-flex;align-items:center;gap:9px;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.09em;font-weight:600;font-size:15px;padding:14px 24px;border-radius:3px;text-decoration:none;cursor:pointer;border:0;transition:transform .08s ease, box-shadow .08s ease;}
+.ns-machines .btn:active{transform:translateY(2px);}
+.ns-machines .btn-primary{background:var(--cream);color:var(--nuka-red);box-shadow:3px 3px 0 rgba(0,0,0,.3);}
+.ns-machines .btn-primary:hover{box-shadow:4px 4px 0 rgba(0,0,0,.35);}
+.ns-machines .btn-ghost{background:transparent;color:var(--cream);border:2px solid var(--cream);}
+.ns-machines .btn-ghost:hover{background:rgba(245,230,200,.12);}
+.ns-machines .btn-dark{background:var(--cola);color:var(--cream);box-shadow:3px 3px 0 rgba(0,0,0,.2);}
+.ns-machines .hero-figure{position:relative;}
+.ns-machines .hero-figure img{width:100%;border-radius:8px;border:6px solid var(--cream);box-shadow:10px 12px 0 rgba(0,0,0,.28);display:block;}
+.ns-machines .price-tag{position:absolute;top:-22px;right:-14px;background:var(--rad);color:var(--cola);font-family:"Oswald",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;padding:12px 16px;border-radius:50%;width:104px;height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(9deg);box-shadow:3px 4px 0 rgba(0,0,0,.3);line-height:1.1;}
+.ns-machines .price-tag b{font-size:16px;}
+
+/* decorative stars */
+.ns-machines .star{position:absolute;color:var(--cream);opacity:.9;z-index:1;pointer-events:none;}
+.ns-machines .star.s1{top:26px;left:6%;font-size:26px;transform:rotate(8deg);opacity:.5;}
+.ns-machines .star.s2{bottom:40px;left:44%;font-size:18px;opacity:.4;}
+.ns-machines .star.s3{top:60px;right:40%;font-size:14px;opacity:.45;}
+
+/* tagline ribbon */
+.ns-machines .ribbon{background:var(--cola);color:var(--cream);text-align:center;padding:14px 20px;position:relative;z-index:2;}
+.ns-machines .ribbon span{font-family:"Kaushan Script",cursive;font-size:clamp(18px,2.4vw,26px);}
+
+/* ---- section shell ---- */
+.ns-machines section{padding:72px 0;position:relative;}
+.ns-machines .sec-head{text-align:center;max-width:44em;margin:0 auto 44px;}
+.ns-machines .sec-eyebrow{color:var(--nuka-red);font-family:"Oswald",sans-serif;font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:13px;margin-bottom:12px;}
+.ns-machines .sec-head h2{font-size:clamp(30px,4.4vw,48px);color:var(--cola);}
+.ns-machines .sec-head p{font-size:17px;line-height:1.6;margin-top:16px;color:#5A4636;}
+
+/* feature cards */
+.ns-machines .features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.ns-machines .card{background:var(--white);border:1px solid #E4D6BC;border-radius:8px;padding:26px 22px;box-shadow:0 8px 20px rgba(61,28,11,.06);}
+.ns-machines .card .ic{width:46px;height:46px;border-radius:50%;background:var(--nuka-red);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:"Alfa Slab One",serif;font-size:20px;margin-bottom:16px;}
+.ns-machines .card h4{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:17px;color:var(--cola);margin-bottom:8px;}
+.ns-machines .card p{font-size:14.5px;line-height:1.55;color:#5A4636;margin:0;}
+
+/* brochure strip */
+.ns-machines .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.ns-machines .split img{width:100%;border-radius:8px;box-shadow:0 14px 30px rgba(61,28,11,.18);display:block;}
+.ns-machines .split h3{font-size:clamp(26px,3.4vw,38px);color:var(--cola);margin-bottom:14px;}
+.ns-machines .spec-list{list-style:none;padding:0;margin:18px 0 0;}
+.ns-machines .spec-list li{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed #D9C7A6;font-size:15px;}
+.ns-machines .spec-list li b{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.03em;color:var(--nuka-red);min-width:120px;}
+
+/* sales models */
+.ns-machines .models{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.ns-machines .model{background:var(--white);border:2px solid #E4D6BC;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 24px rgba(61,28,11,.08);position:relative;}
+.ns-machines .model.featured{border-color:var(--nuka-red);box-shadow:0 16px 34px rgba(196,30,36,.18);transform:translateY(-6px);}
+.ns-machines .model .flag{position:absolute;top:14px;right:-34px;background:var(--rad);color:var(--cola);font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:700;padding:5px 40px;transform:rotate(38deg);}
+.ns-machines .model .top{background:var(--nuka-red);color:var(--cream);padding:24px 24px 18px;}
+.ns-machines .model.featured .top{background:var(--cola);}
+.ns-machines .model .top .mname{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.05em;font-size:20px;font-weight:700;}
+.ns-machines .model .top .msub{font-size:13px;opacity:.85;margin-top:2px;}
+.ns-machines .model .body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;}
+.ns-machines .model .price{font-family:"Alfa Slab One",serif;font-size:30px;color:var(--cola);}
+.ns-machines .model .price small{font-family:"Work Sans",sans-serif;font-size:13px;color:#8a765f;font-weight:500;}
+.ns-machines .model ul{list-style:none;padding:0;margin:16px 0 22px;flex:1;}
+.ns-machines .model ul li{font-size:14px;padding:7px 0 7px 24px;position:relative;color:#4a382a;}
+.ns-machines .model ul li::before{content:"★";position:absolute;left:0;color:var(--nuka-red);font-size:12px;top:8px;}
+.ns-machines .model .btn{width:100%;justify-content:center;}
+
+/* showroom band */
+.ns-machines .showroom{position:relative;color:var(--cream);text-align:center;padding:0;}
+.ns-machines .showroom .bg{position:relative;}
+.ns-machines .showroom img{width:100%;display:block;max-height:520px;object-fit:cover;filter:saturate(1.05);}
+.ns-machines .showroom .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,28,11,.15),rgba(61,28,11,.72));display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0 24px 54px;}
+.ns-machines .showroom .overlay h2{font-size:clamp(28px,4vw,46px);color:var(--white);text-shadow:2px 2px 0 rgba(0,0,0,.4);}
+.ns-machines .showroom .overlay p{max-width:36em;font-size:17px;margin:14px 0 22px;text-shadow:0 1px 3px rgba(0,0,0,.5);}
+
+/* service */
+.ns-machines #service{background:
+      linear-gradient(180deg,#241612 0%, #1b100d 100%);color:var(--cream);}
+.ns-machines #service .sec-eyebrow{color:var(--rad);}
+.ns-machines #service .sec-head h2{color:var(--white);}
+.ns-machines #service .sec-head p{color:#D9C6AE;}
+.ns-machines .svc-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;}
+.ns-machines .svc-figure img{width:100%;border-radius:10px;border:5px solid var(--cream);box-shadow:0 16px 34px rgba(0,0,0,.4);display:block;}
+.ns-machines .svc-figure .cap{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--rad);margin-top:14px;text-align:center;}
+.ns-machines .plan{background:rgba(245,230,200,.05);border:1px solid rgba(245,230,200,.18);border-radius:10px;padding:22px 24px;margin-bottom:16px;}
+.ns-machines .plan h4{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:18px;color:var(--white);display:flex;align-items:center;justify-content:space-between;}
+.ns-machines .plan h4 .tier{font-size:12px;background:var(--nuka-red);color:var(--cream);padding:4px 10px;border-radius:20px;letter-spacing:.06em;}
+.ns-machines .plan.hot h4 .tier{background:var(--rad);color:var(--cola);}
+.ns-machines .plan p{font-size:14.5px;line-height:1.55;color:#D9C6AE;margin:10px 0 0;}
+
+/* Rita promise */
+.ns-machines .promise{background:var(--sky);color:var(--cola);text-align:center;padding:56px 0;position:relative;overflow:hidden;}
+.ns-machines .promise .wrap{position:relative;z-index:2;max-width:42em;}
+.ns-machines .promise .script{font-size:clamp(26px,4vw,42px);color:var(--nuka-red);}
+.ns-machines .promise p{font-size:17px;line-height:1.6;margin-top:14px;}
+.ns-machines .promise .sig{font-family:"Kaushan Script",cursive;font-size:24px;color:var(--cola);margin-top:20px;}
+.ns-machines .wordmark{font-family:"Kaushan Script",cursive;font-size:34px;color:var(--cream);}
+.ns-machines .wordmark sup{font-size:12px;}
+@media(max-width:900px){
+.ns-machines .hero .wrap{grid-template-columns:1fr;}
+.ns-machines .features{grid-template-columns:1fr 1fr;}
+.ns-machines .models{grid-template-columns:1fr;}
+.ns-machines .split,.ns-machines .svc-grid{grid-template-columns:1fr;}
+.ns-machines .price-tag{width:88px;height:88px;top:-14px;}
+  
+}
+@media(max-width:560px){
+.ns-machines .features{grid-template-columns:1fr;}
+  
+}
+
