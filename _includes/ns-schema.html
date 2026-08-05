@@ -158,3 +158,70 @@
 }
 </script>
 {% endif %}
+
+{% comment %}
+  Machines | the NukaSoft Bottle Dispenser product line.
+  Real products with real pricing (confirmed 2026-08-05), sold and serviced by
+  NukaSoft and tracked as customer assets in D365 Field Service.
+  Prices here MUST match the visible page copy | Google flags a mismatch.
+{% endcomment %}
+{% if page.url contains "/machines" %}
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "https://nukasoft.ai/machines/#counter-cadet",
+    "name": "NukaSoft Bottle Dispenser | Counter Cadet",
+    "description": "Compact tabletop bottle dispenser.  90 bottles across 3 columns with Nuka-Chill compact cooling, sized for a countertop or break nook.  Includes a 1-year Basic Tune-Up.",
+    "image": "https://nukasoft.ai/assets/images/machines/machine-hero.jpg",
+    "category": "Beverage Vending Machine",
+    "brand": { "@id": "https://nukasoft.ai/#organization" },
+    "offers": {
+      "@type": "Offer",
+      "price": "1957",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://nukasoft.ai/machines/",
+      "seller": { "@id": "https://nukasoft.ai/#organization" }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "https://nukasoft.ai/machines/#standard-upright",
+    "name": "NukaSoft Bottle Dispenser | Standard Upright",
+    "description": "The full-height bottle dispenser and the best seller of the line.  Full showroom presence with Nuka-Chill cooling, Connected Field Service ready for IoT predictive maintenance.",
+    "image": "https://nukasoft.ai/assets/images/machines/machine-hero.jpg",
+    "category": "Beverage Vending Machine",
+    "brand": { "@id": "https://nukasoft.ai/#organization" },
+    "offers": {
+      "@type": "Offer",
+      "price": "3349",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://nukasoft.ai/machines/",
+      "seller": { "@id": "https://nukasoft.ai/#organization" }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "https://nukasoft.ai/machines/#shelter-edition",
+    "name": "NukaSoft Bottle Dispenser | Shelter Edition",
+    "description": "Ruggedized off-grid bottle dispenser built for hard environments.  The heavy-duty unit in the NukaSoft line, Connected Field Service ready.",
+    "image": "https://nukasoft.ai/assets/images/machines/machine-service.webp",
+    "category": "Beverage Vending Machine",
+    "brand": { "@id": "https://nukasoft.ai/#organization" },
+    "offers": {
+      "@type": "Offer",
+      "price": "4880",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://nukasoft.ai/machines/",
+      "seller": { "@id": "https://nukasoft.ai/#organization" }
+    }
+  }
+]
+</script>
+{% endif %}
