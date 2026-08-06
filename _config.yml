@@ -41,9 +41,6 @@ collections:
   docs:
     output: true
     permalink: /docs/:name/
-  learnings:
-    output: true
-    permalink: /learnings/:name/
 
 # Defaults
 defaults:

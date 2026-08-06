@@ -1,9 +1,7 @@
 {% comment %}
   ns-topbar.html | Sticky topbar with primary nav.
-  Per redesign: Home / Machines / Crew / Skills / Logs / Learnings / Docs.
+  Per redesign: Home / Machines / Crew / Skills / Logs / Docs.
   Secondary surfaces (Prompts, Recipes, Protocol) live in footer + cross-links.
-  NOTE: this nav is hardcoded here.  _data/navigation.yml is NOT used by this
-  theme setup | editing it changes nothing.  Edit this file.
 {% endcomment %}
 <header class="topbar">
   <div class="topbar-inner">
@@ -17,7 +15,6 @@
       <a href="{{ '/crew/' | relative_url }}"{% if page.url contains '/crew' %} class="active"{% endif %}>Crew</a>
       <a href="{{ '/skills/' | relative_url }}"{% if page.url contains '/skills' %} class="active"{% endif %}>Skills</a>
       <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="active"{% endif %}>Logs</a>
-      <a href="{{ '/learnings/' | relative_url }}"{% if page.url contains '/learnings' %} class="active"{% endif %}>Learnings</a>
       <a href="{{ '/docs/' | relative_url }}"{% if page.url contains '/docs' %} class="active"{% endif %}>Docs</a>
       <a href="https://github.com/NukaSoft/nukasoft.ai" class="gh"><span class="star">★</span> GitHub</a>
     </nav>
