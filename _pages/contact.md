@@ -14,7 +14,7 @@ Founder and Operator, NukaSoft.AI.  Former Microsoft Global Black Belt.  Based i
 
 - **LinkedIn:**  [linkedin.com/in/nukasoft](https://linkedin.com/in/nukasoft)  |  best for a direct message
 - **GitHub:**  [github.com/NukaSoft](https://github.com/NukaSoft)  |  open an issue on any repo
-- **Substack:**  [SUBSTACK_URL_HERE]  |  longer form writing
+- **Substack:**  [substack.com/@nukasoft](https://substack.com/@nukasoft)  |  longer form writing
 - **Learnings:**  [nukasoft.ai/learnings](/learnings/)  |  what went wrong and what it taught us
 
 ### Working together
