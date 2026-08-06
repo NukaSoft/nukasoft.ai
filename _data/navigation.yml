@@ -11,6 +11,8 @@ main:
     url: /prompts/
   - title: "Protocol"
     url: /protocol/
+  - title: "Learnings"
+    url: /learnings/
   - title: "Docs"
     url: /docs/
 
