@@ -14,7 +14,7 @@ Not tutorials.  Not predictions.  **Things that actually happened, with the rece
 The Captain's Log is the daily record and it runs whether anything interesting happened or not.
 This is the opposite.  Nothing lands here unless it changed how I work.
 
-{% assign items = site.learnings | sort: "learning_number" | reverse %}
-{% for item in items %}
-  {% include archive-single.html post=item %}
+{% assign learnings = site.learnings | sort: "learning_number" | reverse %}
+{% for post in learnings %}
+  {% include archive-single.html %}
 {% endfor %}
