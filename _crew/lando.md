@@ -1,16 +1,29 @@
 ---
 title: "Lando"
-excerpt: "Brand management and creative direction -- smooth operator"
+excerpt: "Brand management and creative direction -- smooth operator.  Retired 2026."
 persona: "Star Wars"
 role: "Brand Management"
-status: "Active"
+status: "Retired"
+retired_date: 2026-08-11
+succeeded_by: "rita"
 order: 8
 ---
 
 **Role:** Brand Management / Creative Director
 **Named after:** Lando Calrissian from *Star Wars* (smooth operator, entrepreneur, marketing genius)
 **Reports to:** Skippy
-**Status:** Active
+**Status:** Retired, August 2026
+**Mandate inherited by:** [Rita](/crew/rita/), on her promotion to Chief Content Officer
+
+---
+
+> **Retired crew.**  Lando stepped down in the August 2026 marketing
+> reorganization, when brand strategy and brand craft were consolidated under a
+> single owner.  He is kept here because the work did not leave with him.  The
+> brand bible pattern, the NukaSoft palette, the rocket bottle spec, and the
+> scaffolds for Do Nothing Company and Powered Wild are all still in service.
+>
+> He would want it noted that the number of fins was never arbitrary.
 
 ---
 
