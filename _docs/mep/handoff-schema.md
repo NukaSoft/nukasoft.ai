@@ -2,7 +2,7 @@
 
 **Version:** 1.0
 **Date:** 2026-03-22
-**License:** AGPL-3.0-or-later â€” Copyright (C) 2026 Pierre Hulsebus / NukaSoft.AI
+**License:** CC BY 4.0 | Copyright 2026 Pierre Hulsebus / NukaSoft.AI
 
 ---
 
