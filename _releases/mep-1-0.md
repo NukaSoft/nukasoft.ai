@@ -1,11 +1,13 @@
 ---
 title: "MEP 1.0"
 excerpt: ""
+product: mep
 version: "1.0"
 release_date: 2026-03-22
+current: false
 ---
 
-**Released 2026-03-22** | [Read the specification at this version](/docs/mep-protocol-v1/)
+**Released 2026-03-22**  |  [Read the specification at this version](/docs/mep-protocol-v1/)
 
 **Initial release.**
 
@@ -30,4 +32,4 @@ release_date: 2026-03-22
 
 ---
 
-[All releases](/releases/) | [Current specification](/docs/mep-protocol/)
+[All MEP releases](/releases/)  |  [Current specification](/docs/mep-protocol/)

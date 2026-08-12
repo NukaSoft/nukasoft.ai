@@ -1,8 +1,10 @@
 ---
 title: "MEP 2.0"
 excerpt: ""
+product: mep
 version: "2.0"
 release_date: 2026-04-13
+current: false
 ---
 
 **Released 2026-04-13**
@@ -26,4 +28,4 @@ release_date: 2026-04-13
 
 ---
 
-[All releases](/releases/) | [Current specification](/docs/mep-protocol/)
+[All MEP releases](/releases/)  |  [Current specification](/docs/mep-protocol/)

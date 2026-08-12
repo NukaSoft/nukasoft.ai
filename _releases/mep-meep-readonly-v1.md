@@ -1,11 +1,13 @@
 ---
 title: "MEP MEEP-ReadOnly-v1"
 excerpt: ""
+product: mep
 version: "MEEP-ReadOnly-v1"
 release_date: 2026-04-29
+current: false
 ---
 
-**Released 2026-04-29** | [Read the specification at this version](/docs/meep-readonly-v1/)
+**Released 2026-04-29**  |  [Read the specification at this version](/docs/meep-readonly-v1/)
 
 **Read-only peer-agent context surface.**
 
@@ -26,4 +28,4 @@ release_date: 2026-04-29
 
 ---
 
-[All releases](/releases/) | [Current specification](/docs/mep-protocol/)
+[All MEP releases](/releases/)  |  [Current specification](/docs/mep-protocol/)

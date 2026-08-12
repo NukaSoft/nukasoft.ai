@@ -1,0 +1,65 @@
+# Products and solutions with a docs section on nukasoft.ai.
+#
+# This file is the register.  A product that is not here does not get a
+# docs section, and nothing downstream may invent one.  Same rule as
+# skills/rita/brands.yml, for the same reason: one place to look, and
+# nulls that mean "unknown" rather than "somebody will fill this in".
+#
+# status:
+#   published | live on the site, release pages generated
+#   planned   | registered, nothing generated yet.  nulls are expected here
+#
+# changelog is a path relative to the repo root.  Release pages are
+# GENERATED from it by scripts/build-release-pages.py and must never be
+# hand written, or the site and the repository drift and only one of them
+# is right.
+#
+# specs maps a version to the URL of the specification AT that version.
+# Most versions have no standalone document, only a changelog entry, and
+# that is fine.  Omit rather than guess.
+
+- slug: mep
+  name: "MEP | Meat Puppet Elimination Protocol"
+  tagline: "A state relay for stateless AI sessions.  Stops a human being used as the message bus between machines."
+  status: published
+  changelog: docs/mep-project/CHANGELOG.md
+  current: "2.4"
+  specs:
+    "2.4": /docs/mep-protocol/
+    "MEEP-ReadOnly-v1": /docs/meep-readonly-v1/
+    "1.0": /docs/mep-protocol-v1/
+
+- slug: arp
+  name: "ARP | Agent Retirement Protocol"
+  tagline: "How to remove an agent without leaving its instructions behind to be followed by something that no longer exists."
+  status: published
+  changelog: null          # no changelog yet.  One release, no history to show
+  current: "1.0"
+  specs:
+    "1.0": /docs/arp-protocol/
+
+# --- Registered, not built.  Expected the week of 2026-08-17 -------------
+
+- slug: fsn
+  name: "Field Service Nerd"
+  tagline: null
+  status: planned
+  changelog: null
+  current: null
+  specs: {}
+
+- slug: weatherwyze
+  name: "WeatherWyze"
+  tagline: null
+  status: planned
+  changelog: null
+  current: null
+  specs: {}
+
+- slug: dpp
+  name: "Digital Product Passport"
+  tagline: null            # vault 111.  Public name not settled, see the vault registry
+  status: planned
+  changelog: null
+  current: null
+  specs: {}

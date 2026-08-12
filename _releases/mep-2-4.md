@@ -1,11 +1,13 @@
 ---
 title: "MEP 2.4"
 excerpt: "AGPL-3.0 replaced by a two license split by artifact type."
+product: mep
 version: "2.4"
 release_date: 2026-08-11
+current: true
 ---
 
-**Released 2026-08-11** | [Read the specification at this version](/docs/mep-protocol/)
+**Released 2026-08-11**  |  **Current release.**  |  [Read the specification at this version](/docs/mep-protocol/)
 
 ### Relicensed to full open source
 
@@ -30,4 +32,4 @@ both the private history and the public repository before relicensing.
 
 ---
 
-[All releases](/releases/) | [Current specification](/docs/mep-protocol/)
+[All MEP releases](/releases/)

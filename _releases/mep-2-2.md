@@ -1,8 +1,10 @@
 ---
 title: "MEP 2.2"
 excerpt: "- `s3-redshift-hosted-relay.md` | Rejected.  Correct SaaS architecture, wrong for a zero-infrastructure protocol."
+product: mep
 version: "2.2"
 release_date: 2026-04-15
+current: false
 ---
 
 **Released 2026-04-15**
@@ -29,4 +31,4 @@ release_date: 2026-04-15
 
 ---
 
-[All releases](/releases/) | [Current specification](/docs/mep-protocol/)
+[All MEP releases](/releases/)  |  [Current specification](/docs/mep-protocol/)
