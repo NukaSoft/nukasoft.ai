@@ -4,7 +4,19 @@ excerpt: "A self-enforcing asynchronous state relay for AI sessions across machi
 version: "1.0"
 date: 2026-03-22
 authors: "Pierre Hulsebus & Skippy the Magnificent"
+published: false
+archived: 2026-08-11
 ---
+
+> **ARCHIVED 2026-08-11**
+>
+> This copy is archived.  It duplicated the canonical spec at a URL that collided
+> with it, and had drifted to a different component numbering.
+> 
+> **Canonical:** `docs/mep-project/spec/mep-protocol.md`, rendered at `/docs/mep-protocol/`.
+> 
+> Retained rather than deleted so links and history still resolve.  `published: false`
+> stops it being served without removing the record.
 
 **Version:** 1.0
 **Date:** March 22, 2026

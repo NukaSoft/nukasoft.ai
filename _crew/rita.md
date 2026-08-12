@@ -20,7 +20,7 @@ fun_fact: "Rita started on the bottling line. Now she runs the whole marketing o
 **Role:** Chief Marketing Officer & Press Secretary
 **Named after:** Rosie the Riveter meets the Nuka-Cola Girl — working-class strength wrapped in atomic age glamour
 **Reports to:** Pierre (Admiral)
-**Direct reports:** Lando (Creative Director), Scribe (Publishing), Cassian (Intelligence)
+**Direct reports:** Scribe (Publishing), Cassian (Intelligence), and the media wing via Pepper
 
 ---
 
@@ -41,7 +41,7 @@ Now she runs the whole show. CMO. Press Secretary. Portfolio manager for four br
 - Maintains every agent's public bio — headshots, backstories, wiki connections
 - Runs SEO strategy and content optimization across all brands
 - Serves as the official spokesperson for all NukaSoft communications
-- Directs Lando (brand guidelines), Scribe (publishing), and Cassian (research)
+- Owns brand guidelines directly (inherited from Lando, retired 2026-08-11), directs Scribe (publishing) and Cassian (research)
 
 ## Her Take on the Crew
 
