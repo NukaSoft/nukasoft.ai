@@ -1,13 +1,17 @@
-﻿---
-title: "MEP -- Meat Puppet Elimination Protocol"
-excerpt: "A self-enforcing asynchronous state relay for AI sessions across machines"
+---
+title: "MEP 1.0 -- Meat Puppet Elimination Protocol"
+excerpt: "The original specification, 22 March 2026.  Superseded by 2.4."
 version: "1.0"
 date: 2026-03-22
 authors: "Pierre Hulsebus & Skippy the Magnificent"
-published: false
 archived: 2026-08-11
 ---
 
+> **This is an archived release.**  It is kept because MEP's own retirement
+> protocol says archive rather than delete, and because a specification with
+> no history is hard to trust.  The current version is
+> [MEP 2.4](/docs/mep-protocol/).  What changed between them is in the
+> [release notes](/releases/).
 > **ARCHIVED 2026-08-11**
 >
 > This copy is archived.  It duplicated the canonical spec at a URL that collided

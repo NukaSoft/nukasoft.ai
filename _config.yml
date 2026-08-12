@@ -47,6 +47,9 @@ collections:
   episodes:
     output: true
     permalink: /podcast/:name/
+  releases:
+    output: true
+    permalink: /releases/:name/
 
 # Defaults
 defaults:
@@ -87,6 +90,11 @@ defaults:
   - scope:
       path: ""
       type: episodes
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: releases
     values:
       layout: single
   - scope:
