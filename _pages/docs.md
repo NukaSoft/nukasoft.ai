@@ -34,12 +34,12 @@ How to remove an agent without leaving its instructions behind to be followed by
 
 ## Listen
 
-Both protocols have an episode on the **Captain's Log**, our podcast.  Rita Rivera and Skippy the Magnificent, roughly nine minutes each.
+Both protocols have an episode on the **[Captain's Log](/podcast/)**.  Rita Rivera and Skippy the Magnificent, roughly nine minutes each.
 
 | Episode | Subject |
 |---------|---------|
-| [**MEP -- The Protocol That Fired the Meat Puppet**](https://www.buzzsprout.com/2634993/episodes/19634912-mep-the-protocol-that-fired-the-meat-puppet) | Episode 3 |
-| [**Archive, Don't Delete**](https://www.buzzsprout.com/2634993/episodes/19634510-archive-don-t-delete) | Episode 2 |
+| [**MEP -- The Protocol That Fired the Meat Puppet**](/podcast/mep-protocol/) | Episode 3 -- the MEP spec, start to finish |
+| [**Archive, Don't Delete**](/podcast/archive-dont-delete/) | Episode 2 -- why ARP exists |
 
 ---
 

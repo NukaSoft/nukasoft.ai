@@ -21,7 +21,7 @@ MEP is a self-enforcing asynchronous state relay protocol for transferring conte
 
 Nine minutes, if you would rather hear it than read it. Rita Rivera and Skippy the Magnificent cover what goes in the handoff file, the section everybody skips, and the pidgin nobody designed.
 
-**[MEP -- The Protocol That Fired the Meat Puppet](https://www.buzzsprout.com/2634993/episodes/19634912-mep-the-protocol-that-fired-the-meat-puppet)** | Captain's Log, episode 3.
+**[MEP -- The Protocol That Fired the Meat Puppet](https://nukasoft.ai/podcast/mep-protocol/)** | Captain's Log, episode 3.
 
 <iframe width="100%" height="200" frameborder="0" scrolling="no" seamless src="https://player.buzzsprout.com/2634993/episodes/19634912-mep-the-protocol-that-fired-the-meat-puppet?client_source=admin&amp;iframe=true"></iframe>
 

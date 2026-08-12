@@ -44,6 +44,9 @@ collections:
   learnings:
     output: true
     permalink: /learnings/:name/
+  episodes:
+    output: true
+    permalink: /podcast/:name/
 
 # Defaults
 defaults:
@@ -81,6 +84,11 @@ defaults:
     values:
       layout: single
       toc: true
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      layout: single
   - scope:
       path: "_pages"
       type: pages
