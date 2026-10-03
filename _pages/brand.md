@@ -115,7 +115,7 @@ Three primary treatments.
 - Coca-Cola-inspired lettering | flowing, warm, inviting
 - Used for: clean/modern applications, social profiles, merchandise
 
-![Nuka-Soft Wordmark](/assets/images/NukaSoft_Wordmark_Design2.png)
+![Nuka-Soft Wordmark](/assets/images/brand/NukaSoft_Wordmark_Design2.png)
 
 ### Stacked Logo
 - Two-line treatment: "Nuka" on top, "Soft" below in cream/ivory script
@@ -124,7 +124,7 @@ Three primary treatments.
 - Large flowing swoosh from the "a" in Nuka
 - Used for: bottle labels, posters, billboards, vintage applications
 
-![Nuka-Soft Stacked Logo](/assets/images/NukaSoft_Log.png)
+![Nuka-Soft Stacked Logo](/assets/images/brand/NukaSoft_Log.png)
 
 ### Bottle Label (Round Medallion)
 - Circular red badge
@@ -181,9 +181,9 @@ She started on the bottling line. The company noticed her. They styled her | vic
 | **The Brand** | Victory rolls, red bandana, aviator goggles, styled coveralls, leather gloves, studio lighting | The "before" in before/after narratives, cautionary content, "this is what they did" |
 | **The Survivor (Present)** | Same victory rolls and coveralls but weathered, lived-in. Hand on hip, leaning against the bottle. Smile has weight, eyes have seen things. | **Default for all current NukaSoft content.** |
 
-![Rita Rivera](/assets/images/Rita_1.png)
+![Rita Rivera](/assets/images/brand/Rita_1.png)
 
-![Rita Rivera tin sign](/assets/images/Rita_Rivera.png)
+![Rita Rivera tin sign](/assets/images/brand/Rita_Rivera.png)
 
 ### Rita's Voice (Writing as Rita)
 
@@ -326,7 +326,7 @@ Pierre's writing lives on top of a few load-bearing personal notes. If you're wr
 - Red background upper two-thirds, cream/tan footer strip
 - Tagline ribbon banner at the bottom
 
-![Poster layout reference](/assets/images/Poster_1.png)
+![Poster layout reference](/assets/images/brand/Poster_1.png)
 
 ### Vintage Tin Sign (Portrait)
 - "NUKA-SOFT" in rough red brush lettering across the top
@@ -376,11 +376,11 @@ This isn't semantic fluff | it's a core brand principle. The term "Artificial Pe
 
 | File | Description | URL |
 |------|-------------|-----|
-| NukaSoft Wordmark | Clean white script on red | [/assets/images/NukaSoft_Wordmark_Design2.png](/assets/images/NukaSoft_Wordmark_Design2.png) |
-| NukaSoft Stacked Logo | Cream script with stars on red | [/assets/images/NukaSoft_Log.png](/assets/images/NukaSoft_Log.png) |
-| Rita (full body) | Rita with rocket bottle | [/assets/images/Rita_1.png](/assets/images/Rita_1.png) |
-| Rita (tin sign) | Portrait vintage tin sign | [/assets/images/Rita_Rivera.png](/assets/images/Rita_Rivera.png) |
-| Poster | Full landscape composition | [/assets/images/Poster_1.png](/assets/images/Poster_1.png) |
+| NukaSoft Wordmark | Clean white script on red | [/assets/images/brand/NukaSoft_Wordmark_Design2.png](/assets/images/brand/NukaSoft_Wordmark_Design2.png) |
+| NukaSoft Stacked Logo | Cream script with stars on red | [/assets/images/brand/NukaSoft_Log.png](/assets/images/brand/NukaSoft_Log.png) |
+| Rita (full body) | Rita with rocket bottle | [/assets/images/brand/Rita_1.png](/assets/images/brand/Rita_1.png) |
+| Rita (tin sign) | Portrait vintage tin sign | [/assets/images/brand/Rita_Rivera.png](/assets/images/brand/Rita_Rivera.png) |
+| Poster | Full landscape composition | [/assets/images/brand/Poster_1.png](/assets/images/brand/Poster_1.png) |
 
 ---
 
