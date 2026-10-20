@@ -185,7 +185,7 @@ Properties inherited from industrial shift changes:
 
 **An agent resolving its own operational failure without human intervention.**
 
-MEP was originally designed to carry context between sessions. The [First Autonomous CI Recovery milestone](spec/mep-protocol.md#milestone-first-autonomous-ci-recovery) (April 3, 2026) proved it can also close the *CI feedback loop* â€” diagnosing and fixing merge conflicts by reasoning about the baton's structure.
+MEP was originally designed to carry context between sessions. The [First Autonomous CI Recovery milestone](/docs/mep-protocol/#milestone-first-autonomous-ci-recovery) (April 3, 2026) proved it can also close the *CI feedback loop* â€” diagnosing and fixing merge conflicts by reasoning about the baton's structure.
 
 This is only possible because the baton is semantically structured. Free-form text cannot be autonomously merged. Structure enables reasoning.
 

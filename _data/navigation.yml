@@ -1,26 +1,93 @@
+# Source of truth for the rendered topbar and footer.
+# ns-topbar.html and ns-footer.html loop these lists. Labels, order, and
+# hrefs must match the 2026-10-19 chrome. Dead links get fixed; nothing else.
+#
+# TODO(Pierre): pick ONE public name for /blog/.
+# Do not change the rendered labels in this PR. Current labels, all pointing
+# at the same URL:
+#   topbar  -> Logs
+#   footer  -> Captain's Log
+#   footer  -> Stardates (duplicate of Captain's Log)
+# Choose one: Logs | Captain's Log | Stardates
+
 main:
   - title: "Home"
     url: /
-  - title: "Blog"
-    url: /blog/
+    match: exact
+  - title: "Machines"
+    url: /machines/
+    match: /machines
   - title: "Crew"
     url: /crew/
+    match: /crew
   - title: "Skills"
     url: /skills/
-  - title: "Prompts"
-    url: /prompts/
-  - title: "Protocol"
-    url: /protocol/
+    match: /skills
+  - title: "Logs"
+    url: /blog/
+    match: /blog
+  - title: "Learnings"
+    url: /learnings/
+    match: /learnings
   - title: "Docs"
     url: /docs/
+    match: /docs
+  - title: "GitHub"
+    url: https://github.com/NukaSoft/nukasoft.ai
+    class: gh
+    star: true
+    external: true
 
+footer:
+  - heading: "Ship"
+    links:
+      - title: "Crew"
+        url: /crew/
+      - title: "Skills"
+        url: /skills/
+      - title: "Recipes"
+        url: /recipes/
+      - title: "Prompts"
+        url: /prompts/
+  - heading: "Logs"
+    links:
+      - title: "Captain's Log"
+        url: /blog/
+      - title: "Stardates"
+        url: /blog/
+      - title: "RSS Feed"
+        url: /feed.xml
+  - heading: "Protocol"
+    links:
+      - title: "MEP"
+        url: /docs/mep-protocol/
+      - title: "Docs"
+        url: /docs/
+      - title: "Brand Guide"
+        url: /brand/
+      - title: "GitHub"
+        url: https://github.com/NukaSoft/nukasoft.ai
+        external: true
+
+legal:
+  - title: "Privacy"
+    url: /privacy/
+  - title: "Contact"
+    url: /contact/
+
+# Not rendered by ns-topbar or ns-footer. Kept as a roster index so the
+# unused theme sidebar key is not stale. /rita/ is the public Rita URL.
 crew:
   - title: "The Roster"
     children:
+      - title: "Pierre"
+        url: /crew/pierre/
       - title: "Skippy"
         url: /crew/skippy/
       - title: "Bishop"
         url: /crew/bishop/
+      - title: "Rita"
+        url: /rita/
       - title: "Piper"
         url: /crew/piper/
       - title: "Codsworth"
@@ -35,3 +102,25 @@ crew:
         url: /crew/lando/
       - title: "Radar"
         url: /crew/radar/
+      - title: "Hastings"
+        url: /crew/hastings/
+      - title: "Uhura"
+        url: /crew/uhura/
+      - title: "Nagatha"
+        url: /crew/nagatha/
+      - title: "Ratchet"
+        url: /crew/ratchet/
+      - title: "Garrus"
+        url: /crew/garrus/
+      - title: "Ripley"
+        url: /crew/ripley/
+      - title: "Lobot"
+        url: /crew/lobot/
+      - title: "Peggy"
+        url: /crew/peggy/
+      - title: "Alice"
+        url: /crew/alice/
+      - title: "Saul"
+        url: /crew/saul/
+      - title: "House"
+        url: /crew/house/

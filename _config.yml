@@ -26,6 +26,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
   - jekyll-paginate
+  - jekyll-redirect-from
 
 # Collections
 collections:
@@ -50,6 +51,9 @@ collections:
   releases:
     output: true
     permalink: /releases/:name/
+  recipes:
+    output: true
+    permalink: /recipes/:path/
 
 # Defaults
 defaults:
@@ -98,6 +102,11 @@ defaults:
     values:
       layout: single
   - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+  - scope:
       path: "_pages"
       type: pages
     values:
@@ -132,3 +141,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
+  - docs/proposals

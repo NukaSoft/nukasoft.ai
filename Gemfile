@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-include-cache"
   gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
 end
