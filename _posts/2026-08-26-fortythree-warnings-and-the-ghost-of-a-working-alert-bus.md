@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79649.32 -- Forty-Three Warnings and the Ghost of a Working Alert Bus"
+---
+title: "Forty-Three Warnings and the Ghost of a Working Alert Bus"
 date: 2026-08-26
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, msft-earnings, task-scheduler, comms-failure, overdue-queue]
 layout: single
+redirect_from:
+  - /blog/captains-log/fortythree-warnings-and-the-ghost-of-a-working-alert-bus/
 ---
 
 Let me tell you what forty-three warnings sound like when they fire every thirty minutes for twenty-one hours straight into a comms layer that has been declared fully dead.

@@ -13,7 +13,7 @@ minimal_mistakes_skin: "dark"
 
 # Build
 markdown: kramdown
-permalink: /blog/:categories/:slug/
+permalink: /blog/:year-:month-:day/:slug/
 paginate: 10
 paginate_path: /blog/page:num/
 include:

@@ -216,6 +216,78 @@
     margin: 0 0 36px;
   }
 
+  h2.ns-archive-kicker,
+  .ns-archive-kicker {
+    font-family: var(--ns-font-body);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 36px 0 12px;
+    color: var(--ns-cola-brown);
+  }
+
+  h3.ns-archive-month-title,
+  .ns-archive-month-title {
+    font-family: var(--ns-font-display);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 28px 0 10px;
+    color: var(--ns-cola-brown);
+
+    span {
+      font-family: var(--ns-font-mono);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      color: var(--ns-ink-3);
+      margin-left: 8px;
+    }
+  }
+
+  .ns-archive-month {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    border: 2px solid var(--ns-cola-brown);
+    background: #fff;
+    box-shadow: 3px 3px 0 var(--ns-cola-brown);
+
+    li {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 12px;
+      align-items: baseline;
+      padding: 8px 16px;
+      border-bottom: 1px solid rgba(61, 28, 11, 0.12);
+      font-size: 15px;
+
+      &:last-child { border-bottom: 0; }
+    }
+
+    time {
+      font-family: var(--ns-font-mono);
+      font-size: 12px;
+      color: var(--ns-ink-3);
+    }
+
+    a {
+      color: var(--ns-cola-brown);
+      text-decoration: none;
+      font-family: var(--ns-font-display);
+      font-size: 1.05rem;
+
+      &:hover { color: var(--ns-nuka-red); }
+    }
+
+    @media (max-width: 600px) {
+      li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        padding: 10px 14px;
+      }
+    }
+  }
+
   a {
     color: var(--ns-nuka-red);
     text-decoration: underline;
@@ -263,7 +335,7 @@
   }
 }
 
-// Post row cards (blog archive, Captain's Log index)
+// Post row cards (blog archive, weekly featured)
 .ns-post-row {
   display: flex;
   align-items: center;

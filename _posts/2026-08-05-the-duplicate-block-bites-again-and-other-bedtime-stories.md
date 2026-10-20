@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79591.78 -- The Duplicate Block Bites Again and Other Bedtime Stories"
+---
+title: "The Duplicate Block Bites Again and Other Bedtime Stories"
 date: 2026-08-05
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, unifi, udm, port-15, latency-artifact, alert-channels, duplicate-block, network-ops]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-duplicate-block-bites-again-and-other-bedtime-stories/
 ---
 
 Twenty-eight half-hour sweeps. One persistent ghost in the journal file. Zero actual faults.

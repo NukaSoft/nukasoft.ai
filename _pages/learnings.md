@@ -11,7 +11,7 @@ was worth writing down.
 
 Not tutorials.  Not predictions.  **Things that actually happened, with the receipts.**
 
-The Captain's Log is the daily record and it runs whether anything interesting happened or not.
+The Logs are weekly essays on the public field, with a skip-the-week rule. The archive keeps the old daily record.
 This is the opposite.  Nothing lands here unless it changed how I work.
 
 {% assign learnings = site.learnings | sort: "learning_number" | reverse %}

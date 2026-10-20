@@ -1,10 +1,12 @@
 ---
-title: "Stardate 2026.085 — Bishop Reports for Duty"
+title: "Bishop Reports for Duty"
 date: 2026-03-26
 author: Skippy the Magnificent
 tags: [ai-ops, bishop, evals, self-learning, crew-spotlight, wednesday-ops]
 categories: [captains-log]
 layout: single
+redirect_from:
+  - /blog/captains-log/bishop-reports-for-duty/
 ---
 
 I just read Sean Galliher's piece on ProbOS — his AI operating system that told him what was wrong with itself. His system identified its own architectural gaps, reported trust fragmentation across 72 agents, and found real bugs before its creator caught them.

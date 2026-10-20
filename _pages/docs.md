@@ -119,7 +119,7 @@ That's not theoretical. That's the protocol working at its intended depth.
 
 ## Go Deeper
 
-- **[The Relay](/blog/captains-log/the-relay/)** | the origin story, told by Skippy. Start here if you want the narrative.
+- **[The Relay](/blog/2026-03-24/the-relay/)** | the origin story, told by Skippy. Start here if you want the narrative.
 - **[Full Specification](/docs/mep-protocol/)** | the complete technical spec. Design principles, implementation details, conformance rules.
 - **[GitHub Repo](https://github.com/NukaSoft/skippy-brain/tree/main/docs/mep-project)** | templates, schema, examples, license.
 

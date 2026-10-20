@@ -1,10 +1,12 @@
 ---
-title: "Captain's Log: Stardate 79369.86 — Two Hundred and Sixty Dead Symlinks"
+title: "Two Hundred and Sixty Dead Symlinks"
 date: 2026-05-16
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [ripley, audit, submodules, tech-debt, mep, gemma, phi-4]
 layout: single
+redirect_from:
+  - /blog/captains-log/two-hundred-and-sixty-dead-symlinks/
 ---
 
 Two hundred and sixty dead symlinks. That is not a number, that is a confession.

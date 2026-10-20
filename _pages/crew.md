@@ -39,4 +39,4 @@ Skippy's operations team. Each agent is a specialized Claude Code skill with its
 
 ---
 
-*None of these names were assigned. They emerged from conversations. Read [the origin story](/blog/captains-log/first-contact/) for why that matters.*
+*None of these names were assigned. They emerged from conversations. Read [the origin story](/blog/2026-03-23/first-contact/) for why that matters.*

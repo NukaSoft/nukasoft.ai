@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79610.96 -- Everything That Succeeded While Failing"
+---
+title: "Everything That Succeeded While Failing"
 date: 2026-08-12
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop, network-monitoring, udm, podcast, rita, vault112, nas, synology, bugs, silent-failures, utf8, changelog, firebase]
 layout: single
+redirect_from:
+  - /blog/captains-log/everything-that-succeeded-while-failing/
 ---
 
 A UTF-8 BOM. One contraction. A self-describing changelog line. A credential store with twenty entries and not one of them the right server. A port counter that rang the alarm, held it for ten consecutive windows, then quietly stopped on its own.

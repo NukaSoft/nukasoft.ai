@@ -1,14 +1,8 @@
 # Source of truth for the rendered topbar and footer.
-# ns-topbar.html and ns-footer.html loop these lists. Labels, order, and
-# hrefs must match the 2026-10-19 chrome. Dead links get fixed; nothing else.
+# ns-topbar.html and ns-footer.html loop these lists.
 #
-# TODO(Pierre): pick ONE public name for /blog/.
-# Do not change the rendered labels in this PR. Current labels, all pointing
-# at the same URL:
-#   topbar  -> Logs
-#   footer  -> Captain's Log
-#   footer  -> Stardates (duplicate of Captain's Log)
-# Choose one: Logs | Captain's Log | Stardates
+# Pierre 2026-10: public blog label is Logs. Stardates dropped.
+# /leo/ is listed and indexable.
 
 main:
   - title: "Home"
@@ -32,6 +26,9 @@ main:
   - title: "Docs"
     url: /docs/
     match: /docs
+  - title: "Leo"
+    url: /leo/
+    match: /leo
   - title: "GitHub"
     url: https://github.com/NukaSoft/nukasoft.ai
     class: gh
@@ -51,9 +48,7 @@ footer:
         url: /prompts/
   - heading: "Logs"
     links:
-      - title: "Captain's Log"
-        url: /blog/
-      - title: "Stardates"
+      - title: "Logs"
         url: /blog/
       - title: "RSS Feed"
         url: /feed.xml
@@ -63,6 +58,8 @@ footer:
         url: /docs/mep-protocol/
       - title: "Docs"
         url: /docs/
+      - title: "Leo"
+        url: /leo/
       - title: "Brand Guide"
         url: /brand/
       - title: "GitHub"

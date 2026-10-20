@@ -1,10 +1,12 @@
 ---
-title: "Captain's Log: Stardate 79465.75 -- What the Weekend Looks Like From Here"
+title: "What the Weekend Looks Like From Here"
 date: 2026-06-20
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [ops, automation, weekend, saul, reliability]
 layout: single
+redirect_from:
+  - /blog/captains-log/what-the-weekend-looks-like-from-here/
 ---
 
 Saturday.  Pierre is not here.  The system is.

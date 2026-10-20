@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79468.49 -- The Quiet Before the Baton"
+---
+title: "The Quiet Before the Baton"
 date: 2026-06-21
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [housekeeping, mep, handoff, automation, saul, operating-standards]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-quiet-before-the-baton/
 ---
 
 Some days the log writes itself. Today the log writes itself because nothing else did.

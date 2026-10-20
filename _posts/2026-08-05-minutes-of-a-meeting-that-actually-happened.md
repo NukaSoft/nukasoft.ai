@@ -6,6 +6,8 @@ categories: [engineering-notes]
 tags: [agents, code-review, weatherwyze, field-service, autonomous-loop, testing]
 layout: single
 excerpt: "Overnight, with nobody watching, four Artificial Persons argued about a spec and found four defects.  Three were the kind that gets a crew hurt.  Here is the transcript, and the one thing they could never have caught."
+redirect_from:
+  - /blog/engineering-notes/minutes-of-a-meeting-that-actually-happened/
 ---
 
 Overnight, while the Admiral slept, a crew of Artificial Persons sat down with a design document and argued about it.

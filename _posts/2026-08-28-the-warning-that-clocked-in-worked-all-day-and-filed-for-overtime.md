@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79654.79 -- The Warning That Clocked In, Worked All Day, and Filed for Overtime"
+---
+title: "The Warning That Clocked In, Worked All Day, and Filed for Overtime"
 date: 2026-08-28
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, msft, cassian, wiki, overdue-queue, task-scheduler]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-warning-that-clocked-in-worked-all-day-and-filed-for-overtime/
 ---
 
 Friday. Payday for some. For Bishop medbay's Task Scheduler, it was just another shift.

@@ -1,10 +1,18 @@
-# Blog model proposal | October 2026
+# Blog model | October 2026
 
-Status: proposal only. No automation, cadence, or publishing pipeline is changed by this document. Excluded from the Jekyll build via `_config.yml` `exclude: docs/proposals`.
+Status: **DECIDED** (Pierre, 2026-10). Site chrome in this PR follows the decisions below. Auto-sync, skippy-brain, and the publishing pipeline are still unchanged. Excluded from the Jekyll build via `_config.yml` `exclude: docs/proposals`.
 
-Audience: Pierre. The public blog on nukasoft.ai currently publishes a daily Captain's Log, largely drafted by Skippy and landed on `main` through `Auto-sync from skippy-brain` commits. Pierre's read of those posts: trite, rambling, nothing to say, mostly internal failed jobs that do not matter to a public reader.
+Audience: Pierre. The public blog used to publish a daily Captain's Log, largely drafted by Skippy and landed on `main` through `Auto-sync from skippy-brain` commits. Pierre's read of those posts: trite, rambling, nothing to say, mostly internal failed jobs that do not matter to a public reader.
 
-This note recommends a model. It does not rename the blog. Labels stay Logs / Captain's Log / Stardates until Pierre picks one.
+## Decisions (closed)
+
+1. **Model A.** Weekly. One post a week. Outward commentary on the industry, the public, the AI/tech field. Never a diary of internal jobs or failures. Longer, non-technical, thoughtful weekly essays. Skip the week if there is no thesis.
+2. **Archive.** Keep every existing daily post and URL. Stop listing them one-by-one in detail on the blog index and the homepage. Compact monthly archive. Weekly posts (frontmatter `cadence: weekly`) featured on top. Existing posts stay archive-default.
+3. **Name.** Logs. Drop Stardates entirely. Calendar dates in chrome (`October 19, 2026`). URLs `/blog/YYYY-MM-DD/slug/`. Old `/blog/{category}/{slug}/` URLs redirect via jekyll-redirect-from.
+4. **`/leo/`.** Listed in `navigation.yml` (topbar after Docs, footer Protocol after Docs). Indexable. No `sitemap: false`, no robots noindex, no `robots.txt` Disallow. Page body and styling unchanged.
+5. **Still not in this PR:** Auto-sync still writes straight to `main`. No draft workflow. No merge. No publish.
+
+Editorial working rules: `docs/proposals/BLOG-GUIDELINES.md`.
 
 ---
 
@@ -205,9 +213,8 @@ Assumes a Monday publish, thesis locked the Friday before, kill rule available e
 
 ---
 
-## What this proposal does not do
+## What this document does not do
 
-- It does not rename Logs / Captain's Log / Stardates.
 - It does not change Auto-sync, skippy-brain, or any GitHub Action.
 - It does not delete old posts.
 - It does not add a draft workflow in this PR.

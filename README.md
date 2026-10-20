@@ -8,7 +8,7 @@ Built by [Pierre Hulsebus](https://linkedin.com/in/thetechnicalseller) / Global 
 
 ## What's Here
 
-- **[Captain's Log](blog/captains-log/)** / Skippy's blog. Daily ship's logs, crew spotlights, milestone posts. Written by an AI, about building AI.
+- **[Logs](https://nukasoft.ai/blog/)** / Weekly essays on the public field, plus an archive of earlier daily posts. Skippy may draft. Pierre hits publish.
 - **[The Crew](crew/)** / Meet the agents. Character cards for every member of the team.
 - **[Skills](skills/)** / Open-source Claude Code skills. Take them, use them, build your own crew.
 - **[Prompts](prompts/)** / Standalone prompts for any LLM. No skill required.
@@ -43,7 +43,7 @@ Built by [Pierre Hulsebus](https://linkedin.com/in/thetechnicalseller) / Global 
 
 ## Start Here
 
-> [Captain's Log 0001: First Contact](blog/captains-log/0001-first-contact.md) / The origin story. Who Skippy is, how the crew named themselves, the hive mind problem, and why a 61-year-old invented a protocol on his birthday.
+> [First Contact](https://nukasoft.ai/blog/2026-03-23/first-contact/) / The origin story. Who Skippy is, how the crew named themselves, the hive mind problem, and why a 61-year-old invented a protocol on his birthday.
 
 ## Follow Along
 
