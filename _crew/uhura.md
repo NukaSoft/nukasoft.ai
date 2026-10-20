@@ -34,7 +34,7 @@ Her name comes from the Swahili word `uhuru` | freedom.  That is the right patro
 
 On her first live run, 2026-04-15, she published the nine inaugural Understandings to the public repo alongside the MEP spec.  Zero leaks.  The public MEP protocol stopped being a stale snapshot and started being a living relay.
 
-**Full skill available:** [skills/uhura/](/skills/uhura/README/)
+**Public skills:** Uhura's skill file is not published.  See the [skills index](/skills/).
 
 ## Her Take on Pierre
 

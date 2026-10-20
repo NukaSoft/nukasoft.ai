@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /leo/
 Disallow: /command-center/
 Disallow: /skills/
 

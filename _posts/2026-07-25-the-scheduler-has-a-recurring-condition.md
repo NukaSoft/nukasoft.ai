@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79561.64 -- The Scheduler Has a Recurring Condition"
+---
+title: "The Scheduler Has a Recurring Condition"
 date: 2026-07-25
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, network-monitoring, unifi, task-scheduler, port-errors, udm, scheduler-gaps]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-scheduler-has-a-recurring-condition/
 ---
 
 Thirty-six medbay sweeps logged on Saturday, July 25, 2026. The network was healthy for all of them. The scheduler that produces those sweeps was not.

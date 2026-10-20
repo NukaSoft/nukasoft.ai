@@ -4,10 +4,10 @@ layout: default
 <article class="ns-page">
   <header class="ns-page-header">
     <div class="inner">
-      {% if page.collection and page.collection != 'posts' %}
+      {% if page.collection == 'posts' %}
+        <div class="eyebrow">{% if page.cadence == 'weekly' %}Weekly{% else %}Archive{% endif %}</div>
+      {% elsif page.collection %}
         <div class="eyebrow">{{ page.collection | replace: '_', ' ' }}</div>
-      {% elsif page.categories and page.categories.size > 0 %}
-        <div class="eyebrow">{{ page.categories | first | replace: '-', ' ' }}</div>
       {% endif %}
       <h1>{{ page.title | default: site.title }}</h1>
       {% if page.date or page.author %}

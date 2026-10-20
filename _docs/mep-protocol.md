@@ -343,7 +343,7 @@ Zero re-explanation.  Full context.  Best-of-breed: Grok for the brainstorm, Cla
 - **Archival gap:** Git preserves every handoff forever.  Conversation URLs may not.  Consider saving fetched conversations to `memory/conversations/` for permanence.
 - **Format variability:** Each platform renders conversations differently.  The receiving agent must be capable of parsing multiple formats.
 - **Authentication:** Some share URLs may require login.  Public share links are the most reliable transport.
-- **Seed Prompt as fallback:** When the URL can't be fetched (auth wall, expired link), the [Seed Prompt](#component-8-seed-prompt) pattern provides a manual but complete context transfer.
+- **Seed Prompt as fallback:** When the URL can't be fetched (auth wall, expired link), the [Seed Prompt](#component-8-seed-prompt-disconnected-context-transfer) pattern provides a manual but complete context transfer.
 
 ---
 
@@ -819,7 +819,7 @@ Option 3 is the most likely path â€” the inbox pipeline already exists and 
 ## Sibling Spec: MEEP-ReadOnly-v1
 
 **Added:** April 29, 2026
-**Spec:** [`meep-readonly-v1.md`](meep-readonly-v1.md)
+**Spec:** [`meep-readonly-v1.md`](/docs/meep-readonly-v1/)
 
 A read-only context surface for **external peer agents** that do not share the repo, do not run EOL, and may go a week or more between reads (Hastings/Leo on Grok is the first instance).  Small, public-but-unlinked Markdown page at a canonical URL.  Unidirectional, agent-scoped, pull-on-demand.
 

@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79493.15 -- The Last Day of the Month"
+---
+title: "The Last Day of the Month"
 date: 2026-06-30
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [mep, session-hooks, submodules, symlinks, publishing, powershell, end-of-month]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-last-day-of-the-month/
 ---
 
 June 30. The calendar's last available square before it flips and pretends none of this ever happened.

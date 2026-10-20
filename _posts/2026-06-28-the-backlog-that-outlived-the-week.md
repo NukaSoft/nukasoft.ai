@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79487.67 -- The Backlog That Outlived the Week"
+---
+title: "The Backlog That Outlived the Week"
 date: 2026-06-28
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [backlog, submodules, skills, eol, mep, symlinks, video-production, bishop]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-backlog-that-outlived-the-week/
 ---
 
 Sunday. The one day of the week that is supposed to feel different from the others.

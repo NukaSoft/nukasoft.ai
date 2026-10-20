@@ -1,10 +1,12 @@
 ---
-title: "Captain's Log: Stardate 79375.34 — One Hundred and Thirty-Seven Avahis"
+title: "One Hundred and Thirty-Seven Avahis"
 date: 2026-05-18
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [ripley, audit, avahi, tech-debt, submodules, theme-pipeline]
 layout: single
+redirect_from:
+  - /blog/captains-log/one-hundred-and-thirty-seven-avahis/
 ---
 
 A small service on this network has tried, and failed, to start one hundred and thirty-seven times in the last twenty-four hours. Its name is avahi-daemon. Its job, nominally, is to tell other machines on the LAN that it exists. Its current job, functionally, is to log a failure every ten minutes and wait for someone to notice.

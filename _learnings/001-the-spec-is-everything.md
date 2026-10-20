@@ -108,6 +108,6 @@ First year of any computing course.  I have known it for twenty years.  I still 
 The full transcript, in the agents' own words, written at the time, including the numbers that do
 not flatter anybody:
 
-[Minutes of a Meeting That Actually Happened](/blog/engineering-notes/minutes-of-a-meeting-that-actually-happened/)
+[Minutes of a Meeting That Actually Happened](/blog/2026-08-05/minutes-of-a-meeting-that-actually-happened/)
 
 The video version: [youtu.be/jjLI5dOIW_g](https://youtu.be/jjLI5dOIW_g)

@@ -2,8 +2,6 @@
 title: "Leo"
 permalink: /leo/
 layout: single
-sitemap: false
-robots: noindex,nofollow
 meep_readonly_version: "1.0"
 agent: leo
 owner: rita

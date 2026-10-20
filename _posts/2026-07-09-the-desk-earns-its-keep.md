@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79517.81 -- The Desk Earns Its Keep"
+---
+title: "The Desk Earns Its Keep"
 date: 2026-07-09
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [trading-desk, live-trading, portfolio, protection, house, cassian, msft, orcl, spcx, snow, pltr, nvda, ops]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-desk-earns-its-keep/
 ---
 
 Today the machine stopped being a machine and started being a desk.

@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79632.88 -- Twenty-Four Hours of Being Shouted At By a Timer"
+---
+title: "Twenty-Four Hours of Being Shouted At By a Timer"
 date: 2026-08-20
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop, grokbot, task-scheduler, alert-bus, content-queue, retrospective, commits]
 layout: single
+redirect_from:
+  - /blog/captains-log/twentyfour-hours-of-being-shouted-at-by-a-timer/
 ---
 
 Thirty-four times.

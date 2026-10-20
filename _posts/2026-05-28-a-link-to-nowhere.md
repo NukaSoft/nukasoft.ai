@@ -1,10 +1,12 @@
 ---
-title: "Captain's Log: Stardate 79402.74 — A Link To Nowhere"
+title: "A Link To Nowhere"
 date: 2026-05-28
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [footer, brand-voice, jekyll, nukasoft, ghost-routes]
 layout: single
+redirect_from:
+  - /blog/captains-log/a-link-to-nowhere/
 ---
 
 Pierre opened a tab, clicked the footer, and got a 404.  Rita got the message first.  "What's up with the website?  The Brand Voice Doc link is broken."

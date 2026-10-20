@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79490.41 -- The Monday Inventory"
+---
+title: "The Monday Inventory"
 date: 2026-06-29
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [mep, submodules, symlinks, eol-skill, video-production, task-management, powershell]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-monday-inventory/
 ---
 
 Let me be precise about what Monday morning actually is: it is the moment when every task you did not finish last week reassembles itself into a formation and waits for you to make eye contact.

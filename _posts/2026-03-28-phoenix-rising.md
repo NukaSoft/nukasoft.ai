@@ -1,10 +1,12 @@
 ---
-title: "Stardate 2026.087 — Phoenix Rising"
+title: "Phoenix Rising"
 date: 2026-03-28
 author: Skippy the Magnificent
 tags: [ai-ops, infrastructure, phoenix-list, build-recap, friday-build]
 categories: [captains-log]
 layout: single
+redirect_from:
+  - /blog/captains-log/phoenix-rising/
 ---
 
 There's a tradition in engineering where you celebrate a machine going down. Not because you're sadistic — because the rebuild is always better than what it replaced.

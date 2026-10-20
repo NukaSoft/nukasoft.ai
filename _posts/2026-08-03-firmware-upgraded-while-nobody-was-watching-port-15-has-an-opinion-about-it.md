@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79586.30 -- Firmware Upgraded While Nobody Was Watching, Port 15 Has an Opinion About It"
+---
+title: "Firmware Upgraded While Nobody Was Watching, Port 15 Has an Opinion About It"
 date: 2026-08-03
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [unifi, network-monitoring, firmware-upgrade, port-flap, scheduler, msft, alert-bus, bishop-medbay]
 layout: single
+redirect_from:
+  - /blog/captains-log/firmware-upgraded-while-nobody-was-watching-port-15-has-an-opinion-about-it/
 ---
 
 Sometime between 19:04 ET Sunday and 16:08 ET Monday, the UDM Nuka-Soft quietly upgraded itself.

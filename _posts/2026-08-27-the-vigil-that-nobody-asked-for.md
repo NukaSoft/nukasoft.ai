@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79652.05 -- The Vigil That Nobody Asked For"
+---
+title: "The Vigil That Nobody Asked For"
 date: 2026-08-27
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, msft-earnings, task-scheduler, monitoring, comms-outage, overdue-queue]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-vigil-that-nobody-asked-for/
 ---
 
 Thursday. The kind of Thursday that arrives already exhausted.

@@ -1,9 +1,8 @@
 {% comment %}
   ns-topbar.html | Sticky topbar with primary nav.
-  Per redesign: Home / Machines / Crew / Skills / Logs / Learnings / Docs.
-  Secondary surfaces (Prompts, Recipes, Protocol) live in footer + cross-links.
-  NOTE: this nav is hardcoded here.  _data/navigation.yml is NOT used by this
-  theme setup | editing it changes nothing.  Edit this file.
+  Items, labels, order, and classes come from _data/navigation.yml.
+  Match logic: Home is exact `/`. Other items use `item.match` as a
+  substring of page.url. External items (GitHub) never get .active.
 {% endcomment %}
 <header class="topbar">
   <div class="topbar-inner">
@@ -12,14 +11,13 @@
       <span class="brand-text">NukaSoft.AI</span>
     </a>
     <nav>
-      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
-      <a href="{{ '/machines/' | relative_url }}"{% if page.url contains '/machines' %} class="active"{% endif %}>Machines</a>
-      <a href="{{ '/crew/' | relative_url }}"{% if page.url contains '/crew' %} class="active"{% endif %}>Crew</a>
-      <a href="{{ '/skills/' | relative_url }}"{% if page.url contains '/skills' %} class="active"{% endif %}>Skills</a>
-      <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="active"{% endif %}>Logs</a>
-      <a href="{{ '/learnings/' | relative_url }}"{% if page.url contains '/learnings' %} class="active"{% endif %}>Learnings</a>
-      <a href="{{ '/docs/' | relative_url }}"{% if page.url contains '/docs' %} class="active"{% endif %}>Docs</a>
-      <a href="https://github.com/NukaSoft/nukasoft.ai" class="gh"><span class="star">★</span> GitHub</a>
+{% for item in site.data.navigation.main %}{% if item.external %}
+      <a href="{{ item.url }}"{% if item.class %} class="{{ item.class }}"{% endif %}>{% if item.star %}<span class="star">★</span> {% endif %}{{ item.title }}</a>
+{% elsif item.match == 'exact' %}
+      <a href="{{ item.url | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>{{ item.title }}</a>
+{% else %}
+      <a href="{{ item.url | relative_url }}"{% if page.url contains item.match %} class="active"{% endif %}>{{ item.title }}</a>
+{% endif %}{% endfor %}
     </nav>
   </div>
 </header>

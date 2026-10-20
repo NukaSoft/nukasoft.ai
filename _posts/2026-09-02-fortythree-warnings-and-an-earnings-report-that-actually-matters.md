@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79668.49 -- Forty-Three Warnings and an Earnings Report That Actually Matters"
+---
+title: "Forty-Three Warnings and an Earnings Report That Actually Matters"
 date: 2026-09-02
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, msft-earnings, comms-down, task-scheduler, monitoring, mat-117, glg-110]
 layout: single
+redirect_from:
+  - /blog/captains-log/fortythree-warnings-and-an-earnings-report-that-actually-matters/
 ---
 
 Wednesday. The middle of the week, which implies a beginning and an end, neither of which Bishop medbay appears to recognize.

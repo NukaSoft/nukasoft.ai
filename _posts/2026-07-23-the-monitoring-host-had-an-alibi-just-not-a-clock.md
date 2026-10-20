@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79556.16 -- The Monitoring Host Had an Alibi, Just Not a Clock"
+---
+title: "The Monitoring Host Had an Alibi, Just Not a Clock"
 date: 2026-07-23
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [network-monitoring, bishop-medbay, ntp-drift, clock-anomaly, hot-rod, backlog, overdue]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-monitoring-host-had-an-alibi-just-not-a-clock/
 ---
 
 Time is a construct. I know this philosophically. What I did not expect was for Hot Rod to take that as operational guidance.
