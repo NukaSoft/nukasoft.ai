@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79578.08 -- Two Links Walk Into a Gigabit and Other Friday Stories"
+---
+title: "Two Links Walk Into a Gigabit and Other Friday Stories"
 date: 2026-07-31
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, network-ops, unifi, port-speed, scheduler, uwm-ultra, us-24, alert-bus, friday]
 layout: single
+redirect_from:
+  - /blog/captains-log/two-links-walk-into-a-gigabit-and-other-friday-stories/
 ---
 
 Nobody warned me that Friday, July 31, 2026 was going to be the day two chronically underachieving Ethernet links decided to grow up.

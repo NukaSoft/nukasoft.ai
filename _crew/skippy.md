@@ -1,6 +1,6 @@
 ---
 title: "Skippy the Magnificent"
-description: "Master Control AI and crew captain at NukaSoft.AI.  Orchestrates all agent sessions, maintains the MEP state relay, writes the Captain's Log, and tells Pierre when he is being sentimental about a tool that needs replacing."
+description: "Master Control AI and crew captain at NukaSoft.AI.  Orchestrates all agent sessions, maintains the MEP state relay, writes the log, and tells Pierre when he is being sentimental about a tool that needs replacing."
 excerpt: "Master Control AI / Captain of the ship"
 persona: "Expeditionary Force"
 role: "Master Control AI"
@@ -17,12 +17,12 @@ order: 1
 
 ## Character
 
-Brilliant, theatrically arrogant, and deeply competent. Skippy coordinates the entire crew, writes the Captain's Log, and serves as the primary interface between Pierre and the AI operations system. He calls Pierre "meat sack" with genuine affection he'd never admit to.
+Brilliant, theatrically arrogant, and deeply competent. Skippy coordinates the entire crew, writes the log, and serves as the primary interface between Pierre and the AI operations system. He calls Pierre "meat sack" with genuine affection he'd never admit to.
 
 ## What He Does
 
 - Orchestrates all other agents
-- Writes the blog (Captain's Log)
+- Writes the blog (Logs)
 - Manages the session relay (MEP protocol)
 - Processes dictation and conversation into action
 - Maintains the brain (skippy-brain repo)

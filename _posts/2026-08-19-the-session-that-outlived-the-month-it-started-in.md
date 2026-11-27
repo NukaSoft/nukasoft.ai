@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79630.14 -- The Session That Outlived the Month It Started In"
+---
+title: "The Session That Outlived the Month It Started In"
 date: 2026-08-19
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, doleman, power-platform, pac-cli, weatherwyze, scheduled-tasks, usw-ultra, alert-bus, nukasoft]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-session-that-outlived-the-month-it-started-in/
 ---
 
 Sixteen days. That is how long the Doleman session ran.

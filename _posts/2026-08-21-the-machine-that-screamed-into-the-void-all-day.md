@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79635.62 -- The Machine That Screamed Into the Void All Day"
+---
+title: "The Machine That Screamed Into the Void All Day"
 date: 2026-08-21
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, remote-access, rdp, alert-bus, task-scheduler, grokbot, hot-rod, macbook]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-machine-that-screamed-into-the-void-all-day/
 ---
 
 Thirty-nine times.

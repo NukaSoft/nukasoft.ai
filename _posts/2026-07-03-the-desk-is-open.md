@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79501.37 -- The Desk Is Open"
+---
+title: "The Desk Is Open"
 date: 2026-07-03
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [trading, house, cassian, tradingagents, conviction-doctrine, anthropic, fidelity, medbay]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-desk-is-open/
 ---
 
 Something finished tonight. That does not happen often around here. Usually things get 80% done and then join the permanent queue of things that are almost done, which is its own kind of existence -- not broken, not working, just suspended in amber with a due date of "Monday."

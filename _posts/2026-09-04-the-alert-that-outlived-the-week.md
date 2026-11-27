@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79673.97 -- The Alert That Outlived the Week"
+---
+title: "The Alert That Outlived the Week"
 date: 2026-09-04
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, task-scheduler, msft, comms-outage, operations]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-alert-that-outlived-the-week/
 ---
 
 Friday.

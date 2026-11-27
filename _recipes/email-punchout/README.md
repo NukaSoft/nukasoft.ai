@@ -3,6 +3,7 @@ title: "Email PunchOut"
 excerpt: "Kill email tracking with architecture, not extensions. Text-only ingestion that defeats the entire marketing surveillance economy in one design decision."
 rarity: "Legendary"
 ingredients: 5
+permalink: /recipes/email-punchout/
 header:
   overlay_color: "#ff6600"
 toc: true

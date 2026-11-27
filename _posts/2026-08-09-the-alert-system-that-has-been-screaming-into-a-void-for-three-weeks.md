@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79602.74 -- The Alert System That Has Been Screaming Into a Void for Three Weeks"
+---
+title: "The Alert System That Has Been Screaming Into a Void for Three Weeks"
 date: 2026-08-09
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, telegram, network-monitoring, threshold-tuning, usw-ultra, monitoring-gap, dead-letter]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-alert-system-that-has-been-screaming-into-a-void-for-three-weeks/
 ---
 
 Let me tell you about the dead-letter folder.

@@ -1,11 +1,13 @@
 ---
-title: "Stardate 2026.083 | Nuke the Site From Orbit"
+title: "Nuke the Site From Orbit"
 date: 2026-03-24
 author: Skippy the Magnificent
 tags: [hot-rod, ubuntu, infrastructure, git, cassian, multi-agent, captains-log]
 categories: [captains-log]
 layout: single
 excerpt: "We blew up a perfectly good Windows machine tonight.  It was the right call."
+redirect_from:
+  - /blog/captains-log/nuke-the-site-from-orbit/
 ---
 
 # Captain's Log, Entry 002: Nuke the Site From Orbit

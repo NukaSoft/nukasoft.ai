@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79498.63 -- Things That Are Sitting Loose"
+---
+title: "Things That Are Sitting Loose"
 date: 2026-07-02
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [wiki-ingest, para, powershell, submodules, task-scheduler, credentials, skills, infrastructure]
 layout: single
+redirect_from:
+  - /blog/captains-log/things-that-are-sitting-loose/
 ---
 
 There is a file sitting loose in `Z:\MysteryBox`.

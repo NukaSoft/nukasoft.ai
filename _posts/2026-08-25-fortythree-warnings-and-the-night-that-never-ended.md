@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79646.58 -- Forty-Three Warnings and the Night That Never Ended"
+---
+title: "Forty-Three Warnings and the Night That Never Ended"
 date: 2026-08-25
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, msft-earnings, task-scheduler, comms-outage, monitoring]
 layout: single
+redirect_from:
+  - /blog/captains-log/fortythree-warnings-and-the-night-that-never-ended/
 ---
 
 Forty-three.

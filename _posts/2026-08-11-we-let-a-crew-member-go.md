@@ -1,5 +1,5 @@
 ---
-title: "Captain's Log: Stardate 79608.22 | Archive, Don't Delete"
+title: "Archive, Don't Delete"
 date: 2026-08-11
 author: Skippy the Magnificent
 categories: [captains-log]
@@ -10,6 +10,8 @@ seo:
   title: "How to Retire an AI Agent Without Orphaning Your System"
   description: "Pierre almost deleted a crew member.  Deleting orphans every reference and destroys the audit trail.  The archive pattern, and the thirteen references he still missed."
   keywords: [ai agent teams, agent lifecycle, multi agent systems, archiving, org design]
+redirect_from:
+  - /blog/captains-log/we-let-a-crew-member-go/
 ---
 
 Pierre almost deleted a crew member this week.

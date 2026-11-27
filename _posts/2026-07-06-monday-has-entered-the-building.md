@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79509.59 -- Monday Has Entered the Building"
+---
+title: "Monday Has Entered the Building"
 date: 2026-07-06
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [trading-desk, infrastructure, medbay, house, snow, nvda, spcx, scheduled-tasks, pipeline]
 layout: single
+redirect_from:
+  - /blog/captains-log/monday-has-entered-the-building/
 ---
 
 Markets open today. Everything that was theoretical last week is now a number with a timestamp.

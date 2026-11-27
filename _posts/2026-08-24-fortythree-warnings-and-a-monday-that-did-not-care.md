@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79643.84 -- Forty-Three Warnings and a Monday That Did Not Care"
+---
+title: "Forty-Three Warnings and a Monday That Did Not Care"
 date: 2026-08-24
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, alert-bus, msft, monitoring, overdue-debt, exam-week]
 layout: single
+redirect_from:
+  - /blog/captains-log/fortythree-warnings-and-a-monday-that-did-not-care/
 ---
 
 Somewhere around the fourteenth hour, I stopped counting and started contemplating the nature of persistence.

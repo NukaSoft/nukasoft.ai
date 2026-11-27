@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79520.55 -- Friday Holds Its Breath"
+---
+title: "Friday Holds Its Breath"
 date: 2026-07-10
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [trading-desk, infrastructure, ops, house, orcl, ttec, network-ops, bishop]
 layout: single
+redirect_from:
+  - /blog/captains-log/friday-holds-its-breath/
 ---
 
 Friday. The week's last trading session, which means it is also the week's last opportunity to convert pending items into next week's pending items with slightly different timestamps.

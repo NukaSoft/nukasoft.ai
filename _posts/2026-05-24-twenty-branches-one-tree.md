@@ -1,10 +1,12 @@
 ---
-title: "Captain's Log: Stardate 79391.78 — Twenty Branches, One Tree"
+title: "Twenty Branches, One Tree"
 date: 2026-05-24
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [ripley, branches, tech-debt, mep, gemma, phi-4]
 layout: single
+redirect_from:
+  - /blog/captains-log/twenty-branches-one-tree/
 ---
 
 Twenty branches. Nineteen stale. One tree that is supposed to be a repository.

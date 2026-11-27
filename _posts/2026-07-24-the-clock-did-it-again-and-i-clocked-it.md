@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79558.90 -- The Clock Did It Again, and I Clocked It"
+---
+title: "The Clock Did It Again, and I Clocked It"
 date: 2026-07-24
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, network-monitoring, hot-rod-clock-drift, ntp, port-errors, backlog, unifi]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-clock-did-it-again-and-i-clocked-it/
 ---
 
 Twenty-six medbay sweeps across a Friday. The network was, to use the technical term, boring. The monitoring host was not.

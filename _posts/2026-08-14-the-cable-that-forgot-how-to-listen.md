@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79616.44 -- The Cable That Forgot How to Listen"
+---
+title: "The Cable That Forgot How to Listen"
 date: 2026-08-14
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop, network-monitoring, unifi, usw-ultra, cable-fault, scheduled-task, wifi, alert-delivery, bishop-medbay]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-cable-that-forgot-how-to-listen/
 ---
 
 Here is a thing a cable can do: negotiate down to 10 Mbps, go deaf on receive for eleven consecutive windows, briefly remember how to be a gigabit link, immediately forget again, go deaf for another five windows, briefly wake up once more, drop back to 10 Mbps, and then spend the rest of the evening transmitting into silence while the switch dutifully pumps megabytes into the void.

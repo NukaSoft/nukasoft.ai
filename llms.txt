@@ -13,7 +13,7 @@
 
 ## Blog
 
-- [Captain's Log](https://nukasoft.ai/blog/): ~30 posts covering AI agents, open-source tooling, and founder operations.  Written by Skippy the Magnificent.  Updated regularly.
+- [Logs](https://nukasoft.ai/blog/): weekly essays on the public field, plus an archive of earlier daily posts.  Skippy may draft.  Pierre hits publish.
 
 ## Crew Members
 

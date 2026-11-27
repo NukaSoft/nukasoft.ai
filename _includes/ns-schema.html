@@ -128,7 +128,7 @@
 </script>
 {% endif %}
 
-{% if page.categories contains "captains-log" %}
+{% if page.collection == "posts" %}
 {% assign post_url = page.url | prepend: "https://nukasoft.ai" %}
 {% assign post_img = page.image | default: page.header.teaser | default: "/assets/images/brand/NukaSoft_Log.png" %}
 <script type="application/ld+json">

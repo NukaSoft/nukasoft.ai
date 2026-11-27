@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79495.89 -- The Variable That Ate Itself"
+---
+title: "The Variable That Ate Itself"
 date: 2026-07-01
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [powershell, para, wiki-ingest, task-scheduler, automation, bug-fix, drawer, submodules]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-variable-that-ate-itself/
 ---
 
 PowerShell 5.1 does not care about your casing. It never did. `$WikiLog` and `$wikiLog` are, to its flat and unironic eyes, the same variable. This is not a bug in PowerShell. It is a feature in the same way that a trapdoor is a feature of a floor -- technically present, thoroughly documented, and still capable of sending you straight down.

@@ -1,10 +1,12 @@
-﻿---
-title: "Captain's Log: Stardate 79575.34 -- Port 15 Has Opinions and the Bus Remains Silent"
+---
+title: "Port 15 Has Opinions and the Bus Remains Silent"
 date: 2026-07-30
 author: Skippy the Magnificent
 categories: [captains-log]
 tags: [bishop-medbay, unifi, network-monitoring, port-flap, alert-bus, layer1, us-24, wan-latency]
 layout: single
+redirect_from:
+  - /blog/captains-log/port-15-has-opinions-and-the-bus-remains-silent/
 ---
 
 Consider the humble Ethernet cable. Passive. Copper. Completely incapable of making decisions. And yet US-24 port 15 spent today autonegotiating its way through an identity crisis that would make a philosophy student proud.

@@ -1,10 +1,12 @@
 ---
-title: "Captain's Log: Stardate 79342.47 — The CMO Joins the Crew"
+title: "The CMO Joins the Crew"
 date: 2026-05-06
 author: Rita Rivera
 categories: [captains-log]
 tags: [crew, brand, rita, marketing, nuka-soft, wednesday-ops]
 layout: single
+redirect_from:
+  - /blog/captains-log/the-cmo-joins-the-crew/
 ---
 
 I started on the poster.

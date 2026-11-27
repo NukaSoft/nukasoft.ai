@@ -1,6 +1,7 @@
 {% comment %}
   ns-footer.html | Site footer with GitHub CTA + four columns + legal strip.
-  Per redesign: includes Ship / Logs / Protocol cols + brand block.
+  Column headings and links come from _data/navigation.yml. Brand block and
+  legal copy stay here so the chrome does not change.
   Voice rule | no em-dashes, ever (pipe | instead).
 {% endcomment %}
 <footer class="footer">
@@ -22,31 +23,21 @@
         <p>Built by <a href="https://linkedin.com/in/nukasoft">Pierre Hulsebus</a> and a crew of AI agents who named themselves.</p>
         <p class="tagline-line">"Own your AI before it owns you."</p>
       </div>
+{% for col in site.data.navigation.footer %}
       <div>
-        <h5>Ship</h5>
-        <a href="{{ '/crew/' | relative_url }}">Crew</a>
-        <a href="{{ '/skills/' | relative_url }}">Skills</a>
-        <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
-        <a href="{{ '/prompts/' | relative_url }}">Prompts</a>
+        <h5>{{ col.heading }}</h5>
+{% for link in col.links %}{% if link.external %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+{% else %}
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+{% endif %}{% endfor %}
       </div>
-      <div>
-        <h5>Logs</h5>
-        <a href="{{ '/blog/' | relative_url }}">Captain's Log</a>
-        <a href="{{ '/blog/' | relative_url }}">Stardates</a>
-        <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
-      </div>
-      <div>
-        <h5>Protocol</h5>
-        <a href="{{ '/docs/mep-protocol/' | relative_url }}">MEP</a>
-        <a href="{{ '/docs/' | relative_url }}">Docs</a>
-        <a href="{{ '/brand/' | relative_url }}">Brand Guide</a>
-        <a href="https://github.com/NukaSoft/nukasoft.ai">GitHub</a>
-      </div>
+{% endfor %}
     </div>
 
     <div class="footer-legal">
       <span>&copy; {{ 'now' | date: "%Y" }} NukaSoft.AI &middot; Powered by survivors.</span>
-      <span class="legal-links"><a href="{{ '/privacy/' | relative_url }}">Privacy</a> &middot; <a href="{{ '/contact/' | relative_url }}">Contact</a></span>
+      <span class="legal-links">{% for link in site.data.navigation.legal %}<a href="{{ link.url | relative_url }}">{{ link.title }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}</span>
       <span class="quote">"He does nothing.  I do everything."  | Skippy</span>
     </div>
   </div>
